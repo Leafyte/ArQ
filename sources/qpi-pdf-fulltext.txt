@@ -1,0 +1,306 @@
+QpiAI <> Q-BITS, Nitte Meenakshi Institute of Technology
+
+QUANT-A-MAZE 3.0
+INDUSTRY PROBLEM STATEMENTS AND JUDGEMENT RUBRICS
+
+1. PURPOSE AND NON-NEGOTIABLE DESIGN PRINCIPLES
+
+The four tracks are considered finalized. Participants’ submitted presentations are indicators of
+interests and technical directions; they are not finalized challenge statements and should not be
+copied as such. The purpose of this brief is to translate those interests into problems
+recognizable as useful, consequential problem statements by professionals in relevant industrial
+domains, viz. logistics, energy, defense, finance, pharmaceuticals, health systems, security,
+agriculture and industrial R&D.
+
+Problem statements and associated deliverables are open to interpretation and are intended to
+provide a foundational direction rather than impose rigid constraints. Participants are
+encouraged to exercise creative freedom and explore innovative approaches, provided their
+solutions preserve and build upon the core intent and objectives outlined. Participant’s chosen
+problem statement and their solution must have: (1) a suitably attributable industrial domain; (2)
+an observable business or scientific outcome; (3) a mathematically valid quantum/optimization
+or track-specific technical component; and (4) an end-to-end implementation without replacing
+the real problem with an unrelated toy.
+
+There are five problem statements per track: Quantum Machine Learning (QML), Post-Quantum
+Cryptography (PQC), Web3 & Blockchain, and Generative AI & Machine Learning. Teams
+should select freely within their confirmed track.
+
+2. TECHNOLOGY ROLE: QpiAI QCloud & QpiAI Opt
+
+QpiAI QCloud / Quantum SDK is for actual quantum-circuit construction, measurement, circuit
+feature representations and experiments on an available simulator or backend.
+- Install the open source QpiAI Quantum SDK:
+
+         > github.com/qpiai/quantum-sdk ; pip install qpiai-quantum
+- Register and get free API key:
+
+         > qcloud.qpiai.tech
+
+QpiAI Opt / Opt SDK is for substantive, correctly formulated combinatorial decisions, especially
+QUBO / Ising and native-higher order HUBO.
+- Install the open source QpiAI Opt SDK:
+
+   > github.com/qpiai/qpiai-opt ; pip     install  qpiai-opt[quantum]
+
+- Register and get free API key:
+
+​  > opt.qpiai.tech
+
+Every QML challenge REQUIRES meaningful use of BOTH QpiAI QCloud and QpiAI Opt. In
+other tracks, QpiAI Opt MUST be used for the real scheduling, selection or allocation task
+wherever applicable. Similarly, QpiAI QCloud MUST be used meaningfully wherever applicable.
+Consequently, usage of QpiAI technologies is incentivized in the judgement rubrics (Section 8).
+
+3. THEMATIC ALIGNMENT AS PER PARTICIPANT SUBMISSIONS
+
+QML domains: fleet routing, EV charging, smart grids, battery health and second life, molecule
+selection, financial risk, recovery logistics and quantum feature representations.
+
+PQC domains: cryptographic inventories, migration, secure messaging, quantum-resistant
+signatures, satellite commands, embedded gateways and formalized verification.
+
+Web3 domains: crop provenance, payments, evidence custody, verified records, language-data
+rights, accountable agents, traceability and revocation.
+
+GenAI/ML domains: incident triage, city buses, healthcare supplies, agronomy, retail inventory,
+document dependencies, safety and operating decisions.
+
+4. TRACK I: QUANTUM MACHINE LEARNING
+
+Mandatory for ALL five: QpiAI QCloud Quantum + QpiAI Opt QUBO / Ising / HUBO optimization.
+
+QML-01: Delay-Risk-Aware Fleet Dispatch for Contract Logistics
+
+Problem. A contract logistics operator has finite vehicles, vehicle-specific capacities, delivery
+windows and contractual commitments. Traffic and service-time uncertainty can make a
+cheap-looking route fail its SLA. Produce vehicle routes that are operationally feasible and
+minimize actual transport/labor expense together with estimated service-failure exposure.
+
+Deliver. Exact vehicle-to-route plan, ordered stops, ETA/risk for each service commitment and
+total financial exposure. Evaluate SLA violations, valid coverage, cost, prediction calibration,
+solver quality and runtime.
+QML-02: Grid-Constrained Commercial EV Fleet Charging
+
+Problem. Vehicle charging must finish before real departure deadlines without exceeding
+feeder/transformer limits or driving expensive power peaks. Select charger-and-time allocations
+minimizing energy tariff costs and demand charges while meeting all confirmed departure
+requirements.
+
+Deliver. Vehicle/charger/time-slot plan, energy delivered, predicted departures, aggregate kW
+loading and bill. Measure departure compliance, peak kW, tariff cost and capacity violations.
+
+QML-03: Retired Battery Qualification and Second-Life Allocation
+
+Problem. Retired batteries differ in health, electrical properties and degradation. Safely decide
+which units qualify for reuse, grouping or recycling while protecting minimum compatibility and
+value constraints.
+
+Deliver. Unit-by-unit reuse/testing/recycling disposition, grouped capacity, compatibility rationale
+and uncertainty. Evaluate health estimation error, forbidden-assignment count, value, pack
+mismatch.
+
+QML-04: Assay-Constrained Selection of Drug-Discovery Compounds
+
+Problem. A drug-discovery team can test only a limited number of molecules and must trade
+predicted activity against chemical novelty, diversity, assay expense and availability. Select a
+high-value next experimental batch for one specified target and assay.
+
+Deliver. Specific molecules, source IDs, cost, predicted measurements/uncertainty, scaffold
+diversity and validation plan. Evaluate retrospective enrichment on held-out assay results, novel
+scaffold coverage and selection value.
+
+QML-05: Discrete Foreign-Exchange Hedge Allocation
+
+Problem. Dated contractual foreign-currency cashflows expose a company to adverse FX
+moves, but forwards/options are purchasable only in discrete tradable lots and constrained by
+approved risk policy, credit and liquidity. Select economically appropriate hedge lots and dates.
+
+Deliver. Hedge tickets, quantities, maturities, quoted costs and residual scenario exposures
+with compliance report. Benchmark held-out risk and implementation cost.
+5. TRACK II: POST-QUANTUM CRYPTOGRAPHY
+
+PQC-01: Verification-Gated Cryptographic Migration Across Banking
+Applications
+
+Problem. A bank has vulnerable RSA/ECC-dependent services, certificates and software
+dependencies that cannot all transition simultaneously without interrupting payment services.
+Identify current cryptographic exposure and prioritize a provably compatible migration schedule.
+
+Deliver. Inventory with file/service evidence, migration sequence, working before-and-after
+protocol traces, compatibility tests and rollback plan. Evaluate detection precision/recall on
+labelled code and configs, protocol correctness, overhead and feasible migration dependencies.
+
+PQC-02: Post-Quantum Authentication of Automotive Firmware Updates
+
+Problem. Software-defined vehicles receive firmware updates on constrained ECUs.
+Forged/rolled-back firmware must be rejected, while real signature sizes, verification time and
+recovery constraints have to remain acceptable over long platform lives.
+
+Deliver. Runnable signer and verifier, signed update manifest, measured signature
+bytes/latency/RAM/flash, failure-recovery results and negative-test suite. Hardware profiles must
+be measured on an identified available device.
+
+PQC-03: Quantum-Resistant Satellite Command Authentication
+
+Problem. Satellites accept high-consequence commands over limited-bandwidth
+communications, often with low repairability. Unauthorized or replayed instructions must be
+rejected without exhausting onboard computation or link budgets.
+
+Deliver. Ground-side signing, onboard-side receiving verification, accepted/rejected log and
+measured resource budget. Test tampered, replayed, expired, unauthorized and forged
+commands.
+
+PQC-04: Long-Term Confidentiality in Hospital-to-Laboratory Data
+Exchange
+
+Problem. Medical reports are retained for long periods; captured encrypted traffic may face
+future quantum threats. Migration to new public-key mechanisms must protect confidential
+transfers without breaking interoperability.
+Deliver. Complete secure record exchange, validated protocol handshake, negative-case tests
+and an explicit key-management/compatibility report. Evaluate session establishment
+correctness, authorization rejection, data integrity and end-to-end latency.
+
+PQC-05: PQC Deployment in Resource-Constrained Industrial Gateways
+
+Problem. Industrial gateways may remain operational for a decade or more under severe
+processor, memory, frame-size and downtime constraints. Cryptographic migration must
+maintain authenticated communication and configuration updates without interrupting control
+functions.
+
+Deliver. Working secure gateway session, signed-update verification, hardware/resource
+measurements and deployment plan. Distinguish device measurements from measurements on
+a desktop emulator.
+
+6. TRACK III: WEB3 & BLOCKCHAIN
+
+WEB3-01: Agricultural Procurement, Quality Grading and Payment
+Settlement
+
+Problem. Agricultural lot value depends on verified delivered weight, quality grading, loss,
+transfer and contract terms. Unverifiable deductions and duplicated claims create disputes
+between growers, collectors, warehouses and processors.
+
+Deliver. Full lot ancestry, mass/quantity reconciliation, attested grading, settlement records,
+dispute evidence and feasible commercial allocation. Evaluate false/duplicate settlement
+rejection, quantity consistency, contractual fulfillment and cost.
+
+WEB3-02: E-Waste Collection, Recovery Yields and Auditable Material
+Claims
+
+Problem. E-waste collected from disparate channels can be misreported, lost between
+handovers or counted twice toward material recovery. An industrial recycler needs traceable
+custody and reconcilable physical yield evidence.
+
+Deliver. Traceable batch graph, processor evidence, validated mass-balance, duplicate-claim
+checks and dispatch assignment. Evaluate independent inventory reconciliation, missing
+handovers, cost and licensed-facility compliance.
+WEB3-03: Cross-Enterprise Digital Passports for EV Battery Reuse and
+Recycling
+
+Problem. Batteries change ownership and use across manufacturers, repairers,
+remanufacturers and recyclers. Every party needs authenticated identity and condition history
+but should only access information authorized for its role.
+
+Deliver. Verified battery-lifecycle state, independently inspectable custody/history evidence,
+access-control tests and disposition decisions. Measure unauthorized write rejection, lineage
+continuity, missing attestation detection and allocation feasibility.
+
+WEB3-04: Rights-Gated Regional-Language Dataset Licensing for AI
+Training
+
+Problem. AI model training datasets may carry different rights for commercial training,
+geography, derivative works, redistribution, expiry or revocation. Unauthorized data ingestion
+creates substantial contractual and reputational exposure.
+
+Deliver. Signed rights ledger, ingestion decision API, accepted/rejected corpus manifests, audit
+log, licensing-cost allocation and adversarial policy checks. Evaluate false authorizations,
+correct denial behavior, traceability and coverage.
+
+WEB3-05: Policy-Bound Autonomous Procurement and
+Machine-to-Machine Payments
+
+Problem. Autonomous software can buy low-value supplies/services efficiently but must not
+exceed delegated authority, buy from unauthorized vendors or obey malicious instructions that
+manipulate payment policy.
+
+Deliver. Agent request, approved purchase basket, signed authority, executable payment on a
+controlled test environment, transaction proofs and revocation. Evaluate unauthorized-payment
+rejection, purchasing costs, budget enforcement and verifier failure handling.
+
+7. TRACK IV: GENERATIVE AI & MACHINE LEARNING
+
+GENAI-01: Freight Exception Resolution Before Demurrage and Delivery
+Penalties
+
+Problem. Documentation, customs release, terminal deadlines and truck bookings are
+fragmented across carrier emails, shipping documents, status feeds and internal notes. Missing
+an action can cause avoidable demurrage, detention, storage or missed deliveries.
+Deliver. Container-level blocker, verified evidence, time-bound responsible action, feasible
+truck/slot allocation and projected avoidable costs. Assess evidence precision, missed blockers,
+false escalations, deadline compliance and historical expense.
+
+GENAI-02: Security Incident Triage and Qualified Analyst Assignment
+
+Problem. SOC analysts must group related identity, endpoint and cloud alerts, preserve
+evidential context and assign urgent cases to qualified responders under capacity and
+response-time contracts.
+
+Deliver. Auditable incident queue, links to contributing logs, assigned specialists, response
+plans and uncertainty. Evaluate evidence accuracy, grouping precision, important incident recall,
+response SLA adherence and analyst workload.
+
+GENAI-03: Bus Headway Recovery and Passenger Disruption Updates
+
+Problem. Traffic and uneven boarding cause buses to bunch. Dispatchers choose whether to
+hold, short-turn, release a spare or make no change without breaking driver, stop-coverage and
+fleet constraints.
+
+Deliver. Specific dispatcher hold/short-turn/spare orders, predicted revised arrivals and
+accurate bilingual or multilingual passenger information where relevant. Evaluate predicted ETA
+error, headway regularity, missed service, feasibility and notification truthfulness.
+
+GENAI-04: Expiry-Aware Essential Medicine Redistribution Across Health
+Facilities
+
+Problem. Some medical facilities stock out of essential drugs while nearby facilities hold eligible
+lots close to expiry. Redistribution is constrained by actual inventories, drug identity, minimum
+stock reserve, shelf life, permitted transport and cold chain.
+
+Deliver. Auditable lot-level transfer orders, quantities, source/destination, temperature
+requirements, shortage reduction and expected expiry avoidance. Evaluate actual stockout
+reductions, expiry and inventory feasibility.
+
+GENAI-05: Plant-Disease Investigation Coupled to Real Agronomy-Service
+Capacity
+
+Problem. Visually similar crop damage may arise from pests, disease, nutrient stress or
+weather. Field managers need a verified diagnosis pathway and realistic scheduling of
+agronomists, testing services and approved supplies; generic crop-image diagnosis is
+insufficient.
+
+Deliver. Auditable per-field investigation plan, validated next test, appointment, available
+permitted inputs (when independently confirmed) and service orders. Evaluate diagnosis quality
+on independent field observations, unsafe advice, turnaround and feasibility.
+
+8. JUDGEMENT RUBRICS: QpiAI TECHNOLOGY METRIC
+
+The following scoring criteria shall be used for scoring the use of QpiAI technologies in the
+submissions, and shall be incorporated into the judgement rubrics accordingly. The 20 points
+score assumes a 100 points-based scoring system; the scaling shall be adjusted as applicable.
+
+A. USE OF QPIAI TECHNOLOGIES — 20 points.
+
+Judges must score ACTUAL invocation, relevance, correctness and measured integration of
+QpiAI technology, not mentions in slides or a decorative circuit.
+
+A1. Correct, meaningful QpiAI product choice and domain integration — 5 points.
+Does the selected QpiAI component address a genuine computation or domain decision? Are
+inputs and outputs materially connected to the validated business outcome?
+
+A2. Technical formulation and correct use of features — 10 points.
+QpiAI QCloud and associated technical correctness — 5 points (50%).
+QpiAI Opt and associated technical correctness — 5 points (50%).
+
+A3. Working QpiAI implementation with recorded execution evidence — 5 points.
+Working SDK and solver runs, recorded outputs and reproducibility.
+

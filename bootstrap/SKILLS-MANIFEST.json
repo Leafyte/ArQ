@@ -1,0 +1,2278 @@
+{
+  "scope": "Project-local skill bootstrap; no runtime dependencies installed; downloaded scripts were not executed.",
+  "total_skills": 25,
+  "structural_errors": [],
+  "total_files": 258,
+  "skills": [
+    {
+      "name": "architecture-decision-records",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/documentation-generation/skills/architecture-decision-records",
+        "license": "MIT"
+      },
+      "purpose": "Write and maintain Architecture Decision Records (ADRs) following best practices for technical decision documentation. Use when documenting significant technical decisions, reviewing past architectural choices, or establishing decision processes.",
+      "installed_path": ".agents/skills/architecture-decision-records",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/documentation-generation/skills/architecture-decision-records",
+        "source_file_count": 3,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 4,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 5214,
+          "sha256": "cabedd930d36931d593fe57c360cae80b9808038c74ef1a10935b9d99a4031f0"
+        },
+        {
+          "path": "references/decision-templates.md",
+          "bytes": 5267,
+          "sha256": "7f682594145309542a127cb75127481cba8cf4c8d0aa7fc429f6574717bbf63b"
+        },
+        {
+          "path": "references/deprecation-rfc-templates.md",
+          "bytes": 3562,
+          "sha256": "296b5e681216937b04a9fabd5fd562515d3a7acc88948cee2fdb9102ccf341cc"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [
+        {
+          "classification": "illustrative-only",
+          "paths": [
+            "0001-use-postgresql.md",
+            "0002-caching-strategy.md",
+            "0003-mongodb-user-profiles.md",
+            "0020-deprecate-mongodb.md"
+          ],
+          "detail": "Sample ADR tree/index names shown in documentation; the skill creates these in the target repository and does not require bundled example files."
+        }
+      ],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/reference skill with no bundled executable scripts; package commands shown in examples are not run automatically."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "architecture-patterns",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/backend-development/skills/architecture-patterns",
+        "license": "MIT"
+      },
+      "purpose": "Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use this skill when designing clean architecture for a new microservice, when refactoring a monolith to use bounded contexts, when implementing hexagonal or onion architecture patterns, or when debugging dependency cycles between application layers.",
+      "installed_path": ".agents/skills/architecture-patterns",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/backend-development/skills/architecture-patterns",
+        "source_file_count": 3,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 4,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 8106,
+          "sha256": "fb3ea9a26405bc82b8bbbfd2250f15fb13995d09ae4ade999058633044a01562"
+        },
+        {
+          "path": "references/advanced-patterns.md",
+          "bytes": 15720,
+          "sha256": "4dfeda6d36279c4f9905dd220b967feff39bb72eee0bdefb7a8dfb5adf649ee8"
+        },
+        {
+          "path": "references/details.md",
+          "bytes": 11328,
+          "sha256": "0faee867e3b41515fd9a0023e3b9a896df6825f2030bcdc167f2354d6a85b454"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation-only; use boundary guidance without adopting service/microservice examples absent a project need."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "code-review-excellence",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/developer-essentials/skills/code-review-excellence",
+        "license": "MIT"
+      },
+      "purpose": "Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining team morale. Use when reviewing pull requests, establishing review standards, or mentoring developers.",
+      "installed_path": ".agents/skills/code-review-excellence",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/developer-essentials/skills/code-review-excellence",
+        "source_file_count": 3,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 4,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 7070,
+          "sha256": "8846cd288ae95524d9dbb97a253c144398e82b5a4cd1c1f2ff984c07522be234"
+        },
+        {
+          "path": "references/review-patterns.md",
+          "bytes": 4709,
+          "sha256": "721e5d068e29bfba774e34e8d9460e07e719d291ab68bed9980cc4d75e0be397"
+        },
+        {
+          "path": "references/review-techniques.md",
+          "bytes": 2278,
+          "sha256": "6631c502d888093caa115d60eeab68db5be16a8c8619bdd171d370b684ecef80"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/reference skill with no bundled executable scripts; package commands shown in examples are not run automatically."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "debugging-strategies",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/developer-essentials/skills/debugging-strategies",
+        "license": "MIT"
+      },
+      "purpose": "Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently track down bugs across any codebase or technology stack. Use when investigating bugs, performance issues, or unexpected behavior.",
+      "installed_path": ".agents/skills/debugging-strategies",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/developer-essentials/skills/debugging-strategies",
+        "source_file_count": 2,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 3,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 6475,
+          "sha256": "932c0f92076f0ac38d49ac7a9c9cf254039c6993195d7fa4ae054e7da7c6d7ae"
+        },
+        {
+          "path": "references/tools-and-techniques.md",
+          "bytes": 6612,
+          "sha256": "f313112f55fc9d70812a7cb1f161fb92e216e1d7fb4a30954f4e367c96ed70c2"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/reference skill with no bundled executable scripts; package commands shown in examples are not run automatically."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "experimental-design",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/experimental-design",
+        "license": "MIT"
+      },
+      "purpose": "Designs experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so results are interpretable. Use whenever someone is planning a study, asks how to assign subjects/samples to groups, mentions randomization, blocking, stratification, controls, factorial or fractional-factorial designs, design of experiments (DOE), screening many factors, response-surface optimization, crossover or repeated-measures or split-plot designs, cluster/group randomization, Latin squares, plate layouts, batch/run-order effects, replication vs. pseudoreplication, or sequential/adaptive/group-sequential designs. Trigger even for informal phrasings like \"how should I set up this experiment\", \"how do I avoid confounding\", \"what's the best way to test these 6 factors\", or \"assign these mice to conditions\". For computing the sample size or power once the design is chosen, use statistical-power; for analyzing data already collected, use statistical-analysis.",
+      "installed_path": ".agents/skills/experimental-design",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/experimental-design",
+        "source_file_count": 7,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 8,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 16614,
+          "sha256": "53bb303e2d1f127c0062a505b1b6abebd6e4de12e119953b89bdcc0bd93f1798"
+        },
+        {
+          "path": "references/design_types.md",
+          "bytes": 8109,
+          "sha256": "5abfb8c3b6dc141374d536f20a4d708d2e500323dd316c64043ef3f06bbffbf1"
+        },
+        {
+          "path": "references/factorial_and_doe.md",
+          "bytes": 9225,
+          "sha256": "546827cd313fc9eac4003e27273fb1e53b8ce1a2c3164f494acf4ecaa14001c3"
+        },
+        {
+          "path": "references/randomization_and_blocking.md",
+          "bytes": 7964,
+          "sha256": "9e6ab1792621bf742481823ca4660f0e4a353e97ae0818f4139125e96d2c9771"
+        },
+        {
+          "path": "references/sequential_and_adaptive.md",
+          "bytes": 6639,
+          "sha256": "e303e01c5a384963888bcd91e1c2e907d53fd2fe4b00799cc096a54f2b7313fb"
+        },
+        {
+          "path": "scripts/doe_designs.py",
+          "bytes": 9802,
+          "sha256": "a34d561bd40bc46b31dc870c859201db4650dae5a3ab426cee16fedd8a60c961"
+        },
+        {
+          "path": "scripts/randomization.py",
+          "bytes": 9820,
+          "sha256": "9045b5f404c93edaea0f6606191a9dfaacf648b61541311f8063d9f50a55e6aa"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Bundled randomization/DOE helpers operate on local inputs and seeded designs; listed package-install commands are instructions, not executed setup."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "exploratory-data-analysis",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/exploratory-data-analysis",
+        "license": "MIT"
+      },
+      "purpose": "Performs bounded, local exploratory analysis of explicitly supported scientific files. Supports redacted CSV/TSV/JSON profiles; optional NumPy, HDF5, FASTA/FASTQ, and basic image metadata inspection; missingness/leakage audits; outlier and transformation sensitivity; and rigorous EDA report scaffolds. Other domain formats are reference-only and unknown formats fail closed.",
+      "installed_path": ".agents/skills/exploratory-data-analysis",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/exploratory-data-analysis",
+        "source_file_count": 21,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 22,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 15033,
+          "sha256": "2175aaef4df75502b334b075f5ffe8fa5623e7441fab7fea6b4ea910d187b04c"
+        },
+        {
+          "path": "assets/report_template.md",
+          "bytes": 8075,
+          "sha256": "666824f53d5bd87e7684ab4680c4a2ccf33d661a6e45c8df33faa3cc25bd2c46"
+        },
+        {
+          "path": "references/bioinformatics_genomics_formats.md",
+          "bytes": 9170,
+          "sha256": "dff13b6ee9cae273066b4bc3f491fc639eedc9c32aeb1d2f6b3757fdb9ddc088"
+        },
+        {
+          "path": "references/chemistry_molecular_formats.md",
+          "bytes": 8916,
+          "sha256": "d33a3eb5e454f60506b6ca9862c4fb0c6480c8e6264e5f732918823a05fb9b88"
+        },
+        {
+          "path": "references/general_scientific_formats.md",
+          "bytes": 12542,
+          "sha256": "7e302f3f580e9219d61532ddf471aa9e7fc33c154e0215b72c2b737fa3a41198"
+        },
+        {
+          "path": "references/microscopy_imaging_formats.md",
+          "bytes": 9503,
+          "sha256": "8d3cd15c34523af3cbb393ad96bcfbfbe59d7fefbd87ac86910ac973b2b74591"
+        },
+        {
+          "path": "references/proteomics_metabolomics_formats.md",
+          "bytes": 10041,
+          "sha256": "312b6e9b3f8668638a64e2baf0b77381302a5b02bd978d8d2183a6d53182a8a8"
+        },
+        {
+          "path": "references/spectroscopy_analytical_formats.md",
+          "bytes": 9751,
+          "sha256": "66bcb85c5c3390bbcd8dca5be0087b3f1b80bdd53c5af5e76046a44e5a5c31c4"
+        },
+        {
+          "path": "scripts/__init__.py",
+          "bytes": 70,
+          "sha256": "0b79e3d5e19c442d5397999148abe0c553bced6cd659b87a856b8f85cb849ebe"
+        },
+        {
+          "path": "scripts/_capabilities.py",
+          "bytes": 21290,
+          "sha256": "48213bb9b82150f1dd8152408797beba60078431f8435bafbac0efd42c015896"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 14761,
+          "sha256": "b200acab11bd7b78ae85dec766a20b5d3471e14621da029a05c2979d1723f360"
+        },
+        {
+          "path": "scripts/_structured.py",
+          "bytes": 15075,
+          "sha256": "1f1bca3e36a6ac51fdb2fd7a100883e8bfb11d74f45797a1ee694d17127bb350"
+        },
+        {
+          "path": "scripts/_tabular.py",
+          "bytes": 33687,
+          "sha256": "4338609bf09240ce7b7956719e38707eef488ddd485d740bc4a603bdce6f8ef4"
+        },
+        {
+          "path": "scripts/capability_manifest.py",
+          "bytes": 5617,
+          "sha256": "cc33db29c7a00cbd495b54df8884bdc34fdc02a3c195d1ba5939d902470a6288"
+        },
+        {
+          "path": "scripts/distribution_sensitivity.py",
+          "bytes": 3421,
+          "sha256": "9ff186db55f32e114b52a61e01701b84a38dfda00effc547e74887670c91c27f"
+        },
+        {
+          "path": "scripts/eda_analyzer.py",
+          "bytes": 10892,
+          "sha256": "9e75f9929a8bd3fa4e8b4ab77cfa23379afbc6cf4b425f58560684426aab5261"
+        },
+        {
+          "path": "scripts/image_inspector.py",
+          "bytes": 8156,
+          "sha256": "182b93c0b7d0f64270ee708520db4b0bd0aff6d71c03310260a21ca9b07c88ba"
+        },
+        {
+          "path": "scripts/missingness_leakage_audit.py",
+          "bytes": 4034,
+          "sha256": "bb808f4290b44cd4ba1a0a128e54f40a2cda0c526ef09e32c5f62245bf39e2ce"
+        },
+        {
+          "path": "scripts/report_scaffold.py",
+          "bytes": 4390,
+          "sha256": "8f41b77ecbcdb97e9b3a41e4d05ca88cd1c88c558de42f95dade846ed4f7abe1"
+        },
+        {
+          "path": "scripts/sequence_inspector.py",
+          "bytes": 8876,
+          "sha256": "ec3854781205dfb7188a71bd632c568ce9c4d7113880a9a2c63d9371741e92d4"
+        },
+        {
+          "path": "scripts/tabular_profile.py",
+          "bytes": 3186,
+          "sha256": "ed69498fddeb45af05d8cd3c40875ab85ff57806bbcfd3f164733cdaaa2c287c"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Bundled analyzers read caller-supplied local files and may write requested reports; constrain input paths and use an explicit output directory."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "hypothesis-generation",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/hypothesis-generation",
+        "license": "MIT"
+      },
+      "purpose": "Formulates evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictions, measurements, and preregistration-ready analysis plans. Used when turning observations or preliminary findings into transparent, testable research plans without treating hypotheses as facts.",
+      "installed_path": ".agents/skills/hypothesis-generation",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/hypothesis-generation",
+        "source_file_count": 27,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 28,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 16912,
+          "sha256": "687f107710a8f4ff5991458b26bccd0743325d35b828d8ecb431eb22677f5e52"
+        },
+        {
+          "path": "assets/evidence_ledger_template.csv",
+          "bytes": 583,
+          "sha256": "35e959f7ad905bcb6eae9dfdf96e1bdea616f4f7b0b2da958a3e504159f9d3ae"
+        },
+        {
+          "path": "assets/falsification_controls_template.json",
+          "bytes": 5996,
+          "sha256": "24f805f98c6dffa99c3f4ca8d77505a94fafdd64b998dbc5ea067fc47e59adc9"
+        },
+        {
+          "path": "assets/hypothesis_record_template.json",
+          "bytes": 14099,
+          "sha256": "44117d39c66ab2797d2f6be16563f16bb374c187e4fce1b46d5aefb9138daf5f"
+        },
+        {
+          "path": "assets/operationalization_template.json",
+          "bytes": 2264,
+          "sha256": "4efc465398b617f9399b40c13cbdb2e4ba9667f7550c032b667600e898b1ae08"
+        },
+        {
+          "path": "assets/prediction_rival_matrix_template.csv",
+          "bytes": 1641,
+          "sha256": "229540c8af64e23cd5219eb85de55e64baf9f5210d7ba6723d145195a2f77656"
+        },
+        {
+          "path": "assets/preregistration_scaffold_template.md",
+          "bytes": 5239,
+          "sha256": "a7801ae109f6d7cedc7e46c436f7c9133346d45f4ca1bbcc55debab81d0b54dc"
+        },
+        {
+          "path": "assets/search_boundary_template.json",
+          "bytes": 1137,
+          "sha256": "51bd03c5aa1537d96a540b45e51f77bb0c6dbc13631277ed37b15a1027e44229"
+        },
+        {
+          "path": "assets/source_ledger.csv",
+          "bytes": 15206,
+          "sha256": "1d68a5382e523dad376aa465480f11e49e762a259f2d3489f7bb40955bf5d610"
+        },
+        {
+          "path": "references/causal_inference_and_claims.md",
+          "bytes": 8183,
+          "sha256": "b1da64f463aaeb8d4cc76e901f3e472d708d7a2ce005c68080996b76d64f805c"
+        },
+        {
+          "path": "references/concepts_and_workflow.md",
+          "bytes": 7514,
+          "sha256": "99014ddb901c1ef8e345c97e368c66296eeed3ddd68e2aa84a06a47dfc62a2b7"
+        },
+        {
+          "path": "references/ethics_safety_and_ai.md",
+          "bytes": 10723,
+          "sha256": "777b40fbf2ed0eda6430790af1271c4d0e0888de195a2283cdc0016b05d11240"
+        },
+        {
+          "path": "references/experimental_design_patterns.md",
+          "bytes": 10066,
+          "sha256": "6ac054e16c3e659fdc378897fcf24efb3e8e4a3e240cbe919d2c9f625a497e4a"
+        },
+        {
+          "path": "references/hypothesis_quality_criteria.md",
+          "bytes": 8238,
+          "sha256": "d465fccaff8e948962de1ae603229f2a1567e9511ade4416da917c89f54bf525"
+        },
+        {
+          "path": "references/literature_search_strategies.md",
+          "bytes": 8254,
+          "sha256": "ec1503b2ae4d8a4f2867af1d0df7a0f6915dff4538b0a2386daadb2782a4c6ef"
+        },
+        {
+          "path": "references/preregistration_and_open_science.md",
+          "bytes": 7961,
+          "sha256": "fe4e644ec1fcbeb06feee24034179830c5f72a89db399899de3d1c7f8f88a914"
+        },
+        {
+          "path": "references/security_validation.md",
+          "bytes": 4276,
+          "sha256": "c2699947a3150fa72a08e3a85a868d716ea156acdde5cfe2aac8b4cf57f3099a"
+        },
+        {
+          "path": "references/source_ledger.md",
+          "bytes": 10133,
+          "sha256": "5547bead7773c904c51d07d38a2298d4f3a04fdc601545c2dc4237a99bade548"
+        },
+        {
+          "path": "references/tool_reference.md",
+          "bytes": 8645,
+          "sha256": "9dc706836f473c1d6359ee612ab52740de1b483f510960790f891e204890f4d0"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 15753,
+          "sha256": "177e19a0c1f0389720ca888b85a420030de932d56ee6af4ac4715acfe0f59593"
+        },
+        {
+          "path": "scripts/audit_evidence_ledger.py",
+          "bytes": 12406,
+          "sha256": "728e967e493e3497318feb65e210dc93ec4ef1120898ee7d5ad55eeac454095d"
+        },
+        {
+          "path": "scripts/check_falsification_controls.py",
+          "bytes": 16932,
+          "sha256": "0e25c63e6d679370db4529d6aaa543d26008dc01f315269210588e7b16d3b7de"
+        },
+        {
+          "path": "scripts/check_operationalization.py",
+          "bytes": 8323,
+          "sha256": "e734c4dea5c1da5df520b11025dd6f29b2d68af5898c9036b34ddd8f6f964bbf"
+        },
+        {
+          "path": "scripts/generate_preregistration_scaffold.py",
+          "bytes": 14670,
+          "sha256": "c304ed46c56e9d9ec3474f069b14ce54d3ca44d617ff45a49d16ff47587973bd"
+        },
+        {
+          "path": "scripts/lint_causal_claims.py",
+          "bytes": 6998,
+          "sha256": "d2babffe608f9ceab99786a2fad8d1f8a3b49d165a3898183236f14edc9f1d3b"
+        },
+        {
+          "path": "scripts/validate_hypothesis_schema.py",
+          "bytes": 40033,
+          "sha256": "509553a72d2f531ca63080189eaeac4aa02b83e175bc300976ca91578d37c234"
+        },
+        {
+          "path": "scripts/validate_prediction_matrix.py",
+          "bytes": 10101,
+          "sha256": "608e8ef9c14f42a715fa77999c9d902f0de6cbc0191c131fc2e5b337adc7df50"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [
+        {
+          "classification": "documented-deleted-optional-scripts",
+          "paths": [
+            "scripts/generate_schematic.py",
+            "scripts/generate_schematic_ai.py"
+          ],
+          "detail": "Security-validation reference documents these schematic scripts as intentionally removed; no skill instruction requires them."
+        }
+      ],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Bundled validation/scaffold tools are documented as local deterministic CLIs; source validation notes explicitly remove network, credential, subprocess, and dynamic-code behavior."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "literature-review",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/literature-review",
+        "license": "MIT"
+      },
+      "purpose": "Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources. Use for research synthesis, reproducible literature searches, screening, citation checking, or preparing Markdown and PDF reviews. Tracks search coverage, records versus studies, and evidence limitations; supports meta-analysis planning but does not supply a meta-analysis engine.",
+      "installed_path": ".agents/skills/literature-review",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/literature-review",
+        "source_file_count": 12,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 13,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 13098,
+          "sha256": "20ce73246d4b60038638b221ab1b6fea43e0eb81dd920dcc3ad4df4a2716730b"
+        },
+        {
+          "path": "assets/review_template.md",
+          "bytes": 14188,
+          "sha256": "669ae07555843eae2a99b463e1c5fe0ace1d7780493f444f6f96949b9bb3c1a7"
+        },
+        {
+          "path": "references/citation_styles.md",
+          "bytes": 7804,
+          "sha256": "d662eb056347722162279cc9dae488efd42684ed53334bcf8f46556da9f24cab"
+        },
+        {
+          "path": "references/core_workflow.md",
+          "bytes": 12144,
+          "sha256": "6a53f9474b4ca77db5810ba6a322fc41508ae0026fb68cec02f4c1614913ff9b"
+        },
+        {
+          "path": "references/database_strategies.md",
+          "bytes": 10614,
+          "sha256": "25e6a2f2cafc403c79b96e752a4ffa3bf76ecbe17fab2386170f838a63099c37"
+        },
+        {
+          "path": "references/example_workflow.md",
+          "bytes": 3149,
+          "sha256": "de2f5c164a211805065cfa9669491d565a945a1f054a9a540af1985e2ecf40e6"
+        },
+        {
+          "path": "references/search_and_citation.md",
+          "bytes": 4778,
+          "sha256": "87dee175cdbd94f9d9acca84074358f56cb907fc690761edf301fb7f50d6d262"
+        },
+        {
+          "path": "scripts/generate_pdf.py",
+          "bytes": 5097,
+          "sha256": "4484fa1f44aaf4e5a905373932ad360dedb73725032e8778bcb0ef85ddcdd543"
+        },
+        {
+          "path": "scripts/generate_schematic.py",
+          "bytes": 7983,
+          "sha256": "9990d2b1bb119ec466bfd4b81ac0d63dc49520c77b62375cd0c81788da5ff614"
+        },
+        {
+          "path": "scripts/generate_schematic_ai.py",
+          "bytes": 36541,
+          "sha256": "8286eb342e75f2ebfc7688b9f3fb5512c73b0118a63d95d11fbed69b34a98f79"
+        },
+        {
+          "path": "scripts/search_databases.py",
+          "bytes": 9035,
+          "sha256": "0f7c1f38070e3500e18ec4400555c2ed0af6d58d161f6da0afcf6d8a0e419bb3"
+        },
+        {
+          "path": "scripts/verify_citations.py",
+          "bytes": 10158,
+          "sha256": "9fd2a853c7156477da8d983b83c5d61035bc1175fb2c306a828283fa0ec724dc"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [
+        {
+          "path": "scripts/generate_pdf.py",
+          "signals": [
+            "subprocess"
+          ]
+        },
+        {
+          "path": "scripts/generate_schematic.py",
+          "signals": [
+            "subprocess"
+          ]
+        },
+        {
+          "path": "scripts/generate_schematic_ai.py",
+          "signals": [
+            "requests.post"
+          ]
+        }
+      ],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Optional citation lookup makes outbound DOI/database requests. Optional schematic scripts call Pandoc/LaTeX subprocesses and can read OPENROUTER_API_KEY from the environment or .env before sending prompts to OpenRouter; do not invoke without explicit authorization and a secret-handling plan."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "networkx",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/networkx",
+        "license": "MIT"
+      },
+      "purpose": "Creates, analyzes, and visualizes complex networks and graphs in Python with NetworkX. Use when working with network/graph data structures, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks (random, scale-free, small-world), reading/writing graph file formats, or drawing network topologies. Common applications include social, biological, transportation, and citation networks.",
+      "installed_path": ".agents/skills/networkx",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/networkx",
+        "source_file_count": 7,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 8,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 17467,
+          "sha256": "bbac9bdad7c9d3e6a896bb855b68ce4eb8140bd9eb3312b3db1a35b690b4feea"
+        },
+        {
+          "path": "references/algorithms.md",
+          "bytes": 14230,
+          "sha256": "05f13aa904409d4a92488feed0b610709ba17db505f98328f6457ba20cd05a55"
+        },
+        {
+          "path": "references/generators.md",
+          "bytes": 10386,
+          "sha256": "3e25fc22451cdb3b45d6203b22026c5ac9361c3462e38ed6fde0dfd3339e1e27"
+        },
+        {
+          "path": "references/graph-basics.md",
+          "bytes": 8111,
+          "sha256": "77a2bccd72be8157366f8d2ea0a097b4a3e0983f77691168d7bf8158ef9edb93"
+        },
+        {
+          "path": "references/io.md",
+          "bytes": 15760,
+          "sha256": "2218f17e3766bc187437c59f7712c726878ef518ed2896f8c21516c6ca06014e"
+        },
+        {
+          "path": "references/review.md",
+          "bytes": 6295,
+          "sha256": "007b4e99fec3971be86816eb1c1b1f9bbe13e99165f8af7164e720a5cc9c9509"
+        },
+        {
+          "path": "references/visualization.md",
+          "bytes": 14666,
+          "sha256": "db63bfe452ded9f91ffff1f9bec7f6e156670a892edc2b7dbec8110c27dffab2"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Persistence docs warn that Python pickle can execute code; use trusted graph artifacts and constrain caller-selected file paths."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "no-ai-slop",
+      "source": {
+        "repository": "petergyang/no-ai-slop",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "commit": "000650b156983f5159695b441477f4e63b25dc85",
+        "path": "skills/no-ai-slop",
+        "license": "MIT"
+      },
+      "purpose": "Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, or asks whether writing reads as AI.",
+      "installed_path": ".agents/skills/no-ai-slop",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-no-ai-slop/skills/no-ai-slop",
+        "source_file_count": 3,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 4,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "7d39cac07da75acfaa38409007c9753313bf167c4ee94252174b1d5f7134b212"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 10950,
+          "sha256": "1c1abfa4e447e2e96f02832cc3d31d8b298184027aab1bb4cf5aa33179dc2f81"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "bytes": 239,
+          "sha256": "ad777363cf5a63f25344c4d5f756ae17952ea2b0f8a1992d82a702d06f424fdd"
+        },
+        {
+          "path": "eval.md",
+          "bytes": 3257,
+          "sha256": "e0531d9a9ff84abb5cf1a33f21b2dc41204b2d2423d51a8700ab8456705047d8"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Includes an editorial eval rubric and OpenAI skill metadata; no runtime script or hook."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "peer-review",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/peer-review",
+        "license": "MIT"
+      },
+      "purpose": "Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments. Supports authorized review of scientific manuscripts, protocols, preprints, or research proposals; reporting-guideline selection; claim–evidence checks; methods, statistics, reproducibility, ethics, figure/table, and citation critique; or revision-response planning.",
+      "installed_path": ".agents/skills/peer-review",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/peer-review",
+        "source_file_count": 24,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 25,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 14170,
+          "sha256": "e3fa57d6e993f13a86491b80ac084352d308ec255ba37a15d896776d6477ca1f"
+        },
+        {
+          "path": "assets/citation_references_template.csv",
+          "bytes": 198,
+          "sha256": "08cfa082ff7a3dbdc74e729ac27237aa5824810573da7a0dfd38a172c37e132a"
+        },
+        {
+          "path": "assets/claim_evidence_matrix_template.csv",
+          "bytes": 749,
+          "sha256": "eb422b42d9340ca641645d7ad3b5f7be321c2f1477c805a168d371ad22951492"
+        },
+        {
+          "path": "assets/reporting_checklist_template.csv",
+          "bytes": 999,
+          "sha256": "5461edd9e6905745385b2f10133f2b7e2299e53d43905bbc53ee502797c6a3dd"
+        },
+        {
+          "path": "assets/reporting_guidelines.json",
+          "bytes": 14941,
+          "sha256": "c9f76c5d50f6cc65037643630d2e2f46d2b565a3110d0da5cbb2a91270710982"
+        },
+        {
+          "path": "assets/review_intake_template.json",
+          "bytes": 1342,
+          "sha256": "4ca684d46fe4f2b245e9f9d36553f0fd1d2a8c2c0e9ab4e07d400f5a174e3106"
+        },
+        {
+          "path": "assets/review_scaffold_template.md",
+          "bytes": 3093,
+          "sha256": "b3f1c1c95acfb506a40ebd7d5add1e2080a047d008dfed0eed609878ad531929"
+        },
+        {
+          "path": "assets/source_ledger.csv",
+          "bytes": 13448,
+          "sha256": "90e237509b08c728ca30a91763e88aaaca9ff8023fa010808f10dbbd1abc4e68"
+        },
+        {
+          "path": "assets/statistical_reproducibility_template.json",
+          "bytes": 7491,
+          "sha256": "ba97cf46015c1ad2f2c7a36076079ffa990087579c06f70ba05255d40bb63ec1"
+        },
+        {
+          "path": "assets/study_profile_template.json",
+          "bytes": 209,
+          "sha256": "30da87bc0a1f7d3b4109af6f8d4b640247559de568af5cadfb5c9b4493e2fb6a"
+        },
+        {
+          "path": "references/common_issues.md",
+          "bytes": 14256,
+          "sha256": "0df620bafb79a8094f7ebebd585c97a2096ac1cbfd628431ff7f56256a8a4581"
+        },
+        {
+          "path": "references/ethical_review_practice.md",
+          "bytes": 12444,
+          "sha256": "21eb176f3b004865451a5984c207bf98885ccadfadb365ebbf6d365a63067e1a"
+        },
+        {
+          "path": "references/reporting_standards.md",
+          "bytes": 15691,
+          "sha256": "0a5b9b02a55f33ef7ed5dd1015f31e1afff61502aaa58c8216216c83d1adc401"
+        },
+        {
+          "path": "references/security_validation.md",
+          "bytes": 4244,
+          "sha256": "b7fe4875ebad2e47fa2180a8f7e173a759990fdd8e9fa3d7a074f3811b0ca9c1"
+        },
+        {
+          "path": "references/statistical_reproducibility.md",
+          "bytes": 12084,
+          "sha256": "7b51190963f6bbcde16a030d4dcce101a24ed8142dd6faffd2dbafee28908ef4"
+        },
+        {
+          "path": "references/tool_reference.md",
+          "bytes": 9931,
+          "sha256": "875092cd918bb8fb3ffdd501caa4a74390ef9e760f52e94a896c5ecb57a954db"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 14294,
+          "sha256": "2dac5218ecc99ce97bbb1df6ddbefe75e8290b758c1fa77e9d74e97dc490624d"
+        },
+        {
+          "path": "scripts/audit_citations.py",
+          "bytes": 7304,
+          "sha256": "abc68dc168822198dab205f786f446ad063834cf6a7df92348f68e6bf9f77d68"
+        },
+        {
+          "path": "scripts/audit_statistics_reproducibility.py",
+          "bytes": 10760,
+          "sha256": "3fdee5c84e96742b4fda07fa703212b5ed4076cee81504288d87efe7997ee52b"
+        },
+        {
+          "path": "scripts/generate_review_scaffold.py",
+          "bytes": 2715,
+          "sha256": "83a34cac4b1c5286f816049c21ac03de26edb6ab5f6380e950dffc3e1ae89a31"
+        },
+        {
+          "path": "scripts/lint_review.py",
+          "bytes": 9339,
+          "sha256": "333441299bde11ac07e9c64a73967b7f4ed2589562379fbac50c1c0199740126"
+        },
+        {
+          "path": "scripts/select_reporting_guidelines.py",
+          "bytes": 13977,
+          "sha256": "c900a6e7aa89ad852f64a6de5f8439af8a14c94ae14f2e91cfcdffebd4b25a76"
+        },
+        {
+          "path": "scripts/validate_claim_evidence.py",
+          "bytes": 7304,
+          "sha256": "b66d51078fdd06bb98e8544ffbc75016269c5ccb927e2d6898924b132307b3b4"
+        },
+        {
+          "path": "scripts/validate_review_intake.py",
+          "bytes": 14939,
+          "sha256": "0a4307930427ba4d267877a7bc0b880c85902b43a294486bf960152f22a9f376"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [
+        {
+          "classification": "documented-deleted-optional-scripts",
+          "paths": [
+            "scripts/generate_schematic.py",
+            "scripts/generate_schematic_ai.py"
+          ],
+          "detail": "Security-validation reference documents these schematic scripts as intentionally removed; no skill instruction requires them."
+        }
+      ],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Bundled validation/scaffold tools are documented as local deterministic CLIs; source validation notes explicitly remove network, credential, subprocess, and dynamic-code behavior."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "pennylane",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/pennylane",
+        "license": "MIT"
+      },
+      "purpose": "Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows. Use for variational quantum algorithms, quantum machine learning, simulator validation, and moving validated circuits to provider plugins. For hardware-specific compilation use qiskit or cirq; for open-system dynamics use qutip.",
+      "installed_path": ".agents/skills/pennylane",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/pennylane",
+        "source_file_count": 8,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 9,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 7359,
+          "sha256": "d24f957af1f2b787ae3d0cd9a75e4958fa28acb95456c43d9339a8c11748d39f"
+        },
+        {
+          "path": "references/advanced_features.md",
+          "bytes": 8061,
+          "sha256": "8feeaa19e8c92996f878089ec77b8334a9a8e65ba142c67a1b4c8506f8c95146"
+        },
+        {
+          "path": "references/devices_backends.md",
+          "bytes": 9265,
+          "sha256": "884e3aba79369a1618fbaf0855bba3ee781b65c7b727ada8094a5f2e5f343faf"
+        },
+        {
+          "path": "references/getting_started.md",
+          "bytes": 4160,
+          "sha256": "193b0fda0ca9e4b79a802e63a2a050b04d197b6606c0fdd2a21976003bfa8126"
+        },
+        {
+          "path": "references/optimization.md",
+          "bytes": 7025,
+          "sha256": "41a10738d99a41bc5cd79794f257cc4a34af9f0cef90d39472eac726c35b31d6"
+        },
+        {
+          "path": "references/quantum_chemistry.md",
+          "bytes": 7799,
+          "sha256": "6b419ae763b6e1e0098e02d3a244a84db1ea42a4b62724cf1c0cc3db30903e0d"
+        },
+        {
+          "path": "references/quantum_circuits.md",
+          "bytes": 5199,
+          "sha256": "4b198b2eaa020431deaed87b12c40433ac0d34c745627216e073e09e3f57524a"
+        },
+        {
+          "path": "references/quantum_ml.md",
+          "bytes": 6794,
+          "sha256": "4c0202a0236f217dae7d5403144415120fb65792bc26f7dcb3c1790a2cd8efe0"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "No bundled scripts; local simulator guidance is separate from optional provider integrations, which require explicit account/network setup."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "python-design-patterns",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/python-development/skills/python-design-patterns",
+        "license": "MIT"
+      },
+      "purpose": "Python design patterns including KISS, Separation of Concerns, Single Responsibility, and composition over inheritance. Use this skill when designing a new service or component from scratch and choosing how to layer responsibilities, when refactoring a God class or monolithic function that has grown too large, when deciding whether to add a new abstraction or live with duplication, when evaluating a pull request for structural issues like tight coupling or leaking internal types, when choosing between inheritance and composition for a new class hierarchy, or when a codebase is becoming hard to test because of entangled I/O and business logic.",
+      "installed_path": ".agents/skills/python-design-patterns",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/python-development/skills/python-design-patterns",
+        "source_file_count": 2,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 3,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 4814,
+          "sha256": "82dfb06d59470e8c3895cb60fd8f5c19c9b048c023fbc719819a0a48648cd5f7"
+        },
+        {
+          "path": "references/details.md",
+          "bytes": 11349,
+          "sha256": "26671bce73eea412062cd85bfbe13145e1df05b1419d9f269b64be9332e91c15"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/reference skill with no bundled executable scripts; package commands shown in examples are not run automatically."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "python-packaging",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/python-development/skills/python-packaging",
+        "license": "MIT"
+      },
+      "purpose": "Create distributable Python packages with proper project structure, setup.py/pyproject.toml, and publishing to PyPI. Use when packaging Python libraries, creating CLI tools, or distributing Python code.",
+      "installed_path": ".agents/skills/python-packaging",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/python-development/skills/python-packaging",
+        "source_file_count": 3,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 4,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 4096,
+          "sha256": "f747267ff91d6fbb3123ebbbf6a87662476b318f048b50b79c7664c7715d8058"
+        },
+        {
+          "path": "references/advanced-patterns.md",
+          "bytes": 7085,
+          "sha256": "1517fe6ead9d74866177b6c274d6977b8e7b71ac9a7c20cc17025ef076718640"
+        },
+        {
+          "path": "references/details.md",
+          "bytes": 7824,
+          "sha256": "9952e2b8b383ffbbee8a4dc927b7c644fdb86bdf36f427dc3f1954a086d877e9"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/reference skill with no bundled executable scripts; package commands shown in examples are not run automatically."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "python-testing-patterns",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/python-development/skills/python-testing-patterns",
+        "license": "MIT"
+      },
+      "purpose": "Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development. Use when writing Python tests, setting up test suites, or implementing testing best practices.",
+      "installed_path": ".agents/skills/python-testing-patterns",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/python-development/skills/python-testing-patterns",
+        "source_file_count": 3,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 4,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 7560,
+          "sha256": "b8de620ec467d9bc0b935bab2843e9a3a174427dfeefa556d69b82df9eb4127c"
+        },
+        {
+          "path": "references/advanced-patterns.md",
+          "bytes": 9865,
+          "sha256": "0c72b78ec5fec8c18513dcb070c35758e3d88572e0cb0313eb1a2dd35c99bb81"
+        },
+        {
+          "path": "references/details.md",
+          "bytes": 9610,
+          "sha256": "d9d4f70993eb1116a54a49354481db2f969cfa0a1933b5cafa2ac6137ef5da1d"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/reference skill with no bundled executable scripts; package commands shown in examples are not run automatically."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "python-type-safety",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/python-development/skills/python-type-safety",
+        "license": "MIT"
+      },
+      "purpose": "Python type safety with type hints, generics, protocols, and strict type checking. Use when adding type annotations, implementing generic classes, defining structural interfaces, or configuring mypy/pyright.",
+      "installed_path": ".agents/skills/python-type-safety",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/python-development/skills/python-type-safety",
+        "source_file_count": 2,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 3,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 5963,
+          "sha256": "94ff8ce481177ff3f0b02264f3925938490393b613e3ff293530a843eac6c18a"
+        },
+        {
+          "path": "references/details.md",
+          "bytes": 6099,
+          "sha256": "bef04be237c5c97c13e0bd926b8e95b3b58dc6a48d1102b2050042421ef4dde8"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/reference skill with no bundled executable scripts; package commands shown in examples are not run automatically."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "qiskit",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/qiskit",
+        "license": "MIT"
+      },
+      "purpose": "Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime. Use for Qiskit 2.x circuits and operators, V2 Sampler or Estimator primitives, target-aware transpilation, local or noisy simulation, IBM QPU execution, Runtime sessions or batches, error mitigation, and Qiskit ecosystem packages.",
+      "installed_path": ".agents/skills/qiskit",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/qiskit",
+        "source_file_count": 15,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 16,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 13550,
+          "sha256": "859c2330fd3643f6e7967ac17a96eff9299d16ee7a1a953d7bf7e59bf9087b95"
+        },
+        {
+          "path": "references/algorithms.md",
+          "bytes": 11516,
+          "sha256": "d2f76dded24147c025be6139e2c3e503a291ee9396ef001f6e62cfcaeb4eb60e"
+        },
+        {
+          "path": "references/backends.md",
+          "bytes": 12710,
+          "sha256": "ee1f7dd1e69b9b5dce4f984d4173342df9b9a8e4baf55a6b49e492fb50d2e273"
+        },
+        {
+          "path": "references/circuits.md",
+          "bytes": 10207,
+          "sha256": "21d2682d76dae66efab40ba5b21dfbb26f4886fabdb87c8d6a5096c79463456f"
+        },
+        {
+          "path": "references/migration.md",
+          "bytes": 11619,
+          "sha256": "22b4ea2e2431c2a7a0a89e224935325fea502b35ef24ae9757996d71a7e99154"
+        },
+        {
+          "path": "references/patterns.md",
+          "bytes": 9981,
+          "sha256": "d78f86df9a73e2b4a1c52745ce4d6c03b9f9188390d66417934e9bb56c622765"
+        },
+        {
+          "path": "references/primitives.md",
+          "bytes": 14753,
+          "sha256": "b29b41235291ac25855cfd2aabe69c60b8ab555184d3e6fce9452f5a86823b12"
+        },
+        {
+          "path": "references/setup.md",
+          "bytes": 8993,
+          "sha256": "eed5191447bd5f57f97b9a6a7307f79a6a3eb8e553faeda59ab091bc74ad7c6c"
+        },
+        {
+          "path": "references/sources.md",
+          "bytes": 15378,
+          "sha256": "b525d222d1595b6221d85b9e4a801980a0c8c474c95639cddd24fa6632a1d2a2"
+        },
+        {
+          "path": "references/testing.md",
+          "bytes": 11481,
+          "sha256": "9f2adfc827f867beb4697abcbc7fb7cdf2b25ba3a23c20690bf1985bf788c625"
+        },
+        {
+          "path": "references/transpilation.md",
+          "bytes": 11504,
+          "sha256": "28804293c26e157741bb0187de19c53eec5db419653fbced41d872f2435668df"
+        },
+        {
+          "path": "references/visualization.md",
+          "bytes": 8707,
+          "sha256": "06336a738d43e5908ed93d9bb1216a34feb9db5ba40298df61eb729688422ce9"
+        },
+        {
+          "path": "scripts/check_environment.py",
+          "bytes": 8190,
+          "sha256": "f1e853430e82a18034a49192783f0a5fc0405c522e38974e783fcd0ace479d60"
+        },
+        {
+          "path": "scripts/inspect_runtime.py",
+          "bytes": 6649,
+          "sha256": "fe86c93b0737027f6b216d7ef69d7b4b34407a0112ae8a60a8ed3293b508df24"
+        },
+        {
+          "path": "scripts/run_local_primitives.py",
+          "bytes": 5822,
+          "sha256": "2f81622f34573db3b2c13ceb7e23d6a23be76b8ee3cac964e298519071db1ba8"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Runtime inspection may use IBM Quantum saved credentials for read-only account/backend inspection; no job submission was found by independent static review."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/scientific-critical-thinking",
+        "license": "MIT"
+      },
+      "purpose": "Evaluates scientific claims and evidence quality. Applies to experimental design validity, biases and confounders, statistical interpretation, evidence grading frameworks (GRADE, Cochrane Risk of Bias), and teaching critical analysis. Supports evidence appraisal and identifying flaws; formal peer review writing belongs to peer-review.",
+      "installed_path": ".agents/skills/scientific-critical-thinking",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/scientific-critical-thinking",
+        "source_file_count": 9,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 10,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 13381,
+          "sha256": "cd80217c03ac740b6c835b826f8d98d016b157e8cedd96419c84072b7225fa43"
+        },
+        {
+          "path": "references/common_biases.md",
+          "bytes": 12749,
+          "sha256": "d5bba4b6d80d36c98a80db1fc1b5996e95ae73eedf72a06ddef5a75ec684154b"
+        },
+        {
+          "path": "references/core_capabilities.md",
+          "bytes": 17393,
+          "sha256": "73ccade3e8b3beeaebcd24dd5b1afe07a8f43daf4c06b723154ca610d2466ff5"
+        },
+        {
+          "path": "references/evidence_hierarchy.md",
+          "bytes": 17944,
+          "sha256": "ca1736acece138c4f067335b76f1df76b0e6cf4fcc42cd32bf6431dfbd572f16"
+        },
+        {
+          "path": "references/experimental_design.md",
+          "bytes": 18743,
+          "sha256": "abac57523425c97ee0dc3bbb1d0e48ce53ca6d33bc948cbafa87da32cd0930e9"
+        },
+        {
+          "path": "references/logical_fallacies.md",
+          "bytes": 19147,
+          "sha256": "e58710ede21e7608ded9b2d9dabc03482174b92a48705ada2ebb8eb996fcc6bf"
+        },
+        {
+          "path": "references/review_sources.md",
+          "bytes": 7628,
+          "sha256": "c19a78e98a27f12c7ed38d524539fcdbf28db97d047bee166aa6d97ecc37911b"
+        },
+        {
+          "path": "references/scientific_method.md",
+          "bytes": 7826,
+          "sha256": "36650d873a4cd90c3cd59ae97efe2951cbf610eed0d17e1b186af033308504cf"
+        },
+        {
+          "path": "references/statistical_pitfalls.md",
+          "bytes": 21702,
+          "sha256": "a794c87cd95639890a9aa160d73d7fe439f666ee24598d0597582574dc2cb2c8"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [
+        {
+          "classification": "optional-cross-skill-unavailable",
+          "paths": [
+            "skills/scientific-schematics/scripts/generate_schematic.py"
+          ],
+          "detail": "Optional separate scientific-schematics skill; not in the 25-skill set. Do not invoke. Figure generation requires explicit authorization and outbound API credentials."
+        }
+      ],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "scientific-problem-selection",
+      "source": {
+        "repository": "anthropics/knowledge-work-plugins",
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "commit": "c75fda00ff0e41c8ee331ae312c8a07f1967653b",
+        "path": "bio-research/skills/scientific-problem-selection",
+        "license": "Apache-2.0"
+      },
+      "purpose": "This skill should be used when scientists need help with research problem selection, project ideation, troubleshooting stuck projects, or strategic scientific decisions. Use this skill when users ask to pitch a new research idea, work through a project problem, evaluate project risks, plan research strategy, navigate decision trees, or get help choosing what scientific problem to work on. Typical requests include \"I have an idea for a project\", \"I'm stuck on my research\", \"help me evaluate this project\", \"what should I work on\", or \"I need strategic advice about my research\".",
+      "installed_path": ".agents/skills/scientific-problem-selection",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.txt"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "_archive/pre-debugleaf-20261028-220317/preparation/temporary-skills/scientific-problem-selection",
+        "source_file_count": 10,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 11,
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10254,
+          "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 11184,
+          "sha256": "9ec99e3e5b2f4cd7474ef2bb8a1b10ee1f97dbe688c7723c7ec0b18deb8ff0f4"
+        },
+        {
+          "path": "references/01-intuition-pumps.md",
+          "bytes": 12495,
+          "sha256": "b29e16c5e55d32ff133aef8ee933cc1abdafae30390f9bb775a8d2e26d129876"
+        },
+        {
+          "path": "references/02-risk-assessment.md",
+          "bytes": 13177,
+          "sha256": "4643c7d964060df29c5dc71a41c93e4f6f399fdd4b4f5ffbc3bc5c3919b8a626"
+        },
+        {
+          "path": "references/03-optimization-function.md",
+          "bytes": 18167,
+          "sha256": "478641cbcc20e245903543df0d57a86b96e7365eacd2aa61892914488e005bea"
+        },
+        {
+          "path": "references/04-parameter-strategy.md",
+          "bytes": 14423,
+          "sha256": "8a286e9e7e21926b7d9e02c50b960f7f9ea03c43542b8ae60c4ce40604966906"
+        },
+        {
+          "path": "references/05-decision-tree.md",
+          "bytes": 3295,
+          "sha256": "3a9e164a029b3dc7626f7c3e92978dacca67656e91b5ab60fef21e6381e04f8b"
+        },
+        {
+          "path": "references/06-adversity-planning.md",
+          "bytes": 4734,
+          "sha256": "e00b671c3493725339f0bbdb12ad4d876d95f124948ef8ee7c0eb77bf604cda5"
+        },
+        {
+          "path": "references/07-problem-inversion.md",
+          "bytes": 5671,
+          "sha256": "19211d825ea39931f2c67b1032f8521462c64a3874116a630aa9e1246d413979"
+        },
+        {
+          "path": "references/08-integration-synthesis.md",
+          "bytes": 5416,
+          "sha256": "17e2ddcbb943d2d1053f18b29c858afb91eb3815aa66df3006701ce7659d6189"
+        },
+        {
+          "path": "references/09-meta-framework.md",
+          "bytes": 16539,
+          "sha256": "91f4880cef12916d33cf9f12cd42aa23d7cf97f9b9d18e0fb5f0f64e36166602"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "scientific-writing",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/scientific-writing",
+        "license": "MIT"
+      },
+      "purpose": "Drafts, revises, and audits scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountability, confidentiality controls, and local consistency checks. Use for manuscript sections, references, declarations, tables, figures, or submission preparation when scientific accuracy and traceability matter.",
+      "installed_path": ".agents/skills/scientific-writing",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/scientific-writing",
+        "source_file_count": 31,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 32,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 15278,
+          "sha256": "234b312260c19946fbe0975304ca20d76ed624f704569f763b94d0d1f35a2d74"
+        },
+        {
+          "path": "assets/REPORT_FORMATTING_GUIDE.md",
+          "bytes": 2773,
+          "sha256": "c3863b3fc32b11a57c83aff9c89638e218834f880619ce5d4e37e96a3e15c5f7"
+        },
+        {
+          "path": "assets/authorship_template.json",
+          "bytes": 1295,
+          "sha256": "81b868b811a1f349f0858a55e0eb5270556aa96523ddc00f48bb0b9ddbf82611"
+        },
+        {
+          "path": "assets/claim_evidence_template.csv",
+          "bytes": 220,
+          "sha256": "9eebce3f3cd096714d89fd9d0a6bb868ed5e9f4ef917e8cd08e899a4dc0585e4"
+        },
+        {
+          "path": "assets/consistency_manifest_template.json",
+          "bytes": 934,
+          "sha256": "dd226efcabc688adc1cacf1e1c17c6556871af1d3a0a8bc8538262d5337bcf9b"
+        },
+        {
+          "path": "assets/manuscript_manifest_template.json",
+          "bytes": 1049,
+          "sha256": "c182c71fbbf7437a1e391e4b36bc68613145c414c63889a895b4c7e210a35b6f"
+        },
+        {
+          "path": "assets/manuscript_scaffold.md",
+          "bytes": 2044,
+          "sha256": "c3104913c856e4488f3777c4908943139a54f483e7420d06debb1f1b09c89d4e"
+        },
+        {
+          "path": "assets/reporting_coverage_template.json",
+          "bytes": 195,
+          "sha256": "9d56f0eac2ace521191a6fee45672a46c8795136d7aedc6363e0e250fa299a5e"
+        },
+        {
+          "path": "assets/reporting_guidelines.json",
+          "bytes": 16538,
+          "sha256": "a335593ef51321269d6d2ea74862326241424c6e7bd58f6227954bb1b14b467b"
+        },
+        {
+          "path": "assets/source_manifest_template.json",
+          "bytes": 626,
+          "sha256": "a79e9e095cf77500d5a7a4663a99f9826d5eb3c4fbd4466b4d6853d505e422e3"
+        },
+        {
+          "path": "references/authorship_ai_confidentiality.md",
+          "bytes": 5037,
+          "sha256": "5316aa9f00e2bdf00e4cbf23d8b8d1c40f8acbce9810d87f37a051b80d6f02e2"
+        },
+        {
+          "path": "references/citation_styles.md",
+          "bytes": 4039,
+          "sha256": "8f4a378fb22eb45955d2f3d7c06bfdba62de7db3e0a3d1d6dd0b47385e9b1be3"
+        },
+        {
+          "path": "references/cli_reference.md",
+          "bytes": 4221,
+          "sha256": "599e2a379e1a4ebbeaa10e933a02d79457419c8d71be05ba5fffe8a15867cc4e"
+        },
+        {
+          "path": "references/evidence_workflow.md",
+          "bytes": 5143,
+          "sha256": "e8c510ce859d4ff79ce237d31e5a2faad49815ae4a5bcf5f891ab374683640ba"
+        },
+        {
+          "path": "references/figures_tables.md",
+          "bytes": 4009,
+          "sha256": "5c4b5b454ac60fc8a75fb386aa3d05f8a59bfe6fa9873804d3dbda7d5f8876a7"
+        },
+        {
+          "path": "references/imrad_structure.md",
+          "bytes": 4626,
+          "sha256": "3dfaa821f8bf99442a19de9a2b150d96f693d23995df6f047bbb4c32a81b1a0f"
+        },
+        {
+          "path": "references/journal_policies.md",
+          "bytes": 3072,
+          "sha256": "a56d84c3ab8c8fdf25c4a92a9529f330779363b236b34b0d8576294d7a3ebc0e"
+        },
+        {
+          "path": "references/professional_report_formatting.md",
+          "bytes": 3312,
+          "sha256": "b03f097f603cf90654aa1cb2367559556b8a3adaff89de79eeb3e9eb08829408"
+        },
+        {
+          "path": "references/reporting_guidelines.md",
+          "bytes": 4892,
+          "sha256": "1654071d852d4d6002bd7760d24f8fce197504e43fbbf3b3e4765153450ba511"
+        },
+        {
+          "path": "references/research_integrity_open_science.md",
+          "bytes": 4246,
+          "sha256": "c3a482d32721f1c80ab5934c4f562f9c75da78498af656c57e00b9ec5f831896"
+        },
+        {
+          "path": "references/source_ledger.md",
+          "bytes": 11759,
+          "sha256": "2cc4f3af752dfaccfccf7f3db46f1723ff7b7d58b136c62d4a16dc4710f20973"
+        },
+        {
+          "path": "references/writing_principles.md",
+          "bytes": 4001,
+          "sha256": "9df775ba57e0e32ecd65dd35fb5f5db438b883d1cea278ca6c459e3855f8006b"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 8228,
+          "sha256": "c63906dc512d4dacca38d4e406d5cce010869198f644eed0fa44b3d4b1f10384"
+        },
+        {
+          "path": "scripts/audit_claims.py",
+          "bytes": 10311,
+          "sha256": "702007d6cfc185559c80bf0abaa19b6ea24d931500da17e01d18322142b2a57b"
+        },
+        {
+          "path": "scripts/check_consistency.py",
+          "bytes": 14617,
+          "sha256": "a6cb8ba51aa724fab053e709ee643d0ce5e0e4a21e2e87d83eeb580030ba3e6d"
+        },
+        {
+          "path": "scripts/check_references.py",
+          "bytes": 7294,
+          "sha256": "eb20598821bf7f16a820856644742304b6aadecca5a5347649e52d20126d0f1a"
+        },
+        {
+          "path": "scripts/lint_manuscript.py",
+          "bytes": 6052,
+          "sha256": "aa9f00405438b3cc282f9197bf8c3ab4f0fcffb74a53503ad40545157032e70f"
+        },
+        {
+          "path": "scripts/scaffold_manuscript.py",
+          "bytes": 4471,
+          "sha256": "a340075eb11239ab812f8171a0d454a20bcb89d28ad65733ce1d7731c17ecb22"
+        },
+        {
+          "path": "scripts/select_reporting_guidelines.py",
+          "bytes": 7794,
+          "sha256": "811256a45b12af61deb40782c70d0bd670272b1ce9daece443421d9f538ccd31"
+        },
+        {
+          "path": "scripts/validate_authorship.py",
+          "bytes": 11842,
+          "sha256": "0d390e9d82bce61b65250af59e0b59ac325a88e616374cf1499fb63d39b7976d"
+        },
+        {
+          "path": "scripts/validate_manifest.py",
+          "bytes": 14853,
+          "sha256": "27626e9c5c866e823f5d4855c310134afe9e7a25fce311d86cebe8c2c22bb01e"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Bundled helpers are local report/assumption checks; outputs support review and do not establish scientific truth or replace judgment."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "scikit-learn",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/scikit-learn",
+        "license": "MIT"
+      },
+      "purpose": "Supports machine learning in Python with scikit-learn. Applies when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
+      "installed_path": ".agents/skills/scikit-learn",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/scikit-learn",
+        "source_file_count": 11,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 12,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 13601,
+          "sha256": "fe68d54967aab64ee46533bd4efa749e748f6787b4096a2400e0968a52aaf562"
+        },
+        {
+          "path": "references/common_workflows.md",
+          "bytes": 3848,
+          "sha256": "5f79e3799c272a92813bcd8476a3ed758d4a41432f832d442430d92cbf2a0bc6"
+        },
+        {
+          "path": "references/core_capabilities.md",
+          "bytes": 5253,
+          "sha256": "716c020c53a9b8101810ec5ccd4773228f8a58bf646fab981dff534e6577dc7c"
+        },
+        {
+          "path": "references/model_evaluation.md",
+          "bytes": 20102,
+          "sha256": "6abe6f415d16a97cc5cafee3ea72c4a3765fb249884b030639e268e85dcc3151"
+        },
+        {
+          "path": "references/pipelines_and_composition.md",
+          "bytes": 16523,
+          "sha256": "0354fdf00669d018b031d61eafd5159ff320d6c1af78f5be49c2f1b08895c10c"
+        },
+        {
+          "path": "references/preprocessing.md",
+          "bytes": 18982,
+          "sha256": "b3c8802022b402fb9af9ccd011f051feec63906460985a43ad2b638154ea4a89"
+        },
+        {
+          "path": "references/quick_reference.md",
+          "bytes": 12894,
+          "sha256": "c9dd68419eaf2500f3e02f45b34c9498628b1dc453a13712ed3f0d25e4ea6110"
+        },
+        {
+          "path": "references/supervised_learning.md",
+          "bytes": 12488,
+          "sha256": "d6b13470a9d26fca8764d7d0e56d5eb391057ac741308ce65c42f1ff69668966"
+        },
+        {
+          "path": "references/unsupervised_learning.md",
+          "bytes": 17282,
+          "sha256": "7af65a13d024744d76fbe2aa1bfcbe2f14b06579ac84931d3962e1a7c40e12cb"
+        },
+        {
+          "path": "scripts/classification_pipeline.py",
+          "bytes": 10583,
+          "sha256": "b7317bf221c8ed989fd39b47679de0c552d455c7d238b7a52b9374987f589bcf"
+        },
+        {
+          "path": "scripts/clustering_analysis.py",
+          "bytes": 12038,
+          "sha256": "7bafcb169e030d84698f83fffc1c64c461657cffe1abffa34d4b93cd9bd6f015"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "One demo writes two fixed PNG names in the current working directory and may overwrite existing files; use a scratch directory. Split strategy must match grouped/temporal data.",
+        "Persistence docs warn that pickle/joblib artifacts can execute code; load only trusted artifacts."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "statistical-analysis",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/statistical-analysis",
+        "license": "MIT"
+      },
+      "purpose": "Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-formatted reporting. Use whenever a user wants to compare groups, test a hypothesis, analyze experimental or survey data, check statistical assumptions, compute required sample sizes, or write up results - even if they never name a specific test. Covers t-tests, ANOVA, chi-square, correlation, regression, non-parametric and Bayesian methods. For low-level model APIs, see the statsmodels and pymc skills.",
+      "installed_path": ".agents/skills/statistical-analysis",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/statistical-analysis",
+        "source_file_count": 7,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 8,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 24038,
+          "sha256": "c5db9b7dd0735ef56354cecc3f23469bdac7395e9416497ed767ce5643a6fdc8"
+        },
+        {
+          "path": "references/assumptions_and_diagnostics.md",
+          "bytes": 15031,
+          "sha256": "c685336ae68b9f5959d552aac844c64991c5ce5429463659584aea0343f3994d"
+        },
+        {
+          "path": "references/bayesian_statistics.md",
+          "bytes": 14745,
+          "sha256": "14c51daa7723c75482d960b57d3a37846b11c91038dfe7665b6a06d0a97fd5c7"
+        },
+        {
+          "path": "references/effect_sizes_and_power.md",
+          "bytes": 21563,
+          "sha256": "b93f5044c22b09ebd2edf2668b83efb187d1cc31ed14db765acf6f3f77f10b72"
+        },
+        {
+          "path": "references/reporting_standards.md",
+          "bytes": 21956,
+          "sha256": "a25b4c51530ff64292a10a9096b76347f804e89a73dd8037eb5d9acb26973fb4"
+        },
+        {
+          "path": "references/test_selection_guide.md",
+          "bytes": 7083,
+          "sha256": "17f2898ccc5bae0cc331d1ea7b17cc4f43799e42cfb4d23d767adbcc3a76d066"
+        },
+        {
+          "path": "scripts/assumption_checks.py",
+          "bytes": 18739,
+          "sha256": "e5ad57f02fbacf303e3cf0e4633e36ef232f79535e39716e2bf49d0ee29ebb58"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Bundled helpers are local report/assumption checks; outputs support review and do not establish scientific truth or replace judgment."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "statsmodels",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/statsmodels",
+        "license": "MIT"
+      },
+      "purpose": "Fits and diagnoses Python statistical models including OLS, GLM, discrete and mixed models, ARIMA and SARIMAX. Supports coefficient inference, marginal effects, model comparison and time series forecasting with explicit design and uncertainty checks. Used for econometrics and statistical modeling; for guided test selection with APA reporting, see statistical-analysis.",
+      "installed_path": ".agents/skills/statsmodels",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/statsmodels",
+        "source_file_count": 10,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 11,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 12937,
+          "sha256": "fd9390102751eca3fed438ed9901834655df7380aa719ca027ec61dc9d09bcd3"
+        },
+        {
+          "path": "references/discrete_choice.md",
+          "bytes": 19393,
+          "sha256": "d8869f90e931bd606525577e935994ce87f19b58ab496da4d3d03851b6a5e36a"
+        },
+        {
+          "path": "references/glm.md",
+          "bytes": 19065,
+          "sha256": "59a9a450facf0ac7e676082568c66f64f88fec33d622254e589aa86426f6c8bc"
+        },
+        {
+          "path": "references/linear_models.md",
+          "bytes": 14499,
+          "sha256": "9b85abbeb8439bd14499de2e30c371576005452b344f8c4c464de29ec9c763b6"
+        },
+        {
+          "path": "references/model_selection.md",
+          "bytes": 3607,
+          "sha256": "234a257144b2ae8377fd5f223e4f9a2382a9113894c73d2d225f4b3c8ccffc78"
+        },
+        {
+          "path": "references/modeling_capabilities.md",
+          "bytes": 6412,
+          "sha256": "4be6edfc12ab68f326ac429cd3848fc06d18e90698ae419f31faa2af26db8d63"
+        },
+        {
+          "path": "references/quick_start_guide.md",
+          "bytes": 4959,
+          "sha256": "fa79b285fd8a6023359d315ba50a546ecb5c74d85dcfa362b7eb48ad584aaa4e"
+        },
+        {
+          "path": "references/review.md",
+          "bytes": 7121,
+          "sha256": "1b7c93d548e240fe6b7ba8d6d761c9f820aa41b85605879226675ef38121b9a2"
+        },
+        {
+          "path": "references/stats_diagnostics.md",
+          "bytes": 24970,
+          "sha256": "3d3aabdf7a939ca60cfdf81939770dd74d16c54bf6ed927e33f04b44adc2ebeb"
+        },
+        {
+          "path": "references/time_series.md",
+          "bytes": 22582,
+          "sha256": "430debdc9e6f648cca349d21bb225b606fea9ec234f90f233cb3f73dc453cc99"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation/examples only; grouped or chronological validation may be required by the route/time sampling design."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "stride-analysis-patterns",
+      "source": {
+        "repository": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+        "path": "plugins/security-scanning/skills/stride-analysis-patterns",
+        "license": "MIT"
+      },
+      "purpose": "Apply STRIDE methodology to systematically identify threats. Use when analyzing system security, conducting threat modeling sessions, or creating security documentation.",
+      "installed_path": ".agents/skills/stride-analysis-patterns",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-wshobson/plugins/security-scanning/skills/stride-analysis-patterns",
+        "source_file_count": 2,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 3,
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "402666abc624142a13aaf2a6fbeb46bd03b9f9dd53f77704991244134fe8169a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 2518,
+          "sha256": "a1fb2fd8cd41e5191d3ca5297a1e35ac4d367c4f7ace5a14ee4d47fab75d16ca"
+        },
+        {
+          "path": "references/details.md",
+          "bytes": 19096,
+          "sha256": "0e0100cb90d2bbe151cb6d9fd31ea8c1ba67eff3fb7834e73c782d2b7dd11235"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Documentation-only threat taxonomy; identifying threats does not establish that mitigations exist or work."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    },
+    {
+      "name": "sympy",
+      "source": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "commit": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+        "path": "skills/sympy",
+        "license": "MIT"
+      },
+      "purpose": "Performs exact symbolic mathematics with SymPy for algebra, calculus, equation solving, symbolic linear algebra, physics, and lambdify or LaTeX code generation. Use when a task needs symbolic results, explicit assumptions, or exact arithmetic; use NumPy or SciPy for purely numerical workloads.",
+      "installed_path": ".agents/skills/sympy",
+      "compatibility": "Agent Skills SKILL.md format; project-local Codex discovery path. Native activation not tested.",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "license_sha256_matches_pinned": true,
+      "source_comparison": {
+        "staged_source_path": "bootstrap/skill-sources/selected-kdense/skills/sympy",
+        "source_file_count": 8,
+        "matched": true,
+        "missing_from_install": [],
+        "extra_in_install": [],
+        "hash_mismatches": []
+      },
+      "file_count": 9,
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1088,
+          "sha256": "5c793d8fe1c553d49c305f3c178ac360b6d32607bdf1bca06b10d3ba9881d78f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 13701,
+          "sha256": "74540d16a2c4e920a62685635822aeaa9eb0df4b6ecee8e96df9f65e590d8b8e"
+        },
+        {
+          "path": "references/advanced-topics.md",
+          "bytes": 14843,
+          "sha256": "8e681f75bfe7c7d38df496c58b0090e34082fc1462776c27e76ea6afbf03e7bb"
+        },
+        {
+          "path": "references/code-generation-printing.md",
+          "bytes": 15876,
+          "sha256": "6eeb7b2b9d3cacba75b6dd21a8d6a6de968d7aa6e3e933af6226e9eb67b9cdb9"
+        },
+        {
+          "path": "references/core-capabilities.md",
+          "bytes": 9977,
+          "sha256": "982cfa4103f397a109a73cbb006f9e73c7467ee46c7126366e6020b22b3d4b38"
+        },
+        {
+          "path": "references/core_capabilities.md",
+          "bytes": 5434,
+          "sha256": "023d78443af833ab1deb5c4347d204dd226f4fea3a577b4aa78e0f8d3e4a989d"
+        },
+        {
+          "path": "references/matrices-linear-algebra.md",
+          "bytes": 11024,
+          "sha256": "5dbbd734753e82a161d4edc6f1130b4839f0034252b683e485e81cfe81616bcc"
+        },
+        {
+          "path": "references/physics-mechanics.md",
+          "bytes": 15634,
+          "sha256": "8ff11fb507d7cda0284b8b340f19d8d8f2e0b3b48b7ed46101441891b5edb083"
+        },
+        {
+          "path": "references/review.md",
+          "bytes": 6129,
+          "sha256": "db71e764a90bb414cd2bdad23314b9d52b41f76bcbd3317b321cc4facff2166e"
+        }
+      ],
+      "missing_local_references": [],
+      "reference_findings": [],
+      "static_code_signals": [],
+      "review_findings": [
+        "Static files and references checked; bundled scripts were not executed and runtime behavior is not verified.",
+        "Parsing/evaluation APIs can execute input expressions; accept only trusted mathematical expressions."
+      ],
+      "review_status": "STATIC_REVIEW_COMPLETE_WITH_LIMITS",
+      "activation_status": "NOT_TESTED"
+    }
+  ]
+}

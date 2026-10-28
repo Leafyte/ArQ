@@ -1,0 +1,28 @@
+# Preserved/archive and temporary skill-source staging; retain in workspace, exclude from commits.
+_archive/
+bootstrap/skill-sources/
+sources/historical/
+
+# Python environments and generated caches.
+.venv/
+.venv-*/
+.venv_*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.uv-cache/
+
+# Local credentials/config. Keep templates and documented variable names committed.
+.env
+.env.*
+!.env.example
+
+# Local OS/editor metadata.
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/

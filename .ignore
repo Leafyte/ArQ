@@ -1,0 +1,8 @@
+# Archived project history is preserved for reference, but should not steer fresh context.
+_archive/
+
+# Staged upstream skill-source checkouts are audit material, not active project context.
+bootstrap/skill-sources/
+
+# Older team-submitted challenge material is historical; active problem source is in sources/.
+sources/historical/

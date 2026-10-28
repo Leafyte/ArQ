@@ -1,0 +1,78 @@
+Source: QpiAI __ Q-BITS _ Industry Problem Statements & Judgement Rubrics.pdf
+Extraction: pdftotext -layout; UTF-8; page numbers refer to source PDF.
+
+=== Page 2: QML-01 statement and mandatory technology context ===
+- Install the open source QpiAI Opt SDK:
+
+   > github.com/qpiai/qpiai-opt ; pip     install  qpiai-opt[quantum]
+
+- Register and get free API key:
+
+​  > opt.qpiai.tech
+
+Every QML challenge REQUIRES meaningful use of BOTH QpiAI QCloud and QpiAI Opt. In
+other tracks, QpiAI Opt MUST be used for the real scheduling, selection or allocation task
+wherever applicable. Similarly, QpiAI QCloud MUST be used meaningfully wherever applicable.
+Consequently, usage of QpiAI technologies is incentivized in the judgement rubrics (Section 8).
+
+3. THEMATIC ALIGNMENT AS PER PARTICIPANT SUBMISSIONS
+
+QML domains: fleet routing, EV charging, smart grids, battery health and second life, molecule
+selection, financial risk, recovery logistics and quantum feature representations.
+
+PQC domains: cryptographic inventories, migration, secure messaging, quantum-resistant
+signatures, satellite commands, embedded gateways and formalized verification.
+
+Web3 domains: crop provenance, payments, evidence custody, verified records, language-data
+rights, accountable agents, traceability and revocation.
+
+GenAI/ML domains: incident triage, city buses, healthcare supplies, agronomy, retail inventory,
+document dependencies, safety and operating decisions.
+
+4. TRACK I: QUANTUM MACHINE LEARNING
+
+Mandatory for ALL five: QpiAI QCloud Quantum + QpiAI Opt QUBO / Ising / HUBO optimization.
+
+QML-01: Delay-Risk-Aware Fleet Dispatch for Contract Logistics
+
+Problem. A contract logistics operator has finite vehicles, vehicle-specific capacities, delivery
+windows and contractual commitments. Traffic and service-time uncertainty can make a
+cheap-looking route fail its SLA. Produce vehicle routes that are operationally feasible and
+minimize actual transport/labor expense together with estimated service-failure exposure.
+
+Deliver. Exact vehicle-to-route plan, ordered stops, ETA/risk for each service commitment and
+total financial exposure. Evaluate SLA violations, valid coverage, cost, prediction calibration,
+solver quality and runtime.
+
+=== Page 8: QpiAI technology judgement rubric ===
+agronomists, testing services and approved supplies; generic crop-image diagnosis is
+insufficient.
+
+Deliver. Auditable per-field investigation plan, validated next test, appointment, available
+permitted inputs (when independently confirmed) and service orders. Evaluate diagnosis quality
+on independent field observations, unsafe advice, turnaround and feasibility.
+
+8. JUDGEMENT RUBRICS: QpiAI TECHNOLOGY METRIC
+
+The following scoring criteria shall be used for scoring the use of QpiAI technologies in the
+submissions, and shall be incorporated into the judgement rubrics accordingly. The 20 points
+score assumes a 100 points-based scoring system; the scaling shall be adjusted as applicable.
+
+A. USE OF QPIAI TECHNOLOGIES — 20 points.
+
+Judges must score ACTUAL invocation, relevance, correctness and measured integration of
+QpiAI technology, not mentions in slides or a decorative circuit.
+
+A1. Correct, meaningful QpiAI product choice and domain integration — 5 points.
+Does the selected QpiAI component address a genuine computation or domain decision? Are
+inputs and outputs materially connected to the validated business outcome?
+
+A2. Technical formulation and correct use of features — 10 points.
+QpiAI QCloud and associated technical correctness — 5 points (50%).
+QpiAI Opt and associated technical correctness — 5 points (50%).
+
+A3. Working QpiAI implementation with recorded execution evidence — 5 points.
+Working SDK and solver runs, recorded outputs and reproducibility.
+
+Historical team-submitted PDF checked: QUANT-A-MAZE 3.O (DebugLeaf).pdf. Its cover identifies an older EV charging challenge (QML-02) and does not contain the current QML-01 statement. A copy is preserved under sources/historical/ for context; current statement above is from the QpiAI/Q-BITS problem-statement PDF.
+
