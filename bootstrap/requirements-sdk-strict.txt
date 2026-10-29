@@ -1,0 +1,20 @@
+# DebugLeaf - Strict Vendor Extra Dependencies (Alternative)
+# Adheres strictly to qpiai-opt[quantum] metadata requirement: qpiai-quantum==0.3.0.
+# Verified against PyPI metadata on 2026-10-28 (Asia/Kolkata).
+# Target Python interpreter: CPython 3.12 (64-bit)
+
+qpiai-opt[quantum]==0.0.9
+qpiai-quantum==0.3.0
+ortools==9.15.6755
+
+# Transitive Core Pinned Requirements
+numpy>=1.20.0
+scipy>=1.9.0
+pydantic>=2.0.0
+highspy>=1.15.1
+cvxpy>=1.3.0
+networkx>=3.0
+numba>=0.58.0
+pandas>=2.0.0
+protobuf<6.34,>=6.33.1
+pytest>=8.0.0

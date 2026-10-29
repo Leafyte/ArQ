@@ -1,0 +1,10 @@
+{
+  "freeze_date_utc": "2026-10-28",
+  "protocol_sha256": "18D870457CE46F17FD2D132C5902B09EFFAB3134633C4CB8FDDA0CE013F1051B",
+  "dataset_manifest_sha256": "FAC4731D26AF3D359E6822E4C5DAAB422D2101AABCFC234F8FF4F8903720120A",
+  "runner_sha256": "187D4D1B245BFE35FA85CC52006914BC48BF11DFE87D1ED6968E3E440434938C",
+  "scenario_groups": 150,
+  "locked_before_model_evaluation": true,
+  "no_heldout_tuning": true,
+  "chronology": "V2 dependency-free grouped-bootstrap CART comparator; V1 scikit-learn protocol and lock preserved under protocol-v1-scikit-blocked.json and frozen-lock-v1-scikit-blocked.json."
+}

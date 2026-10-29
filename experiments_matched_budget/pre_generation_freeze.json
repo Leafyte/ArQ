@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "F6EB0B4DAC361CD214239574A33E5CA311327AD81CB96241669C45D61C6C9C57",
+  "runner_sha256": "65441499AC17BBD724FC49610C1EF4D2FB5BF8DB232BA16BD1531026DC0C7E30",
+  "frozen_before_data_manifest_generation": true,
+  "frozen_before_heldout_evaluation": true,
+  "chronology": "Protocol and runner hashes recorded before generating new split/data manifest; final frozen_lock.json adds the manifest hash before evaluation."
+}

@@ -26,3 +26,6 @@ Desktop.ini
 .DS_Store
 .idea/
 .vscode/
+
+# Project-local temporary runtime cache
+.runtime/

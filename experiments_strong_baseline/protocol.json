@@ -1,0 +1,44 @@
+{
+  "protocol_id": "terra-independent-matched-baseline-v2",
+  "frozen_before_evaluation": true,
+  "purpose": "Replicated synthetic prospective comparison of decision-focused VQC, predictive-only VQC, logistic regression, and a nonlinear random forest.",
+  "scenario_family": {
+    "generator": "independent four-location, three-order, two-vehicle dispatch family defined in run_experiment.py; not copied from the old fixture",
+    "replicates": 5,
+    "scenario_groups_per_replicate": 30,
+    "split_per_replicate": {"train": 18, "validation": 6, "test": 6},
+    "family_seed": 2026102901,
+    "split_seed": 2026102902,
+    "latent_multiplier": [0.75, 2.1],
+    "forecast_noise_sd": 0.3,
+    "forecast_edge_jitter": [0.97, 1.03],
+    "realized_edge_jitter": [0.9, 1.1],
+    "forecast_clipping": [0.5, 2.5],
+    "scenario_seeds_are_independent_by_replicate": true
+  },
+  "information_boundary": {
+    "model_features": ["forecast route travel cost / 30 clipped to [0,1]", "nominal contractual window pressure"],
+    "training_labels": "train-only indicator that any route stop is late in the separately generated realized matrix, irrespective of penalty",
+    "validation_and_test_labels_passed_to_fit": false,
+    "decision_selection_uses_forecast_only": true,
+    "realized_matrix_opened_after_all_method_selections": true,
+    "common_random_numbers": "all methods evaluated on identical frozen validation/test scenario group IDs and matrices per replicate"
+  },
+  "methods_and_fixed_budgets": {
+    "decision_focused_vqc": {"initial_theta": [0.31, -0.47], "gradient_updates": 120, "learning_rate": 0.025, "objective": "soft exact-cover plan decision loss, temperature 2"},
+    "predictive_only_vqc": {"initial_theta": [0.31, -0.47], "gradient_updates": 120, "learning_rate": 0.08, "objective": "route-label binary cross entropy"},
+    "logistic_regression": {"implementation": "existing deterministic full-batch gradient descent", "updates": 500, "learning_rate": 0.3},
+    "grouped_bootstrap_cart_forest": {"implementation": "dependency-free CART ensemble in run_experiment.py; scenario-group bootstrap, Gini splits, one feature sampled uniformly per node", "n_estimators": 64, "max_depth": 3, "min_samples_leaf": 2, "features_per_node": 1, "random_state_per_replicate": "family_seed + zero_based_replicate_index", "bootstrap_unit": "training scenario group"}
+  },
+  "decision_and_scoring": {
+    "plan_score": "sum forecast route travel cost + predicted probability * sum contractual penalties for each selected route (one-minute horizon)",
+    "exact_reference": "independent domain exact solve on realized scenario, used as a post-selection reference only",
+    "validator": "backend.validator.validate_plan recomputes constraints and objective from realized input",
+    "primary_metrics": ["mean validator objective", "per-scenario regret versus exact realized reference", "feasible and valid plan rate"],
+    "secondary_metrics": ["route-level per-scenario Brier score", "lateness exposure", "runtime and training work"],
+    "replicate_analysis": "report each replicate mean and paired per-scenario method-minus-logistic objective differences; summarize mean, sample SD and range across 5 replicate means",
+    "no_tuning_on_validation_or_test": true,
+    "no_method_or_seed_selection_by_test_outcome": true
+  },
+  "limitations": ["synthetic data only", "small number of independent replicate worlds", "route-level rows are clustered within scenario and are not independent replicates", "computation differs across VQC, logistic, and forest methods", "the custom CART forest is a small fixed comparator, not a validated production baseline", "no calibration or operational claims"]
+}

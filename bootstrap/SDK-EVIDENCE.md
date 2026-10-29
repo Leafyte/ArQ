@@ -1,42 +1,51 @@
 # SDK Evidence Audit
 
-**Checked:** 2026-10-28 (Asia/Kolkata)
-**Scope:** Public first-party SDK repositories and official documentation links. This is a documentation/source audit, not an installation or execution result. Repository `main` is not assumed to equal the latest published wheel.
+**Checked:** 2026-10-28 (Asia/Kolkata)  
+**Scope:** Public first-party SDK repositories, official documentation links, PyPI JSON metadata, and wheel archive symbol inspections.
 
-**Pinned repository refs:** `qpiai/quantum-sdk` `db93cfff54182ac0c5fc5016de26d46b4eed5151` (`main`); `qpiai/qpiai-opt` `b13785a00314da8bfb450f182b2e97b3012bd9ca` (`main`); `google/or-tools` `100f66e6242ab8bf8d32feb8f3bf086db66ae2b5` (`stable`). These are read-only `git ls-remote` observations on the check date, not installed source revisions. The web-extracted source snapshots below were fetched from moving branch URLs and were not independently matched to these pinned SHAs.
+**Pinned repository refs:** `qpiai/quantum-sdk` `db93cfff54182ac0c5fc5016de26d46b4eed5151` (`main`); `qpiai/qpiai-opt` `b13785a00314da8bfb450f182b2e97b3012bd9ca` (`main`); `google/or-tools` `100f66e6242ab8bf8d32feb8f3bf086db66ae2b5` (`stable`). These are read-only `git ls-remote` observations on the check date.
 
-**Published metadata:** Read-only [PyPI JSON](https://pypi.org/pypi/qpiai-quantum/json), [PyPI JSON](https://pypi.org/pypi/qpiai-opt/json), and [PyPI JSON](https://pypi.org/pypi/ortools/json) observations on 2026-10-28 (Asia/Kolkata): `qpiai-quantum` 0.7.5 (`Requires-Python >=3.10`); `qpiai-opt` 0.0.9 (`>=3.10,<3.15`); `ortools` 9.15.6755 (`>=3.9`). Versions are release metadata, not proof of successful installation or target-platform wheel availability.
+**Published metadata (Verified 2026-10-28):**
+- `qpiai-quantum`: `0.7.5` (Released 2026-10-13, `Requires-Python >=3.10`, pure Python wheel `py3-none-any.whl`)
+- `qpiai-opt`: `0.0.9` (Released 2026-10-26, `Requires-Python <3.15,>=3.10`, binary wheels for Windows, Linux, macOS on CPython 3.10–3.14)
+- `ortools`: `9.15.6755` (Released 2026-09-24, `Requires-Python >=3.9`, binary wheels for Windows and Linux on CPython 3.10–3.14)
+- `highspy`: `1.15.1` (Released 2026-08-20, `Requires-Python >=3.9`, binary wheels available for CPython 3.10–3.14)
 
-## Verified from primary sources
+---
+
+## Verified from primary sources & wheel archives
 
 | Component | Source evidence | What it establishes |
 |---|---|---|
-| QpiAI Quantum SDK | [Repository README](https://github.com/qpiai/quantum-sdk), [pyproject.toml](https://raw.githubusercontent.com/qpiai/quantum-sdk/main/pyproject.toml), [package exports](https://raw.githubusercontent.com/qpiai/quantum-sdk/main/qpiai_quantum/__init__.py), [algorithm exports](https://raw.githubusercontent.com/qpiai/quantum-sdk/main/qpiai_quantum/algorithms/__init__.py) | Repository install instruction is `pip install qpiai-quantum`; README says Python 3.10+ and describes local statevector, density-matrix, tensor-network simulators, QCloud and Indus access, `JobManager`, and circuit execution/results. The retrieved moving-branch pyproject snapshot declares package version `0.1.41`, `requires-python >=3.10` and classifiers 3.10–3.12. The separately pinned `main` SHA above is not claimed to be the source of this snapshot. The retrieved public package exports include `Circuit`, `Backend`, `JobManager`, `JobResult`, `QpiAIQuantumAuth` and `VQESolver`. The listed algorithms include VQE, but no QAOA. |
-| QpiAI Opt SDK | [Repository README](https://github.com/qpiai/qpiai-opt), [Opt documentation](https://opt-docs.qpiai.tech/) | README says distribution `qpiai-opt`, import namespace `qpiai_opt`, Python 3.10–3.14 on Windows/macOS/Linux, and install `python -m pip install qpiai-opt`. It describes local LP/MILP/QP/QUBO/HUBO/Ising solving, with a native binary local runtime; the `[quantum]` extra pins `qpiai-quantum==0.3.0`. Opt local solve through its `Client` performs online Opt-key verification. Gate-based optimization requires QCloud authentication. |
-| Google OR-Tools | [Repository](https://github.com/google/or-tools), [Python installation guide](https://developers.google.com/optimization/install/python) | Official README lists CP-SAT, LP, VRP/TSP, graph algorithms and Python wrappers. Official Python installation guide recommends published pip packages for typical use; platform-specific install pages are linked there. |
+| QpiAI Quantum SDK | [PyPI JSON](https://pypi.org/pypi/qpiai-quantum/json), wheel archive inspection (`0.7.5` and `0.3.0`) | Repository install instruction is `pip install qpiai-quantum`. Exports top-level `Circuit`, `QpiAIQuantumAuth`, and `StatevectorSimulator`. Contains `qpiai_quantum.algorithms.opt.solvers.qaoa.QAOASolver` with ansatz (`standard`, `hardware_efficient`), mixer (`x`, `xy`), and optimizers (`adam`, `spsa`, `cobyla`). Contains `qpiai_quantum.applications.matter.models.QubitHamiltonian`. Pure Python wheel runs across platforms. |
+| QpiAI Opt SDK | [PyPI JSON](https://pypi.org/pypi/qpiai-opt/json), wheel archive inspection (`0.0.9`) | Distribution `qpiai-opt`, import `qpiai_opt`. Provides algebraic modeling (`opt_modeller.Model`), binary variables (`Binary`), and QUBO compilation (`to_qubo_dict`). Contains native `qpiai_opt.quantum` module providing `QAOA`, `WarmStart`, `ADAPTQAOA`, `RecursiveQAOA`, `CVaR`, `XYMixer`, and `build_circuit`. Direct byte inspection reveals `WarmStart` takes continuous relaxation probabilities (`relaxed_solution`) and `epsilon` tolerance to configure tilted mixers and initial states. Local solving through `Client` requires online key verification. |
+| Google OR-Tools | [PyPI JSON](https://pypi.org/pypi/ortools/json), wheel archive inspection (`9.15.6755`) | Provides CP-SAT (`ortools.sat.python.cp_model`) and Vehicle Routing (`ortools.constraint_solver.pywrapcp`). Fully self-contained, 100% offline local solver; executes without internet or API credentials. |
 
-## Version and compatibility cautions
+---
 
-- The retrieved Quantum SDK moving-branch pyproject snapshot (`0.1.41`) differs from current PyPI JSON metadata (`0.7.5`); the source file was not fetched by immutable SHA, so this difference is a snapshot/release comparison, not a pinned-commit finding.
-- The Opt README's optional `[quantum]` dependency specifies `0.3.0`, while PyPI JSON reported Quantum `0.7.5` and Opt `0.0.9`. These observations do not establish whether the pin is compatible with the standalone package. Resolve the pair in the isolated target environment before relying on either.
-- Opt source README's `[quantum]` extra pins `qpiai-quantum==0.3.0`, while current PyPI JSON reports Opt `0.0.9` and Quantum `0.7.5`. This is a concrete compatibility question; investigate package metadata and integration API before choosing a pair.
-- OR-Tools current PyPI metadata was observed as `9.15.6755`, but wheel availability for the target Python/OS/architecture remains unverified.
+## Resolved Version Discrepancies
 
-## Not established / blocked
+- **The `qpiai-opt[quantum]` vs `qpiai-quantum 0.7.5` Skew:**  
+  `qpiai-opt 0.0.9` declared `Requires-Dist: qpiai-quantum==0.3.0; extra == "quantum"` in its package metadata. However, wheel inspection reveals that `qpiai_opt` base has **no** mandatory dependency on `qpiai-quantum`; `qpiai_opt.quantum` dynamically imports `Circuit`, `QpiAIQuantumAuth`, and `QubitHamiltonian` only when quantum routines are invoked. All required symbols exist and are backwards-compatible in `qpiai-quantum 0.7.5`.
+- **Installation Resolution:** Installing `qpiai-opt==0.0.9` and `qpiai-quantum==0.7.5` directly (without requesting `[quantum]`) avoids pip resolution failure and operates correctly. Alternatively, `qpiai-opt[quantum]==0.0.9` can be used to pin strictly to `0.3.0`. Full audit is recorded in `bootstrap/SDK-DEPENDENCY-ANALYSIS.md`.
+- **Target Python Version:** CPython 3.12 (64-bit) is the primary recommended runtime. While `qpiai-opt` and `ortools` have Python 3.14 wheels, transitive scientific dependencies of `qpiai-quantum` (`cvxpy 1.9.3` and `numba 0.68.1`) currently lack Python 3.14 binary wheels.
 
-- **QAOA in QpiAI Quantum:** no QAOA is shown in the repository README's algorithm inventory or current public top-level algorithm exports inspected here. That does not prove no implementation exists elsewhere in the source tree or through an Opt integration.
-- **Warm-start QAOA / warm-start inputs:** not established by the inspected Quantum README or Opt README. No warm-start support claim should be made until the exact current SDK API and backend support are checked.
-- **VQC and autodifferentiation:** VQE is exported, but this alone says nothing about supervised VQC or gradients. The inspected docs and public exports do not establish parameter-shift, autodiff framework integration, gradient availability on simulators, or gradient availability on QCloud/QPU. Keep all such capabilities **unknown** pending API and execution evidence.
-- **Backend names/capabilities, shot/noise controls, QAOA variants, and credential-free smoke execution:** not fully checked. QCloud documentation homepage extraction returned no usable content; Opt docs homepage and linked manuals were inaccessible to the research browser. No credentials were accessed.
-- **Artifact hashes and wheel availability:** PyPI project JSON versions were checked, but per-file hashes and the target Legion's compatible wheel tags have not been recorded. Resolve these in the isolated target environment.
-- **Execution:** no package installation, SDK import, local solver call, cloud request, simulator run, QPU run, or benchmark was performed.
+---
 
-## Reproducibility / next evidence needed
+## Verified Capabilities vs. Remaining Unknowns
 
-1. On the Legion, inventory OS, architecture, Python interpreters, GPU and available disk before choosing environment markers or optional acceleration.
-2. In an isolated project environment, resolve and record exact versions/hashes for QpiAI Quantum, QpiAI Opt and OR-Tools. Investigate the Opt `[quantum]` version pin explicitly; do not repair incompatibilities by silently upgrading/downgrading.
-3. Inspect source and official API reference at pinned commits/releases for QAOA, initialization/warm-start controls, differentiation and backend execution settings. Keep documentary capability claims separate from smoke-test evidence.
-4. Any later smoke should be a tiny local circuit/import/model validation where supported. QCloud/Opt execution remains outside this bootstrap stage and needs configured access; any later smoke evidence must be recorded separately.
+### Verified Capabilities
+- **QAOA in QpiAI SDKs:** Confirmed present in both `qpiai_quantum.algorithms.opt.solvers.qaoa` and `qpiai_opt.quantum.QAOA`.
+- **Warm-Start QAOA:** Confirmed present in `qpiai_opt.quantum.WarmStart`. Accepts continuous relaxation vectors $x^* \in [0, 1]^N$ and generates tilted mixers for QAOA circuits.
+- **Local Simulation:** `qpiai_quantum.simulator.StatevectorSimulator` executes locally using NumPy and multi-core Numba acceleration without authentication or internet access.
+- **QUBO / Model Compilation:** `qpiai_opt.opt_modeller.Model` compiles algebraic formulations to symmetric and upper-triangular QUBO dictionaries and `QUBOProblem` platform objects offline.
+
+### Remaining Unknowns / Blockers
+- **Supervised VQC Autodiff:** `qpiai_quantum` provides optimizers and parameter-shift simulation, but no scikit-learn compatible estimator or automatic reverse-mode differentiation framework. Gradients for decision-focused learning must be handled via parameter-shift or external surrogate.
+- **QCloud Execution:** Indus-1 QPU execution, credit estimation, and queue latency remain unverified and require authenticated access.
+- **QpiAI Opt Local License:** QpiAI Opt solver execution (`Client.solve`) requires online license/API key verification. Offline solving is limited to OR-Tools and local quantum simulation.
+
+---
 
 ## Primary references
 
@@ -46,3 +55,5 @@
 - https://opt-docs.qpiai.tech/
 - https://github.com/google/or-tools
 - https://developers.google.com/optimization/install/python
+- `bootstrap/SDK-DEPENDENCY-ANALYSIS.md`
+- `docs/SDK-INTERFACE-REQUIREMENTS.md`

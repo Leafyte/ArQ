@@ -1,0 +1,4003 @@
+{
+  "decision_contract": "enumerate capacity-feasible candidate routes; enumerate exact-cover plans with one route per vehicle; score by sum(travel_cost + VQC risk_probability * one_minute_penalty_rate_sum); choose minimum; validator recomputes selected plan from scenario inputs",
+  "evaluation_status": "exploratory, not blind: integration scenarios were inspected during feature/scenario iteration; do not treat test metrics as prospective evidence",
+  "evidence_label": "exploratory synthetic-scaled conditional dispatch; local exact CPU statevector; no QCloud/QPU",
+  "exact_reference": [
+    {
+      "objective": 43.0,
+      "scenario_id": "traffic-12",
+      "validation": {
+        "errors": [],
+        "feasible": true,
+        "recomputed": {
+          "lateness_exposure": 8.0,
+          "objective": 43.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 21.0,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 23.0,
+              "stops": [
+                {
+                  "arrival": 3.5,
+                  "departure": 4.5,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 3.5
+                },
+                {
+                  "arrival": 11.5,
+                  "departure": 12.5,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 11.5
+                }
+              ],
+              "travel_cost": 21.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 8.0,
+              "objective": 22.0,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 15.0,
+              "stops": [
+                {
+                  "arrival": 7.0,
+                  "departure": 8.0,
+                  "lateness": 2.0,
+                  "order_id": "A",
+                  "penalty_exposure": 8.0,
+                  "service_start": 7.0
+                }
+              ],
+              "travel_cost": 14.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "travel_cost": 35.0
+        },
+        "valid": true
+      }
+    },
+    {
+      "objective": 30.399999999999995,
+      "scenario_id": "traffic-13",
+      "validation": {
+        "errors": [],
+        "feasible": true,
+        "recomputed": {
+          "lateness_exposure": 2.3999999999999986,
+          "objective": 30.399999999999995,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 16.799999999999997,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 18.799999999999997,
+              "stops": [
+                {
+                  "arrival": 2.8,
+                  "departure": 3.8,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.8
+                },
+                {
+                  "arrival": 9.399999999999999,
+                  "departure": 10.399999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 9.399999999999999
+                }
+              ],
+              "travel_cost": 16.799999999999997,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 2.3999999999999986,
+              "objective": 13.599999999999998,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 12.2,
+              "stops": [
+                {
+                  "arrival": 5.6,
+                  "departure": 6.6,
+                  "lateness": 0.5999999999999996,
+                  "order_id": "A",
+                  "penalty_exposure": 2.3999999999999986,
+                  "service_start": 5.6
+                }
+              ],
+              "travel_cost": 11.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "travel_cost": 27.999999999999996
+        },
+        "valid": true
+      }
+    },
+    {
+      "objective": 23.0,
+      "scenario_id": "traffic-14",
+      "validation": {
+        "errors": [],
+        "feasible": true,
+        "recomputed": {
+          "lateness_exposure": 0.0,
+          "objective": 23.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 13.8,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 15.799999999999999,
+              "stops": [
+                {
+                  "arrival": 2.3,
+                  "departure": 3.3,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.3
+                },
+                {
+                  "arrival": 7.8999999999999995,
+                  "departure": 8.899999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 7.8999999999999995
+                }
+              ],
+              "travel_cost": 13.8,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 9.2,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 10.2,
+              "stops": [
+                {
+                  "arrival": 4.6,
+                  "departure": 5.6,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.6
+                }
+              ],
+              "travel_cost": 9.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "travel_cost": 23.0
+        },
+        "valid": true
+      }
+    },
+    {
+      "objective": 10.0,
+      "scenario_id": "traffic-15",
+      "validation": {
+        "errors": [],
+        "feasible": true,
+        "recomputed": {
+          "lateness_exposure": 0.0,
+          "objective": 10.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 4.0,
+              "order_ids": [
+                "A",
+                "B"
+              ],
+              "return_time": 6.0,
+              "stops": [
+                {
+                  "arrival": 2.0,
+                  "departure": 3.0,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.0
+                },
+                {
+                  "arrival": 4.0,
+                  "departure": 5.0,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.0
+                }
+              ],
+              "travel_cost": 4.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 6.0,
+              "order_ids": [
+                "C"
+              ],
+              "return_time": 7.0,
+              "stops": [
+                {
+                  "arrival": 3.0,
+                  "departure": 4.0,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 3.0
+                }
+              ],
+              "travel_cost": 6.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "travel_cost": 10.0
+        },
+        "valid": true
+      }
+    }
+  ],
+  "feature_contract": {
+    "label": "1 iff independently recomputed candidate route lateness_exposure > 0",
+    "x0": "candidate route travel_cost in the current scenario / 20, clipped to [0,1]",
+    "x1": "nominal route window pressure = 1 - clipped minimum nominal stop slack / 4"
+  },
+  "information_timing_limit": "Each scenario travel matrix is exposed to feature construction and then reused as validator ground truth. This measures conditional plan selection given scenario travel times; it does not test prospective delay-risk forecasting from pre-trip data.",
+  "model_training": {
+    "classical_logistic_weights": [
+      -4.083301868747771,
+      1.4435900319597494,
+      4.748282185085922
+    ],
+    "decision_final_soft_plan_loss": 17.4906174361391,
+    "decision_gradient_analytic": [
+      0.0617138646044787,
+      0.041222354789690885
+    ],
+    "decision_gradient_finite_difference_h_1e-5": [
+      0.061713864685231094,
+      0.04122235477410641
+    ],
+    "decision_gradient_max_abs_error": 8.075239088523034e-11,
+    "decision_initial_soft_plan_loss": 17.69514758208195,
+    "decision_theta": [
+      0.010870626027273955,
+      0.008402191590498037
+    ],
+    "gradient_check_train_scenarios": 2,
+    "predictive_theta": [
+      -0.19680019909353688,
+      -0.5886843431521851
+    ],
+    "route_rows": 100,
+    "steps": 120,
+    "train_scenarios": 10
+  },
+  "objective_contract": "travel duration + penalty_rate * lateness minutes; travel duration is the domain's proxy cost, not calibrated currency",
+  "resources": {
+    "max_orders": 3,
+    "optimizer_steps_per_model": 120,
+    "qubits": 2,
+    "scenario_count": 16,
+    "shots": 0,
+    "simulator": "exact statevector",
+    "test_scenario_count": 4
+  },
+  "runtime": {
+    "execution": "local CPU exact statevector; validator recomputes selected plans",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.14"
+  },
+  "scenario_design": {
+    "common_test_scenarios_for_all_models": [
+      "traffic-12",
+      "traffic-13",
+      "traffic-14",
+      "traffic-15"
+    ],
+    "frozen_multipliers": [
+      0.75,
+      0.85,
+      0.95,
+      1.05,
+      1.15,
+      1.25,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      0.9,
+      1.7,
+      3.5,
+      2.8,
+      2.3,
+      1.0
+    ],
+    "split_ranges_by_index": {
+      "test": [
+        12,
+        15
+      ],
+      "train": [
+        0,
+        9
+      ],
+      "validation": [
+        10,
+        11
+      ]
+    }
+  },
+  "source_scenario": {
+    "canonical_json_sha256": "0ecea21694a33c94bd02999c40c227c2f067e1d407c05d6360db86794ddbd439",
+    "name": "fixtures/dispatch_tiny.json",
+    "transform": "travel durations scaled by frozen traffic multiplier; vehicle, order, capacity, service, deadline, and penalty inputs held fixed"
+  },
+  "split": {
+    "test": [
+      {
+        "feasible_plans": 4,
+        "multiplier": 3.5,
+        "route_examples": [
+          {
+            "features": [
+              0.7,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 1,
+            "travel_cost_input": 14.0
+          },
+          {
+            "features": [
+              0.35,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 7.0
+          },
+          {
+            "features": [
+              1.0,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 21.0
+          },
+          {
+            "features": [
+              0.7,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 14.0
+          },
+          {
+            "features": [
+              0.7,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 1,
+            "travel_cost_input": 14.0
+          },
+          {
+            "features": [
+              1.0,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 21.0
+          },
+          {
+            "features": [
+              1.0,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 21.0
+          },
+          {
+            "features": [
+              0.7,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 1,
+            "travel_cost_input": 14.0
+          },
+          {
+            "features": [
+              0.35,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 7.0
+          },
+          {
+            "features": [
+              1.0,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 21.0
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-12",
+        "scenario_sha256": "7001fb3e939e39d46d686747d8dbf7adeb9f3dec560a4031178761ea89620e05"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 2.8,
+        "route_examples": [
+          {
+            "features": [
+              0.5599999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 1,
+            "travel_cost_input": 11.2
+          },
+          {
+            "features": [
+              0.27999999999999997,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.6
+          },
+          {
+            "features": [
+              0.8400000000000001,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 16.8
+          },
+          {
+            "features": [
+              0.5599999999999999,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 11.2
+          },
+          {
+            "features": [
+              0.5599999999999999,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 1,
+            "travel_cost_input": 11.2
+          },
+          {
+            "features": [
+              0.8399999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 16.799999999999997
+          },
+          {
+            "features": [
+              0.8400000000000001,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 16.8
+          },
+          {
+            "features": [
+              0.5599999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 1,
+            "travel_cost_input": 11.2
+          },
+          {
+            "features": [
+              0.27999999999999997,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.6
+          },
+          {
+            "features": [
+              0.8400000000000001,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 16.8
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-13",
+        "scenario_sha256": "175b629bfa1a5e0013f48729f37a44c70f4b31ac1fad31b2ff310800545c0cdc"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 2.3,
+        "route_examples": [
+          {
+            "features": [
+              0.45999999999999996,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 9.2
+          },
+          {
+            "features": [
+              0.22999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.6
+          },
+          {
+            "features": [
+              0.6900000000000001,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 13.8
+          },
+          {
+            "features": [
+              0.45999999999999996,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 9.2
+          },
+          {
+            "features": [
+              0.45999999999999996,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 1,
+            "travel_cost_input": 9.2
+          },
+          {
+            "features": [
+              0.6900000000000001,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 13.8
+          },
+          {
+            "features": [
+              0.6900000000000001,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 13.8
+          },
+          {
+            "features": [
+              0.45999999999999996,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 9.2
+          },
+          {
+            "features": [
+              0.22999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.6
+          },
+          {
+            "features": [
+              0.6900000000000001,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 13.8
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-14",
+        "scenario_sha256": "042d0d19888d3da047f0c2815c96c8afd582fb081197045ab79730e07f467bb8"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 1.0,
+        "route_examples": [
+          {
+            "features": [
+              0.2,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.0
+          },
+          {
+            "features": [
+              0.1,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.0
+          },
+          {
+            "features": [
+              0.3,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.2,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.0
+          },
+          {
+            "features": [
+              0.2,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.0
+          },
+          {
+            "features": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.3,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.2,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.0
+          },
+          {
+            "features": [
+              0.1,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.0
+          },
+          {
+            "features": [
+              0.3,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-15",
+        "scenario_sha256": "46efd6cfcde67bf81d980fc4be835b59300a14bb79b163b79afba04c32b28c0a"
+      }
+    ],
+    "train": [
+      {
+        "feasible_plans": 4,
+        "multiplier": 0.75,
+        "route_examples": [
+          {
+            "features": [
+              0.15,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.0
+          },
+          {
+            "features": [
+              0.075,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.5
+          },
+          {
+            "features": [
+              0.225,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.5
+          },
+          {
+            "features": [
+              0.15,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.0
+          },
+          {
+            "features": [
+              0.15,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.0
+          },
+          {
+            "features": [
+              0.225,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.5
+          },
+          {
+            "features": [
+              0.225,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 4.5
+          },
+          {
+            "features": [
+              0.15,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.0
+          },
+          {
+            "features": [
+              0.075,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.5
+          },
+          {
+            "features": [
+              0.225,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.5
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-00",
+        "scenario_sha256": "01fd1437fcf08c2c6e21d1d0165347d65e687768379c46944b744706399f87b2"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 0.85,
+        "route_examples": [
+          {
+            "features": [
+              0.16999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.4
+          },
+          {
+            "features": [
+              0.08499999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.7
+          },
+          {
+            "features": [
+              0.255,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.1
+          },
+          {
+            "features": [
+              0.16999999999999998,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.4
+          },
+          {
+            "features": [
+              0.16999999999999998,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.4
+          },
+          {
+            "features": [
+              0.255,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.1
+          },
+          {
+            "features": [
+              0.255,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 5.1
+          },
+          {
+            "features": [
+              0.16999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.4
+          },
+          {
+            "features": [
+              0.08499999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.7
+          },
+          {
+            "features": [
+              0.255,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.1
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-01",
+        "scenario_sha256": "21d8b2ba8e1b7bc50f5c0c4f4562220a253fa0cbc11d2900c04dae8cca9e21a2"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 0.95,
+        "route_examples": [
+          {
+            "features": [
+              0.19,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.8
+          },
+          {
+            "features": [
+              0.095,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.9
+          },
+          {
+            "features": [
+              0.28500000000000003,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.7
+          },
+          {
+            "features": [
+              0.19,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.8
+          },
+          {
+            "features": [
+              0.19,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.8
+          },
+          {
+            "features": [
+              0.285,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.699999999999999
+          },
+          {
+            "features": [
+              0.28500000000000003,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 5.7
+          },
+          {
+            "features": [
+              0.19,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.8
+          },
+          {
+            "features": [
+              0.095,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.9
+          },
+          {
+            "features": [
+              0.28500000000000003,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.7
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-02",
+        "scenario_sha256": "7e712f8d69a21c4526974276038a64c22aa3cbfa27b1d831eae110958a394a31"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 1.05,
+        "route_examples": [
+          {
+            "features": [
+              0.21000000000000002,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.2
+          },
+          {
+            "features": [
+              0.10500000000000001,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.1
+          },
+          {
+            "features": [
+              0.315,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.3
+          },
+          {
+            "features": [
+              0.21000000000000002,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 4.2
+          },
+          {
+            "features": [
+              0.21000000000000002,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.2
+          },
+          {
+            "features": [
+              0.31500000000000006,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.300000000000001
+          },
+          {
+            "features": [
+              0.315,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 6.3
+          },
+          {
+            "features": [
+              0.21000000000000002,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.2
+          },
+          {
+            "features": [
+              0.10500000000000001,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.1
+          },
+          {
+            "features": [
+              0.315,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.3
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-03",
+        "scenario_sha256": "f835dd957ecc760658373a7dec81d0013ff25058c0c1445109f10c45e3f57d91"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 1.15,
+        "route_examples": [
+          {
+            "features": [
+              0.22999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.6
+          },
+          {
+            "features": [
+              0.11499999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.3
+          },
+          {
+            "features": [
+              0.34500000000000003,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.9
+          },
+          {
+            "features": [
+              0.22999999999999998,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 4.6
+          },
+          {
+            "features": [
+              0.22999999999999998,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.6
+          },
+          {
+            "features": [
+              0.34500000000000003,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.9
+          },
+          {
+            "features": [
+              0.34500000000000003,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 6.9
+          },
+          {
+            "features": [
+              0.22999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.6
+          },
+          {
+            "features": [
+              0.11499999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.3
+          },
+          {
+            "features": [
+              0.34500000000000003,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.9
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-04",
+        "scenario_sha256": "30b50c1523dd66d2523729a689f2594e582009f669acd02e6fa9720e5c693e88"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 1.25,
+        "route_examples": [
+          {
+            "features": [
+              0.25,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.0
+          },
+          {
+            "features": [
+              0.125,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.5
+          },
+          {
+            "features": [
+              0.375,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 7.5
+          },
+          {
+            "features": [
+              0.25,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 5.0
+          },
+          {
+            "features": [
+              0.25,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.0
+          },
+          {
+            "features": [
+              0.375,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 7.5
+          },
+          {
+            "features": [
+              0.375,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 7.5
+          },
+          {
+            "features": [
+              0.25,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.0
+          },
+          {
+            "features": [
+              0.125,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 2.5
+          },
+          {
+            "features": [
+              0.375,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 7.5
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-05",
+        "scenario_sha256": "e6f2ea375ad293ecf5b195a9a94e56b1bdeee790529f22351546c664de78695c"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 1.5,
+        "route_examples": [
+          {
+            "features": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.15,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.0
+          },
+          {
+            "features": [
+              0.45,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 9.0
+          },
+          {
+            "features": [
+              0.3,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.3,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.45,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 9.0
+          },
+          {
+            "features": [
+              0.45,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 9.0
+          },
+          {
+            "features": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.15,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.0
+          },
+          {
+            "features": [
+              0.45,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 9.0
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-06",
+        "scenario_sha256": "efa0b13694ce76f1a4fb34bab010d5d53350c4a0a06e5e6a0a11f1604ab865ef"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 2.0,
+        "route_examples": [
+          {
+            "features": [
+              0.4,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 8.0
+          },
+          {
+            "features": [
+              0.2,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.0
+          },
+          {
+            "features": [
+              0.6,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 12.0
+          },
+          {
+            "features": [
+              0.4,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 8.0
+          },
+          {
+            "features": [
+              0.4,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 8.0
+          },
+          {
+            "features": [
+              0.6,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 12.0
+          },
+          {
+            "features": [
+              0.6,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 12.0
+          },
+          {
+            "features": [
+              0.4,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 8.0
+          },
+          {
+            "features": [
+              0.2,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 4.0
+          },
+          {
+            "features": [
+              0.6,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 12.0
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-07",
+        "scenario_sha256": "a2422e38ed530485615c2c862191e2166177b0ef7cd800cb6d12263902a0d1c0"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 2.5,
+        "route_examples": [
+          {
+            "features": [
+              0.5,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 10.0
+          },
+          {
+            "features": [
+              0.25,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.0
+          },
+          {
+            "features": [
+              0.75,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 15.0
+          },
+          {
+            "features": [
+              0.5,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 10.0
+          },
+          {
+            "features": [
+              0.5,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 1,
+            "travel_cost_input": 10.0
+          },
+          {
+            "features": [
+              0.75,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 15.0
+          },
+          {
+            "features": [
+              0.75,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 15.0
+          },
+          {
+            "features": [
+              0.5,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 10.0
+          },
+          {
+            "features": [
+              0.25,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.0
+          },
+          {
+            "features": [
+              0.75,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 15.0
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-08",
+        "scenario_sha256": "4dd9534ce08d9e6d6877d1e9cf9d17fd885183585efac055205023541f6c7b25"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 3.0,
+        "route_examples": [
+          {
+            "features": [
+              0.6,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 1,
+            "travel_cost_input": 12.0
+          },
+          {
+            "features": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.9,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 18.0
+          },
+          {
+            "features": [
+              0.6,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 12.0
+          },
+          {
+            "features": [
+              0.6,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 1,
+            "travel_cost_input": 12.0
+          },
+          {
+            "features": [
+              0.9,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 18.0
+          },
+          {
+            "features": [
+              0.9,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 18.0
+          },
+          {
+            "features": [
+              0.6,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 1,
+            "travel_cost_input": 12.0
+          },
+          {
+            "features": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.0
+          },
+          {
+            "features": [
+              0.9,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 18.0
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-09",
+        "scenario_sha256": "b36ed40cd28c89b872d6e1b4b712e12c98b14cc2c11110243d91abb01e64df55"
+      }
+    ],
+    "validation": [
+      {
+        "feasible_plans": 4,
+        "multiplier": 0.9,
+        "route_examples": [
+          {
+            "features": [
+              0.18,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.6
+          },
+          {
+            "features": [
+              0.09,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.8
+          },
+          {
+            "features": [
+              0.27,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.4
+          },
+          {
+            "features": [
+              0.18,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.6
+          },
+          {
+            "features": [
+              0.18,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.6
+          },
+          {
+            "features": [
+              0.27,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.4
+          },
+          {
+            "features": [
+              0.27,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 5.4
+          },
+          {
+            "features": [
+              0.18,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.6
+          },
+          {
+            "features": [
+              0.09,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 1.8
+          },
+          {
+            "features": [
+              0.27,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 5.4
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-10",
+        "scenario_sha256": "c741648f2308f2f9debb283d2f0dea56e2193767a6a0c427af38b572b3986b28"
+      },
+      {
+        "feasible_plans": 4,
+        "multiplier": 1.7,
+        "route_examples": [
+          {
+            "features": [
+              0.33999999999999997,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V1:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.8
+          },
+          {
+            "features": [
+              0.16999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V1:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.4
+          },
+          {
+            "features": [
+              0.51,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V1:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 10.2
+          },
+          {
+            "features": [
+              0.33999999999999997,
+              1.0
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:A>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 6.8
+          },
+          {
+            "features": [
+              0.33999999999999997,
+              0.5
+            ],
+            "one_minute_exposure_scale": 6.0,
+            "route_id": "V1:B>A",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.8
+          },
+          {
+            "features": [
+              0.51,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:B>C",
+            "sla_event_label": 0,
+            "travel_cost_input": 10.2
+          },
+          {
+            "features": [
+              0.51,
+              1.0
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "route_id": "V1:C>B",
+            "sla_event_label": 1,
+            "travel_cost_input": 10.2
+          },
+          {
+            "features": [
+              0.33999999999999997,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "route_id": "V2:A",
+            "sla_event_label": 0,
+            "travel_cost_input": 6.8
+          },
+          {
+            "features": [
+              0.16999999999999998,
+              0.25
+            ],
+            "one_minute_exposure_scale": 2.0,
+            "route_id": "V2:B",
+            "sla_event_label": 0,
+            "travel_cost_input": 3.4
+          },
+          {
+            "features": [
+              0.51,
+              0.0
+            ],
+            "one_minute_exposure_scale": 1.0,
+            "route_id": "V2:C",
+            "sla_event_label": 0,
+            "travel_cost_input": 10.2
+          }
+        ],
+        "route_rows": 10,
+        "scenario_id": "traffic-11",
+        "scenario_sha256": "c29cc376b42765be0c88e38a1fa72a76b2e4a1bb84a2e2ba640a0830ecb6d051"
+      }
+    ]
+  },
+  "test_metrics": {
+    "classical_logistic": {
+      "coverage_rate": 1.0,
+      "feasibility_rate": 1.0,
+      "mean_model_estimated_exposure": 0.8236630125981529,
+      "mean_regret_vs_exact_reference": 0.0,
+      "mean_validator_lateness_exposure": 2.5999999999999996,
+      "mean_validator_objective": 26.599999999999998,
+      "mean_validator_travel_cost": 24.0,
+      "n_test_scenarios": 4
+    },
+    "decision_focused_vqc": {
+      "coverage_rate": 1.0,
+      "feasibility_rate": 1.0,
+      "mean_model_estimated_exposure": 1.3667191164479195,
+      "mean_regret_vs_exact_reference": 0.0,
+      "mean_validator_lateness_exposure": 2.5999999999999996,
+      "mean_validator_objective": 26.599999999999998,
+      "mean_validator_travel_cost": 24.0,
+      "n_test_scenarios": 4
+    },
+    "predictive_only_vqc": {
+      "coverage_rate": 1.0,
+      "feasibility_rate": 1.0,
+      "mean_model_estimated_exposure": 1.7361511361251216,
+      "mean_regret_vs_exact_reference": 0.0,
+      "mean_validator_lateness_exposure": 2.5999999999999996,
+      "mean_validator_objective": 26.599999999999998,
+      "mean_validator_travel_cost": 24.0,
+      "n_test_scenarios": 4
+    }
+  },
+  "test_outcomes": {
+    "classical_logistic": [
+      {
+        "estimated_exposure": 1.0957199545242275,
+        "estimated_plan_cost": 36.09571995452423,
+        "multiplier": 3.5,
+        "raw_plan": {
+          "lateness_exposure": 8.0,
+          "objective": 43.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 21.0,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 23.0,
+              "stops": [
+                {
+                  "arrival": 3.5,
+                  "departure": 4.5,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 3.5
+                },
+                {
+                  "arrival": 11.5,
+                  "departure": 12.5,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 11.5
+                }
+              ],
+              "travel_cost": 21.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 8.0,
+              "objective": 22.0,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 15.0,
+              "stops": [
+                {
+                  "arrival": 7.0,
+                  "departure": 8.0,
+                  "lateness": 2.0,
+                  "order_id": "A",
+                  "penalty_exposure": 8.0,
+                  "service_start": 7.0
+                }
+              ],
+              "travel_cost": 14.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 35.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-12",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.5687862049265429,
+            "feature_values": [
+              1.0,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.18959540164218094,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 21.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 21.0
+          },
+          {
+            "estimated_exposure": 0.5269337495976846,
+            "feature_values": [
+              0.7,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.13173343739942114,
+            "route_id": "V2:A",
+            "travel_cost_input": 14.0,
+            "validator_realized_exposure": 8.0,
+            "validator_realized_objective": 22.0
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 8.0,
+            "objective": 43.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 21.0,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 23.0,
+                "stops": [
+                  {
+                    "arrival": 3.5,
+                    "departure": 4.5,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 3.5
+                  },
+                  {
+                    "arrival": 11.5,
+                    "departure": 12.5,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 11.5
+                  }
+                ],
+                "travel_cost": 21.0,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 8.0,
+                "objective": 22.0,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 15.0,
+                "stops": [
+                  {
+                    "arrival": 7.0,
+                    "departure": 8.0,
+                    "lateness": 2.0,
+                    "order_id": "A",
+                    "penalty_exposure": 8.0,
+                    "service_start": 7.0
+                  }
+                ],
+                "travel_cost": 14.0,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 35.0
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 0.9109967040952951,
+        "estimated_plan_cost": 28.91099670409529,
+        "multiplier": 2.8,
+        "raw_plan": {
+          "lateness_exposure": 2.3999999999999986,
+          "objective": 30.399999999999995,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 16.799999999999997,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 18.799999999999997,
+              "stops": [
+                {
+                  "arrival": 2.8,
+                  "departure": 3.8,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.8
+                },
+                {
+                  "arrival": 9.399999999999999,
+                  "departure": 10.399999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 9.399999999999999
+                }
+              ],
+              "travel_cost": 16.799999999999997,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 2.3999999999999986,
+              "objective": 13.599999999999998,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 12.2,
+              "stops": [
+                {
+                  "arrival": 5.6,
+                  "departure": 6.6,
+                  "lateness": 0.5999999999999996,
+                  "order_id": "A",
+                  "penalty_exposure": 2.3999999999999986,
+                  "service_start": 5.6
+                }
+              ],
+              "travel_cost": 11.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 27.999999999999996
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-13",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.4698518537411946,
+            "feature_values": [
+              0.8399999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.1566172845803982,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 16.799999999999997,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 16.799999999999997
+          },
+          {
+            "estimated_exposure": 0.44114485035410045,
+            "feature_values": [
+              0.5599999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.11028621258852511,
+            "route_id": "V2:A",
+            "travel_cost_input": 11.2,
+            "validator_realized_exposure": 2.3999999999999986,
+            "validator_realized_objective": 13.599999999999998
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 2.3999999999999986,
+            "objective": 30.399999999999995,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 16.799999999999997,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 18.799999999999997,
+                "stops": [
+                  {
+                    "arrival": 2.8,
+                    "departure": 3.8,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.8
+                  },
+                  {
+                    "arrival": 9.399999999999999,
+                    "departure": 10.399999999999999,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 9.399999999999999
+                  }
+                ],
+                "travel_cost": 16.799999999999997,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 2.3999999999999986,
+                "objective": 13.599999999999998,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 12.2,
+                "stops": [
+                  {
+                    "arrival": 5.6,
+                    "departure": 6.6,
+                    "lateness": 0.5999999999999996,
+                    "order_id": "A",
+                    "penalty_exposure": 2.3999999999999986,
+                    "service_start": 5.6
+                  }
+                ],
+                "travel_cost": 11.2,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 27.999999999999996
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 0.7778639196582868,
+        "estimated_plan_cost": 23.777863919658287,
+        "multiplier": 2.3,
+        "raw_plan": {
+          "lateness_exposure": 0.0,
+          "objective": 23.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 13.8,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 15.799999999999999,
+              "stops": [
+                {
+                  "arrival": 2.3,
+                  "departure": 3.3,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.3
+                },
+                {
+                  "arrival": 7.8999999999999995,
+                  "departure": 8.899999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 7.8999999999999995
+                }
+              ],
+              "travel_cost": 13.8,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 9.2,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 10.2,
+              "stops": [
+                {
+                  "arrival": 4.6,
+                  "departure": 5.6,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.6
+                }
+              ],
+              "travel_cost": 9.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 23.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-14",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.39027306874333323,
+            "feature_values": [
+              0.6900000000000001,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.1300910229144444,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 13.8,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 13.8
+          },
+          {
+            "estimated_exposure": 0.38759085091495354,
+            "feature_values": [
+              0.45999999999999996,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.09689771272873839,
+            "route_id": "V2:A",
+            "travel_cost_input": 9.2,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 9.2
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 0.0,
+            "objective": 23.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 13.8,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 15.799999999999999,
+                "stops": [
+                  {
+                    "arrival": 2.3,
+                    "departure": 3.3,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.3
+                  },
+                  {
+                    "arrival": 7.8999999999999995,
+                    "departure": 8.899999999999999,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 7.8999999999999995
+                  }
+                ],
+                "travel_cost": 13.8,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 0.0,
+                "objective": 9.2,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 10.2,
+                "stops": [
+                  {
+                    "arrival": 4.6,
+                    "departure": 5.6,
+                    "lateness": 0.0,
+                    "order_id": "A",
+                    "penalty_exposure": 0.0,
+                    "service_start": 4.6
+                  }
+                ],
+                "travel_cost": 9.2,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 23.0
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 0.5100714721148022,
+        "estimated_plan_cost": 10.510071472114802,
+        "multiplier": 1.0,
+        "raw_plan": {
+          "lateness_exposure": 0.0,
+          "objective": 10.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 6.0,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 8.0,
+              "stops": [
+                {
+                  "arrival": 1.0,
+                  "departure": 2.0,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 1.0
+                },
+                {
+                  "arrival": 4.0,
+                  "departure": 5.0,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.0
+                }
+              ],
+              "travel_cost": 6.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 4.0,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 5.0,
+              "stops": [
+                {
+                  "arrival": 2.0,
+                  "departure": 3.0,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.0
+                }
+              ],
+              "travel_cost": 4.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 10.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-15",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.2354457175663343,
+            "feature_values": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.07848190585544478,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 6.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 6.0
+          },
+          {
+            "estimated_exposure": 0.2746257545484679,
+            "feature_values": [
+              0.2,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.06865643863711697,
+            "route_id": "V2:A",
+            "travel_cost_input": 4.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 4.0
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 0.0,
+            "objective": 10.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 6.0,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 8.0,
+                "stops": [
+                  {
+                    "arrival": 1.0,
+                    "departure": 2.0,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 1.0
+                  },
+                  {
+                    "arrival": 4.0,
+                    "departure": 5.0,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 4.0
+                  }
+                ],
+                "travel_cost": 6.0,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 0.0,
+                "objective": 4.0,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 5.0,
+                "stops": [
+                  {
+                    "arrival": 2.0,
+                    "departure": 3.0,
+                    "lateness": 0.0,
+                    "order_id": "A",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.0
+                  }
+                ],
+                "travel_cost": 4.0,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 10.0
+          },
+          "valid": true
+        }
+      }
+    ],
+    "decision_focused_vqc": [
+      {
+        "estimated_exposure": 1.3590727877686428,
+        "estimated_plan_cost": 36.359072787768646,
+        "multiplier": 3.5,
+        "raw_plan": {
+          "lateness_exposure": 8.0,
+          "objective": 43.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 21.0,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 23.0,
+              "stops": [
+                {
+                  "arrival": 3.5,
+                  "departure": 4.5,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 3.5
+                },
+                {
+                  "arrival": 11.5,
+                  "departure": 12.5,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 11.5
+                }
+              ],
+              "travel_cost": 21.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 8.0,
+              "objective": 22.0,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 15.0,
+              "stops": [
+                {
+                  "arrival": 7.0,
+                  "departure": 8.0,
+                  "lateness": 2.0,
+                  "order_id": "A",
+                  "penalty_exposure": 8.0,
+                  "service_start": 7.0
+                }
+              ],
+              "travel_cost": 14.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 35.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-12",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.5811860158671485,
+            "feature_values": [
+              1.0,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.19372867195571614,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 21.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 21.0
+          },
+          {
+            "estimated_exposure": 0.7778867719014944,
+            "feature_values": [
+              0.7,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.1944716929753736,
+            "route_id": "V2:A",
+            "travel_cost_input": 14.0,
+            "validator_realized_exposure": 8.0,
+            "validator_realized_objective": 22.0
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 8.0,
+            "objective": 43.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 21.0,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 23.0,
+                "stops": [
+                  {
+                    "arrival": 3.5,
+                    "departure": 4.5,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 3.5
+                  },
+                  {
+                    "arrival": 11.5,
+                    "departure": 12.5,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 11.5
+                  }
+                ],
+                "travel_cost": 21.0,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 8.0,
+                "objective": 22.0,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 15.0,
+                "stops": [
+                  {
+                    "arrival": 7.0,
+                    "departure": 8.0,
+                    "lateness": 2.0,
+                    "order_id": "A",
+                    "penalty_exposure": 8.0,
+                    "service_start": 7.0
+                  }
+                ],
+                "travel_cost": 14.0,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 35.0
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 1.3626860226709039,
+        "estimated_plan_cost": 29.3626860226709,
+        "multiplier": 2.8,
+        "raw_plan": {
+          "lateness_exposure": 2.3999999999999986,
+          "objective": 30.399999999999995,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 16.799999999999997,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 18.799999999999997,
+              "stops": [
+                {
+                  "arrival": 2.8,
+                  "departure": 3.8,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.8
+                },
+                {
+                  "arrival": 9.399999999999999,
+                  "departure": 10.399999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 9.399999999999999
+                }
+              ],
+              "travel_cost": 16.799999999999997,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 2.3999999999999986,
+              "objective": 13.599999999999998,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 12.2,
+              "stops": [
+                {
+                  "arrival": 5.6,
+                  "departure": 6.6,
+                  "lateness": 0.5999999999999996,
+                  "order_id": "A",
+                  "penalty_exposure": 2.3999999999999986,
+                  "service_start": 5.6
+                }
+              ],
+              "travel_cost": 11.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 27.999999999999996
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-13",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.5818337361666345,
+            "feature_values": [
+              0.8399999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.1939445787222115,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 16.799999999999997,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 16.799999999999997
+          },
+          {
+            "estimated_exposure": 0.7808522865042693,
+            "feature_values": [
+              0.5599999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.19521307162606732,
+            "route_id": "V2:A",
+            "travel_cost_input": 11.2,
+            "validator_realized_exposure": 2.3999999999999986,
+            "validator_realized_objective": 13.599999999999998
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 2.3999999999999986,
+            "objective": 30.399999999999995,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 16.799999999999997,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 18.799999999999997,
+                "stops": [
+                  {
+                    "arrival": 2.8,
+                    "departure": 3.8,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.8
+                  },
+                  {
+                    "arrival": 9.399999999999999,
+                    "departure": 10.399999999999999,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 9.399999999999999
+                  }
+                ],
+                "travel_cost": 16.799999999999997,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 2.3999999999999986,
+                "objective": 13.599999999999998,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 12.2,
+                "stops": [
+                  {
+                    "arrival": 5.6,
+                    "departure": 6.6,
+                    "lateness": 0.5999999999999996,
+                    "order_id": "A",
+                    "penalty_exposure": 2.3999999999999986,
+                    "service_start": 5.6
+                  }
+                ],
+                "travel_cost": 11.2,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 27.999999999999996
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 1.3667457920507848,
+        "estimated_plan_cost": 24.366745792050786,
+        "multiplier": 2.3,
+        "raw_plan": {
+          "lateness_exposure": 0.0,
+          "objective": 23.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 13.8,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 15.799999999999999,
+              "stops": [
+                {
+                  "arrival": 2.3,
+                  "departure": 3.3,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.3
+                },
+                {
+                  "arrival": 7.8999999999999995,
+                  "departure": 8.899999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 7.8999999999999995
+                }
+              ],
+              "travel_cost": 13.8,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 9.2,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 10.2,
+              "stops": [
+                {
+                  "arrival": 4.6,
+                  "departure": 5.6,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.6
+                }
+              ],
+              "travel_cost": 9.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 23.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-14",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.5835570572500762,
+            "feature_values": [
+              0.6900000000000001,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.19451901908335875,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 13.8,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 13.8
+          },
+          {
+            "estimated_exposure": 0.7831887348007087,
+            "feature_values": [
+              0.45999999999999996,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.19579718370017718,
+            "route_id": "V2:A",
+            "travel_cost_input": 9.2,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 9.2
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 0.0,
+            "objective": 23.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 13.8,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 15.799999999999999,
+                "stops": [
+                  {
+                    "arrival": 2.3,
+                    "departure": 3.3,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.3
+                  },
+                  {
+                    "arrival": 7.8999999999999995,
+                    "departure": 8.899999999999999,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 7.8999999999999995
+                  }
+                ],
+                "travel_cost": 13.8,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 0.0,
+                "objective": 9.2,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 10.2,
+                "stops": [
+                  {
+                    "arrival": 4.6,
+                    "departure": 5.6,
+                    "lateness": 0.0,
+                    "order_id": "A",
+                    "penalty_exposure": 0.0,
+                    "service_start": 4.6
+                  }
+                ],
+                "travel_cost": 9.2,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 23.0
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 1.3783718633013466,
+        "estimated_plan_cost": 11.378371863301346,
+        "multiplier": 1.0,
+        "raw_plan": {
+          "lateness_exposure": 0.0,
+          "objective": 10.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 6.0,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 8.0,
+              "stops": [
+                {
+                  "arrival": 1.0,
+                  "departure": 2.0,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 1.0
+                },
+                {
+                  "arrival": 4.0,
+                  "departure": 5.0,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.0
+                }
+              ],
+              "travel_cost": 6.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 4.0,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 5.0,
+              "stops": [
+                {
+                  "arrival": 2.0,
+                  "departure": 3.0,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.0
+                }
+              ],
+              "travel_cost": 4.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 10.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-15",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.5900073367700763,
+            "feature_values": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.19666911225669212,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 6.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 6.0
+          },
+          {
+            "estimated_exposure": 0.7883645265312703,
+            "feature_values": [
+              0.2,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.19709113163281758,
+            "route_id": "V2:A",
+            "travel_cost_input": 4.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 4.0
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 0.0,
+            "objective": 10.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 6.0,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 8.0,
+                "stops": [
+                  {
+                    "arrival": 1.0,
+                    "departure": 2.0,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 1.0
+                  },
+                  {
+                    "arrival": 4.0,
+                    "departure": 5.0,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 4.0
+                  }
+                ],
+                "travel_cost": 6.0,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 0.0,
+                "objective": 4.0,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 5.0,
+                "stops": [
+                  {
+                    "arrival": 2.0,
+                    "departure": 3.0,
+                    "lateness": 0.0,
+                    "order_id": "A",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.0
+                  }
+                ],
+                "travel_cost": 4.0,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 10.0
+          },
+          "valid": true
+        }
+      }
+    ],
+    "predictive_only_vqc": [
+      {
+        "estimated_exposure": 2.3915933065356842,
+        "estimated_plan_cost": 37.39159330653568,
+        "multiplier": 3.5,
+        "raw_plan": {
+          "lateness_exposure": 8.0,
+          "objective": 43.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 21.0,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 23.0,
+              "stops": [
+                {
+                  "arrival": 3.5,
+                  "departure": 4.5,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 3.5
+                },
+                {
+                  "arrival": 11.5,
+                  "departure": 12.5,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 11.5
+                }
+              ],
+              "travel_cost": 21.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 8.0,
+              "objective": 22.0,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 15.0,
+              "stops": [
+                {
+                  "arrival": 7.0,
+                  "departure": 8.0,
+                  "lateness": 2.0,
+                  "order_id": "A",
+                  "penalty_exposure": 8.0,
+                  "service_start": 7.0
+                }
+              ],
+              "travel_cost": 14.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 35.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-12",
+        "selected_routes": [
+          {
+            "estimated_exposure": 1.2159576402130448,
+            "feature_values": [
+              1.0,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.4053192134043483,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 21.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 21.0
+          },
+          {
+            "estimated_exposure": 1.1756356663226393,
+            "feature_values": [
+              0.7,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.2939089165806598,
+            "route_id": "V2:A",
+            "travel_cost_input": 14.0,
+            "validator_realized_exposure": 8.0,
+            "validator_realized_objective": 22.0
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 8.0,
+            "objective": 43.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 21.0,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 23.0,
+                "stops": [
+                  {
+                    "arrival": 3.5,
+                    "departure": 4.5,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 3.5
+                  },
+                  {
+                    "arrival": 11.5,
+                    "departure": 12.5,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 11.5
+                  }
+                ],
+                "travel_cost": 21.0,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 8.0,
+                "objective": 22.0,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 15.0,
+                "stops": [
+                  {
+                    "arrival": 7.0,
+                    "departure": 8.0,
+                    "lateness": 2.0,
+                    "order_id": "A",
+                    "penalty_exposure": 8.0,
+                    "service_start": 7.0
+                  }
+                ],
+                "travel_cost": 14.0,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 35.0
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 1.9845972902033124,
+        "estimated_plan_cost": 29.98459729020331,
+        "multiplier": 2.8,
+        "raw_plan": {
+          "lateness_exposure": 2.3999999999999986,
+          "objective": 30.399999999999995,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 16.799999999999997,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 18.799999999999997,
+              "stops": [
+                {
+                  "arrival": 2.8,
+                  "departure": 3.8,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.8
+                },
+                {
+                  "arrival": 9.399999999999999,
+                  "departure": 10.399999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 9.399999999999999
+                }
+              ],
+              "travel_cost": 16.799999999999997,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 2.3999999999999986,
+              "objective": 13.599999999999998,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 12.2,
+              "stops": [
+                {
+                  "arrival": 5.6,
+                  "departure": 6.6,
+                  "lateness": 0.5999999999999996,
+                  "order_id": "A",
+                  "penalty_exposure": 2.3999999999999986,
+                  "service_start": 5.6
+                }
+              ],
+              "travel_cost": 11.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 27.999999999999996
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-13",
+        "selected_routes": [
+          {
+            "estimated_exposure": 1.0745775921700749,
+            "feature_values": [
+              0.8399999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.3581925307233583,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 16.799999999999997,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 16.799999999999997
+          },
+          {
+            "estimated_exposure": 0.9100196980332377,
+            "feature_values": [
+              0.5599999999999999,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.22750492450830942,
+            "route_id": "V2:A",
+            "travel_cost_input": 11.2,
+            "validator_realized_exposure": 2.3999999999999986,
+            "validator_realized_objective": 13.599999999999998
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 2.3999999999999986,
+            "objective": 30.399999999999995,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 16.799999999999997,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 18.799999999999997,
+                "stops": [
+                  {
+                    "arrival": 2.8,
+                    "departure": 3.8,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.8
+                  },
+                  {
+                    "arrival": 9.399999999999999,
+                    "departure": 10.399999999999999,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 9.399999999999999
+                  }
+                ],
+                "travel_cost": 16.799999999999997,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 2.3999999999999986,
+                "objective": 13.599999999999998,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 12.2,
+                "stops": [
+                  {
+                    "arrival": 5.6,
+                    "departure": 6.6,
+                    "lateness": 0.5999999999999996,
+                    "order_id": "A",
+                    "penalty_exposure": 2.3999999999999986,
+                    "service_start": 5.6
+                  }
+                ],
+                "travel_cost": 11.2,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 27.999999999999996
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 1.617598273816987,
+        "estimated_plan_cost": 24.617598273816988,
+        "multiplier": 2.3,
+        "raw_plan": {
+          "lateness_exposure": 0.0,
+          "objective": 23.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 13.8,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 15.799999999999999,
+              "stops": [
+                {
+                  "arrival": 2.3,
+                  "departure": 3.3,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.3
+                },
+                {
+                  "arrival": 7.8999999999999995,
+                  "departure": 8.899999999999999,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 7.8999999999999995
+                }
+              ],
+              "travel_cost": 13.8,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 9.2,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 10.2,
+              "stops": [
+                {
+                  "arrival": 4.6,
+                  "departure": 5.6,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.6
+                }
+              ],
+              "travel_cost": 9.2,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 23.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-14",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.8670343662211889,
+            "feature_values": [
+              0.6900000000000001,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.28901145540706297,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 13.8,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 13.8
+          },
+          {
+            "estimated_exposure": 0.7505639075957982,
+            "feature_values": [
+              0.45999999999999996,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.18764097689894954,
+            "route_id": "V2:A",
+            "travel_cost_input": 9.2,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 9.2
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 0.0,
+            "objective": 23.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 13.8,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 15.799999999999999,
+                "stops": [
+                  {
+                    "arrival": 2.3,
+                    "departure": 3.3,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.3
+                  },
+                  {
+                    "arrival": 7.8999999999999995,
+                    "departure": 8.899999999999999,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 7.8999999999999995
+                  }
+                ],
+                "travel_cost": 13.8,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 0.0,
+                "objective": 9.2,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 10.2,
+                "stops": [
+                  {
+                    "arrival": 4.6,
+                    "departure": 5.6,
+                    "lateness": 0.0,
+                    "order_id": "A",
+                    "penalty_exposure": 0.0,
+                    "service_start": 4.6
+                  }
+                ],
+                "travel_cost": 9.2,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 23.0
+          },
+          "valid": true
+        }
+      },
+      {
+        "estimated_exposure": 0.9508156739445027,
+        "estimated_plan_cost": 10.950815673944504,
+        "multiplier": 1.0,
+        "raw_plan": {
+          "lateness_exposure": 0.0,
+          "objective": 10.0,
+          "routes": [
+            {
+              "lateness_exposure": 0.0,
+              "objective": 6.0,
+              "order_ids": [
+                "B",
+                "C"
+              ],
+              "return_time": 8.0,
+              "stops": [
+                {
+                  "arrival": 1.0,
+                  "departure": 2.0,
+                  "lateness": 0.0,
+                  "order_id": "B",
+                  "penalty_exposure": 0.0,
+                  "service_start": 1.0
+                },
+                {
+                  "arrival": 4.0,
+                  "departure": 5.0,
+                  "lateness": 0.0,
+                  "order_id": "C",
+                  "penalty_exposure": 0.0,
+                  "service_start": 4.0
+                }
+              ],
+              "travel_cost": 6.0,
+              "vehicle_id": "V1"
+            },
+            {
+              "lateness_exposure": 0.0,
+              "objective": 4.0,
+              "order_ids": [
+                "A"
+              ],
+              "return_time": 5.0,
+              "stops": [
+                {
+                  "arrival": 2.0,
+                  "departure": 3.0,
+                  "lateness": 0.0,
+                  "order_id": "A",
+                  "penalty_exposure": 0.0,
+                  "service_start": 2.0
+                }
+              ],
+              "travel_cost": 4.0,
+              "vehicle_id": "V2"
+            }
+          ],
+          "status": "feasible",
+          "travel_cost": 10.0
+        },
+        "required_order_count": 3,
+        "scenario_id": "traffic-15",
+        "selected_routes": [
+          {
+            "estimated_exposure": 0.43224619090765126,
+            "feature_values": [
+              0.3,
+              0.25
+            ],
+            "one_minute_exposure_scale": 3.0,
+            "risk_probability": 0.14408206363588374,
+            "route_id": "V1:B>C",
+            "travel_cost_input": 6.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 6.0
+          },
+          {
+            "estimated_exposure": 0.5185694830368515,
+            "feature_values": [
+              0.2,
+              0.25
+            ],
+            "one_minute_exposure_scale": 4.0,
+            "risk_probability": 0.12964237075921287,
+            "route_id": "V2:A",
+            "travel_cost_input": 4.0,
+            "validator_realized_exposure": 0.0,
+            "validator_realized_objective": 4.0
+          }
+        ],
+        "served_order_count": 3,
+        "validation": {
+          "errors": [],
+          "feasible": true,
+          "recomputed": {
+            "lateness_exposure": 0.0,
+            "objective": 10.0,
+            "routes": [
+              {
+                "lateness_exposure": 0.0,
+                "objective": 6.0,
+                "order_ids": [
+                  "B",
+                  "C"
+                ],
+                "return_time": 8.0,
+                "stops": [
+                  {
+                    "arrival": 1.0,
+                    "departure": 2.0,
+                    "lateness": 0.0,
+                    "order_id": "B",
+                    "penalty_exposure": 0.0,
+                    "service_start": 1.0
+                  },
+                  {
+                    "arrival": 4.0,
+                    "departure": 5.0,
+                    "lateness": 0.0,
+                    "order_id": "C",
+                    "penalty_exposure": 0.0,
+                    "service_start": 4.0
+                  }
+                ],
+                "travel_cost": 6.0,
+                "vehicle_id": "V1"
+              },
+              {
+                "lateness_exposure": 0.0,
+                "objective": 4.0,
+                "order_ids": [
+                  "A"
+                ],
+                "return_time": 5.0,
+                "stops": [
+                  {
+                    "arrival": 2.0,
+                    "departure": 3.0,
+                    "lateness": 0.0,
+                    "order_id": "A",
+                    "penalty_exposure": 0.0,
+                    "service_start": 2.0
+                  }
+                ],
+                "travel_cost": 4.0,
+                "vehicle_id": "V2"
+              }
+            ],
+            "travel_cost": 10.0
+          },
+          "valid": true
+        }
+      }
+    ]
+  }
+}

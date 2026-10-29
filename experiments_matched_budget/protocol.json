@@ -1,0 +1,48 @@
+{
+  "protocol_id": "terra-independent-matched-budget-v1",
+  "frozen_before_generation": true,
+  "frozen_before_evaluation": true,
+  "purpose": "One-time synthetic comparison of decision-focused VQC, predictive-only VQC, and logistic regression on independent new worlds.",
+  "scenario_family": {
+    "generator": "independent four-location, three-order, two-vehicle family in this isolated runner; same documented generator shape as V2 but with new fixed seeds",
+    "replicates": 5,
+    "scenario_groups_per_replicate": 30,
+    "split_per_replicate": {"train": 18, "validation": 6, "test": 6},
+    "family_seed": 2026103001,
+    "split_seed": 2026103002,
+    "latent_multiplier": [0.75, 2.1],
+    "forecast_noise_sd": 0.3,
+    "forecast_edge_jitter": [0.97, 1.03],
+    "realized_edge_jitter": [0.9, 1.1],
+    "forecast_clipping": [0.5, 2.5],
+    "scenario_seeds_are_independent_by_replicate": true
+  },
+  "information_boundary": {
+    "model_features": ["forecast route travel cost / 30 clipped to [0,1]", "nominal contractual window pressure"],
+    "training_labels": "train-only indicator that any stop on route is late in the separately generated realized matrix, irrespective of penalty",
+    "validation_and_test_labels_passed_to_fit": false,
+    "decision_selection_uses_forecast_only": true,
+    "realized_matrix_opened_after_all_method_selections": true,
+    "common_random_numbers": "all methods receive identical frozen forecast and realized matrices per replicate and identical 18/6/6 group splits"
+  },
+  "methods_and_fixed_budgets": {
+    "primary_budget": "at most 0.25 process CPU seconds per method per replicate, measured via Python process_time; stop only between full-batch optimizer updates, so one update may exceed cap",
+    "cpu_seconds_per_method_replicate": 0.25,
+    "max_updates": 120,
+    "decision_focused_vqc": {"initial_theta": [0.31, -0.47], "learning_rate": 0.025, "objective": "soft exact-cover plan decision loss, temperature 2"},
+    "predictive_only_vqc": {"initial_theta": [0.31, -0.47], "learning_rate": 0.08, "objective": "route-label binary cross entropy"},
+    "logistic_regression": {"implementation": "deterministic full-batch logistic gradient descent", "learning_rate": 0.3},
+    "secondary_work_counts": ["completed optimizer updates", "train route rows", "test scenario groups", "fit process CPU seconds", "fit wall seconds"]
+  },
+  "decision_and_scoring": {
+    "plan_score": "sum forecast route travel cost + predicted probability * sum contractual penalties for each selected route (one-minute horizon)",
+    "exact_reference": "independent exact solve on realized scenario, post-selection only",
+    "validator": "backend.validator.validate_plan recomputes constraints and objective from realized input",
+    "primary_metrics": ["mean validator objective", "per-scenario regret versus exact realized reference", "valid-plan rate"],
+    "secondary_metrics": ["route Brier score", "lateness exposure", "fit CPU and wall time", "updates completed"],
+    "replicate_analysis": "report five replicate test means and paired per-scenario method-minus-logistic objective differences",
+    "no_tuning_on_validation_or_test": true,
+    "no_method_or_seed_selection_by_test_outcome": true
+  },
+  "limitations": ["synthetic data only", "five independent replicate worlds and six test groups per replicate", "CPU time is a common upper bound, not equal compute delivered; stopping granularity is one full-batch update", "decision, predictive and logistic objectives have different computational costs", "no tree baseline, calibration or operational claims", "one evaluation only"]
+}

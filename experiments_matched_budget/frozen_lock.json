@@ -1,0 +1,10 @@
+{
+  "freeze_date_utc": "2026-10-29",
+  "protocol_sha256": "F6EB0B4DAC361CD214239574A33E5CA311327AD81CB96241669C45D61C6C9C57",
+  "dataset_manifest_sha256": "DB95F5F18BA15577321AED9CB381033B4FD23A6C7AE485C9D37AF576C790BB5C",
+  "runner_sha256": "65441499AC17BBD724FC49610C1EF4D2FB5BF8DB232BA16BD1531026DC0C7E30",
+  "scenario_groups": 150,
+  "locked_before_heldout_evaluation": true,
+  "no_heldout_tuning": true,
+  "chronology": "Protocol and runner hashes were recorded before generating the independent data manifest. The frozen manifest and all three SHA-256 values were verified before the single evaluation."
+}

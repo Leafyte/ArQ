@@ -1,0 +1,43 @@
+{
+  "protocol_id": "prospective-dispatch-vqc-v1",
+  "frozen_before_evaluation": true,
+  "source_fixture": {
+    "path": "fixtures/dispatch_tiny.json",
+    "sha256_file_bytes": "39C2AEC74DA0C7A71B6E3BEC32BC91D16FC3DD283F7F73D056F0684A255F9733"
+  },
+  "scenario_generation": {
+    "scenario_count": 24,
+    "scenario_seed": 20261028,
+    "forecast_noise_seed": 20261029,
+    "split_seed": 20261030,
+    "latent_realized_multiplier_distribution": "Uniform[0.7, 2.5]",
+    "forecast_multiplier": "clip(realized_multiplier + Normal(0, 0.30), 0.5, 3.0)",
+    "forecast_leg_noise": "independent Uniform[0.97, 1.03] per non-diagonal leg, multiplied by nominal duration and forecast multiplier",
+    "realized_leg_noise": "independent Uniform[0.90, 1.10] per non-diagonal leg, multiplied by nominal duration and latent realized multiplier",
+    "group_split": "shuffle scenario indices with split_seed; first 12 train, next 6 validation, final 6 test; keep each scenario and all its routes in one group",
+    "common_random_numbers": "all three methods receive the identical forecast scenarios; all selected plans are checked against the paired identical realized scenarios"
+  },
+  "information_boundary": {
+    "decision_features": "nominal source inputs, forecast travel matrix, forecast-generated route candidate travel cost, and nominal route window pressure",
+    "hidden_until_after_selection": "realized travel matrix, realized route timing, realized SLA labels, validator objective",
+    "training_labels": "for train scenarios only, route SLA-event indicator from separately sampled realized travel",
+    "validation_and_test_labels": "never passed to model fitting, model selection, feature selection, calibration, or plan selection"
+  },
+  "model_and_decision": {
+    "vqc_qubits": 2,
+    "feature_map": "RY(pi*x0) q0, RY(pi*x1) q1",
+    "ansatz": "CNOT(0,1), RY(theta0) q0, RY(theta1) q1, CNOT(1,0)",
+    "readout": "risk probability sigmoid(-2*<Z0>)",
+    "route_features": "x0=clip(forecast route travel_cost/30,0,1); x1=1-clip(nominal minimum stop slack/4,0,1)",
+    "risk_adjusted_route_estimate": "forecast route travel duration + predicted SLA-event probability * sum(contract penalty rates) * 1 minute",
+    "decision_loss": "soft minimum (temperature 2.0) over exact-cover forecast-feasible plans, weighted by paired validator-recomputed realized objective on train scenarios",
+    "optimizer": "120 full-batch parameter updates per model; VQC decision learning rate 0.025; predictive VQC learning rate 0.08; classical logistic 500 updates at 0.3",
+    "classical_comparators": ["predictive-only VQC trained on train-group SLA labels", "logistic regression trained on the same train-group route rows"],
+    "reference": "exact tiny solver on realized test inputs, then independent validator recomputation"
+  },
+  "reporting": {
+    "primary": ["validator objective", "validator travel cost", "validator lateness exposure", "regret vs exact realized-scenario reference", "plan feasibility rate", "complete order coverage"],
+    "secondary": ["model-estimated exposure", "route risk probability", "runtime/resource budget"],
+    "claims": "synthetic simulation only; no operational currency claim, forecast calibration claim, quantum advantage claim, QpiAI SDK execution claim, cloud claim, or QPU claim"
+  }
+}

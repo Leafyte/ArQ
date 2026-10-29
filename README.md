@@ -1,27 +1,27 @@
-# DebugLeaf
+# DebugLeaf / Q-VANTIS
 
-DebugLeaf is preparing a research prototype for Quant-A-Maze 3.0, QML-01: Delay-Risk-Aware Fleet Dispatch for Contract Logistics. The active statement and rubric are extracted from the official QpiAI problem-statement source under `sources/`. The older team-submitted challenge PDF is historical context only.
+DebugLeaf is a research prototype for the Quant-A-Maze 3.0 QML-01 challenge: delay-risk-aware fleet dispatch for contract logistics. The active problem statement and rubric are extracted from the official source under `sources/`; the older team-submitted challenge PDF is historical context.
 
 ## Current stage
 
-Bootstrap and architecture-readiness planning only. B (risk-conditioned warm-start QAOA) plus C (decision-focused VQC) is a research hypothesis. Feasibility, novelty, QpiAI API support, and useful decision impact remain unproven. No core algorithm, training, frontend, or benchmark result is claimed.
+The owner has opened a bounded V1 implementation stage. The goal is a full backend centered on a decision-focused variational quantum circuit (VQC), with a classical warm start and warm-start QAOA as supporting approaches. V1 acceptance gates are in [docs/V1-ACCEPTANCE.md](docs/V1-ACCEPTANCE.md). These are targets, not claims that implementation, tests, or results already exist.
 
-## Start here
+The new Terra coordinator owns the 5-hour build window. Its start time is when that agent actually begins; its goal was submitted directly in the new Terra chat. Codex usage limits, stage boundaries, preservation, and reporting rules are in [AGENTS.md](AGENTS.md).
 
-1. Read [AGENTS.md](AGENTS.md) for scope, evidence, preservation, and handoff rules.
-2. Read [the source evidence audit](bootstrap/SDK-EVIDENCE.md) for verified SDK facts, package/version cautions, and unknown capabilities.
-3. Read [architecture readiness](bootstrap/ARCHITECTURE-READINESS.md) for provisional gates and sequencing.
-4. Use [the documentation map](docs/DOCUMENTATION-MAP.md) to review planned docs before authoring full PRD/TRD/design documents.
-5. Use the two Antigravity prompts under `prompts/` only in their named environments. The Legion prompt is ready for the remote machine; it has not been run from this workspace.
+## Current verified workspace state
 
-## Project-local agent skills
+The earlier preflight text above is a snapshot of the workspace before implementation. The current checkout now contains a bounded local backend prototype, decision-focused VQC and QAOA slices, API/job and risk/recovery/financial paths, and recorded synthetic experiments. Current evidence and limitations are maintained in [docs/TERRA-V1-REPORT.md](docs/TERRA-V1-REPORT.md); reproducible local commands and bounds are in [docs/V1-RUNBOOK.md](docs/V1-RUNBOOK.md). The overall result remains partial and is not a production or live-fleet deployment.
 
-Exactly 25 project-local skill packages are installed under `.agents/skills/`: K-Dense (14), Anthropic (1), wshobson (9), and petergyang (1). The [skill review](bootstrap/SKILLS-REVIEW.md) and [machine-readable manifest](bootstrap/SKILLS-MANIFEST.json) record provenance and review findings; the manifest covers 258 files with no structural errors and marks the static review complete with limits. The [independent content review](bootstrap/SKILLS-INDEPENDENT-REVIEW.md) separately covers its stated subset of eight skills. Native skill activation in the current runtime has not been tested. Current SDK/runtime dependencies have not been installed.
+Start with:
 
-## Verified challenge output
+1. [AGENTS.md](AGENTS.md) for current stage, safety, evidence, timebox, and usage rules.
+2. [docs/V1-ACCEPTANCE.md](docs/V1-ACCEPTANCE.md) for measurable targets and reporting requirements.
+3. [bootstrap/SDK-EVIDENCE.md](bootstrap/SDK-EVIDENCE.md) for inspected SDK/package facts and unresolved capabilities.
+4. [bootstrap/ARCHITECTURE-READINESS.md](bootstrap/ARCHITECTURE-READINESS.md) for earlier proposals; treat its bootstrap-stage gates as historical where they conflict with the owner-opened V1 stage.
+5. [sources/q-vantis-build-spec.md](sources/q-vantis-build-spec.md) for the verbatim legacy specification, retained as reference only.
 
-The official problem requires an operationally feasible fleet dispatch plan with vehicle assignments, ordered stops, ETAs and SLA-risk estimates, total financial exposure, and evaluation covering SLA violations, coverage, cost, calibration, solver quality, and runtime. The QpiAI technology rubric reserves 20 points for meaningful integration, QCloud correctness, Opt correctness, and recorded reproducible execution. See `sources/problem-extract.txt` for page-mapped extraction and the source PDF.
+## Evidence boundaries
 
-## Team order
+The challenge expects an operationally feasible dispatch plan with vehicle assignments, ordered stops, ETAs/SLA-risk estimates, financial exposure, and evaluation of SLA violations, coverage, cost, calibration, solver quality, and runtime. See `sources/problem-extract.txt` and the source PDF for the extracted requirements. SDK package inspection is recorded in `bootstrap/SDK-EVIDENCE.md`; it is not proof of authenticated service calls, QPU use, or end-to-end integration.
 
-M1 and M2 establish the problem/data/decision contracts and leakage-safe learning baselines first. M3 and M4 join using frozen interfaces and fixtures, independent of completed model training. This sequencing is proposed and awaits owner review.
+No quantum advantage, novelty, calibrated risk, live-fleet dispatch, or operational performance claim is made by this README. Tiny plans have passed the independent validator in local tests and HTTP checks; this is prototype evidence only. The default local API mode has no authentication. An optional token-role mode passed a sentinel localhost smoke, but it is a prototype and has not had production security review. Keep local services on loopback. Results must identify whether they came from classical execution, a local simulator, a mock, cloud simulation, or QPU, and include only metrics actually measured. See [the runtime guide](docs/API-RUNTIME.md) for its role policy and [the acceptance report](docs/TERRA-V1-REPORT.md) for evidence and limits.

@@ -1,0 +1,147 @@
+{
+  "circuit": {
+    "ansatz": "CNOT(0,1); RY(theta0) q0; RY(theta1) q1; CNOT(1,0)",
+    "depth": 4,
+    "feature_map": "RY(pi*x0) on q0; RY(pi*x1) on q1",
+    "gate_counts": [
+      [
+        "RY",
+        4
+      ],
+      [
+        "CNOT",
+        2
+      ]
+    ],
+    "initialization": "theta=(0.31,-0.47) radians",
+    "observable": "Z on q0; risk=sigmoid(-2*<Z0>)",
+    "qubits": 2,
+    "simulator": "custom exact statevector, complex128 semantics, local CPU"
+  },
+  "data": {
+    "n": 64,
+    "rule": "y=1[0.62*x0+0.38*x1+0.12*sin(2*pi*x0)>0.55]",
+    "seed": "not applicable; arithmetic fixture",
+    "split_counts": {
+      "test": 12,
+      "train": 40,
+      "validation": 12
+    },
+    "split_hashes_sha256": {
+      "test": "6ebc7d5ad946371c5d35b5e12b81d2c1a4aacf1252369ced84959b4966a66864",
+      "train": "08d040b5df84767305b17b668ecc64263d10bade72cef2bbc639610576ac1af7",
+      "validation": "b969712de277e4e79747a80a7e4baab09485437544859499d06c9273b482da4d"
+    }
+  },
+  "evidence_label": "synthetic deterministic data; exact local statevector; no QCloud/QPU call",
+  "gradient_check": {
+    "absolute_errors": [
+      5.3041904202189016e-11,
+      2.0046880822022217e-11
+    ],
+    "analytic_parameter_shift_chain_rule": [
+      0.47049030843762557,
+      0.06262905620563933
+    ],
+    "centered_finite_difference_h_1e-5": [
+      0.4704903084906675,
+      0.06262905618559245
+    ],
+    "max_absolute_error": 5.3041904202189016e-11,
+    "tolerance_absolute": 2e-07,
+    "training_examples": 8
+  },
+  "resource_budget": {
+    "external_services": 0,
+    "optimizer_steps_per_model": 120,
+    "qubits": 2,
+    "shots": "exact statevector (no sampling)",
+    "test_rows": 12,
+    "training_rows": 40
+  },
+  "runtime": {
+    "execution": "local CPU exact statevector; no vendor SDK invocation",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.14"
+  },
+  "synthetic_oracle_test_cost": 2.4583333333333335,
+  "test_metrics": {
+    "classical_logistic": {
+      "accuracy": 0.8333333333333334,
+      "brier": 0.10729801000659178,
+      "mean_dispatch_cost": 3.1779193015117557,
+      "n": 12,
+      "regret_vs_synthetic_oracle": 0.7195859681784222
+    },
+    "decision_focused_vqc": {
+      "accuracy": 0.8333333333333334,
+      "brier": 0.1182644161504945,
+      "mean_dispatch_cost": 3.2664157454450997,
+      "n": 12,
+      "regret_vs_synthetic_oracle": 0.8080824121117662
+    },
+    "predictive_only_vqc": {
+      "accuracy": 0.9166666666666666,
+      "brier": 0.10093888690813042,
+      "mean_dispatch_cost": 3.162238884793631,
+      "n": 12,
+      "regret_vs_synthetic_oracle": 0.7039055514602977
+    }
+  },
+  "tiny_example": {
+    "features": [
+      0.2,
+      0.8
+    ],
+    "readout_z0": -0.5630241906945214,
+    "realized_cost_if_sla_event": 3.914100731153517,
+    "risk_probability": 0.7551089048198733,
+    "soft_route_a_share": 0.280724390052937,
+    "soft_route_b_share": 0.719275609947063,
+    "trainable_angles": [
+      0.31,
+      -0.47
+    ]
+  },
+  "training": {
+    "classical_logistic_weights": [
+      -4.213074053191961,
+      4.63108544643768,
+      2.8718444424300915
+    ],
+    "decision_final_loss": 3.3474901903798724,
+    "decision_initial_loss": 3.6765290721968036,
+    "decision_theta": [
+      -0.14849368074277014,
+      -1.1949503697726787
+    ],
+    "learning_rate": 0.08,
+    "predictive_final_bce": 0.42433871533347894,
+    "predictive_initial_bce": 0.5637840528315239,
+    "predictive_theta": [
+      -0.29809275202349,
+      -1.090385975397132
+    ],
+    "steps": 120
+  },
+  "validation_metrics": {
+    "classical_logistic": {
+      "accuracy": 0.75,
+      "brier": 0.14773678421693748,
+      "mean_dispatch_cost": 3.2267855186877252,
+      "n": 12
+    },
+    "decision_focused_vqc": {
+      "accuracy": 0.6666666666666666,
+      "brier": 0.1723412445578297,
+      "mean_dispatch_cost": 3.4012930895539513,
+      "n": 12
+    },
+    "predictive_only_vqc": {
+      "accuracy": 0.75,
+      "brier": 0.14435647435585597,
+      "mean_dispatch_cost": 3.1859122495483874,
+      "n": 12
+    }
+  }
+}

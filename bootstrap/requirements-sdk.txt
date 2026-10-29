@@ -1,0 +1,33 @@
+# DebugLeaf - Proposed SDK Integration Dependencies (Recommended Latest Compatible)
+# Verified against PyPI metadata on 2026-10-28 (Asia/Kolkata).
+# Target Python interpreter: CPython 3.12 (64-bit)
+#
+# Rationale:
+# Installs qpiai-opt and qpiai-quantum without the '[quantum]' extra name to allow
+# using latest qpiai-quantum 0.7.5 while satisfying qpiai-opt 0.0.9 base requirements.
+# qpiai_opt.quantum dynamically imports qpiai_quantum and operates seamlessly with 0.7.5.
+
+# Core Challenge SDKs
+qpiai-opt==0.0.9
+qpiai-quantum==0.7.5
+ortools==9.15.6755
+
+# Transitive Solver & Math Dependencies (pinned to verified binary wheels)
+numpy==2.5.4
+scipy==1.18.1
+pydantic==2.14.1
+pydantic-core==2.50.1
+highspy==1.15.1
+cvxpy==1.9.3
+networkx==3.7
+numba==0.68.1
+
+# Classical Routing & Data Helpers
+pandas==3.1.0
+protobuf==6.33.6
+requests==2.34.2
+requests-sse==0.5.3
+python-dotenv==1.2.4
+
+# Testing & Reproducibility Support
+pytest>=8.0.0

@@ -1,0 +1,8 @@
+{
+  "freeze_date_utc": "2026-10-28",
+  "protocol_sha256": "55E88AFBCA8CDC4A4146022965C868FFD179EB2083336AB44D2733DC23A16B7B",
+  "dataset_manifest_sha256": "FAC4731D26AF3D359E6822E4C5DAAB422D2101AABCFC234F8FF4F8903720120A",
+  "scenario_groups": 150,
+  "locked_before_model_evaluation": true,
+  "no_heldout_tuning": true
+}

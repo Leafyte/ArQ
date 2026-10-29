@@ -1,0 +1,3578 @@
+{
+  "dataset_manifest": {
+    "base_scenario_sha256": "6F891F502C8E09BE31C6FA1B3E3188A8DEB7DCEF79BA9EA74A048BBFD9182A02",
+    "family_id": "independent-dispatch-synthetic-v1",
+    "label_visibility": {
+      "rep01-case00": "unavailable_to_fit",
+      "rep01-case01": "train_only",
+      "rep01-case02": "train_only",
+      "rep01-case03": "train_only",
+      "rep01-case04": "train_only",
+      "rep01-case05": "train_only",
+      "rep01-case06": "train_only",
+      "rep01-case07": "train_only",
+      "rep01-case08": "unavailable_to_fit",
+      "rep01-case09": "train_only",
+      "rep01-case10": "train_only",
+      "rep01-case11": "train_only",
+      "rep01-case12": "train_only",
+      "rep01-case13": "unavailable_to_fit",
+      "rep01-case14": "train_only",
+      "rep01-case15": "unavailable_to_fit",
+      "rep01-case16": "train_only",
+      "rep01-case17": "train_only",
+      "rep01-case18": "unavailable_to_fit",
+      "rep01-case19": "train_only",
+      "rep01-case20": "unavailable_to_fit",
+      "rep01-case21": "unavailable_to_fit",
+      "rep01-case22": "unavailable_to_fit",
+      "rep01-case23": "unavailable_to_fit",
+      "rep01-case24": "unavailable_to_fit",
+      "rep01-case25": "unavailable_to_fit",
+      "rep01-case26": "train_only",
+      "rep01-case27": "train_only",
+      "rep01-case28": "train_only",
+      "rep01-case29": "unavailable_to_fit",
+      "rep02-case00": "train_only",
+      "rep02-case01": "unavailable_to_fit",
+      "rep02-case02": "train_only",
+      "rep02-case03": "train_only",
+      "rep02-case04": "train_only",
+      "rep02-case05": "unavailable_to_fit",
+      "rep02-case06": "unavailable_to_fit",
+      "rep02-case07": "train_only",
+      "rep02-case08": "unavailable_to_fit",
+      "rep02-case09": "train_only",
+      "rep02-case10": "unavailable_to_fit",
+      "rep02-case11": "train_only",
+      "rep02-case12": "train_only",
+      "rep02-case13": "train_only",
+      "rep02-case14": "train_only",
+      "rep02-case15": "train_only",
+      "rep02-case16": "train_only",
+      "rep02-case17": "train_only",
+      "rep02-case18": "train_only",
+      "rep02-case19": "train_only",
+      "rep02-case20": "train_only",
+      "rep02-case21": "unavailable_to_fit",
+      "rep02-case22": "unavailable_to_fit",
+      "rep02-case23": "unavailable_to_fit",
+      "rep02-case24": "train_only",
+      "rep02-case25": "train_only",
+      "rep02-case26": "unavailable_to_fit",
+      "rep02-case27": "unavailable_to_fit",
+      "rep02-case28": "unavailable_to_fit",
+      "rep02-case29": "unavailable_to_fit",
+      "rep03-case00": "unavailable_to_fit",
+      "rep03-case01": "train_only",
+      "rep03-case02": "train_only",
+      "rep03-case03": "unavailable_to_fit",
+      "rep03-case04": "train_only",
+      "rep03-case05": "unavailable_to_fit",
+      "rep03-case06": "unavailable_to_fit",
+      "rep03-case07": "unavailable_to_fit",
+      "rep03-case08": "train_only",
+      "rep03-case09": "train_only",
+      "rep03-case10": "unavailable_to_fit",
+      "rep03-case11": "train_only",
+      "rep03-case12": "train_only",
+      "rep03-case13": "unavailable_to_fit",
+      "rep03-case14": "train_only",
+      "rep03-case15": "unavailable_to_fit",
+      "rep03-case16": "train_only",
+      "rep03-case17": "unavailable_to_fit",
+      "rep03-case18": "train_only",
+      "rep03-case19": "train_only",
+      "rep03-case20": "train_only",
+      "rep03-case21": "train_only",
+      "rep03-case22": "train_only",
+      "rep03-case23": "unavailable_to_fit",
+      "rep03-case24": "unavailable_to_fit",
+      "rep03-case25": "unavailable_to_fit",
+      "rep03-case26": "train_only",
+      "rep03-case27": "train_only",
+      "rep03-case28": "train_only",
+      "rep03-case29": "train_only",
+      "rep04-case00": "train_only",
+      "rep04-case01": "train_only",
+      "rep04-case02": "unavailable_to_fit",
+      "rep04-case03": "train_only",
+      "rep04-case04": "unavailable_to_fit",
+      "rep04-case05": "unavailable_to_fit",
+      "rep04-case06": "train_only",
+      "rep04-case07": "train_only",
+      "rep04-case08": "train_only",
+      "rep04-case09": "train_only",
+      "rep04-case10": "unavailable_to_fit",
+      "rep04-case11": "unavailable_to_fit",
+      "rep04-case12": "unavailable_to_fit",
+      "rep04-case13": "train_only",
+      "rep04-case14": "unavailable_to_fit",
+      "rep04-case15": "train_only",
+      "rep04-case16": "unavailable_to_fit",
+      "rep04-case17": "train_only",
+      "rep04-case18": "unavailable_to_fit",
+      "rep04-case19": "unavailable_to_fit",
+      "rep04-case20": "train_only",
+      "rep04-case21": "train_only",
+      "rep04-case22": "train_only",
+      "rep04-case23": "train_only",
+      "rep04-case24": "unavailable_to_fit",
+      "rep04-case25": "train_only",
+      "rep04-case26": "train_only",
+      "rep04-case27": "unavailable_to_fit",
+      "rep04-case28": "train_only",
+      "rep04-case29": "train_only",
+      "rep05-case00": "unavailable_to_fit",
+      "rep05-case01": "unavailable_to_fit",
+      "rep05-case02": "unavailable_to_fit",
+      "rep05-case03": "train_only",
+      "rep05-case04": "train_only",
+      "rep05-case05": "train_only",
+      "rep05-case06": "unavailable_to_fit",
+      "rep05-case07": "train_only",
+      "rep05-case08": "unavailable_to_fit",
+      "rep05-case09": "train_only",
+      "rep05-case10": "train_only",
+      "rep05-case11": "unavailable_to_fit",
+      "rep05-case12": "unavailable_to_fit",
+      "rep05-case13": "train_only",
+      "rep05-case14": "unavailable_to_fit",
+      "rep05-case15": "train_only",
+      "rep05-case16": "unavailable_to_fit",
+      "rep05-case17": "train_only",
+      "rep05-case18": "train_only",
+      "rep05-case19": "train_only",
+      "rep05-case20": "unavailable_to_fit",
+      "rep05-case21": "unavailable_to_fit",
+      "rep05-case22": "unavailable_to_fit",
+      "rep05-case23": "train_only",
+      "rep05-case24": "train_only",
+      "rep05-case25": "train_only",
+      "rep05-case26": "train_only",
+      "rep05-case27": "train_only",
+      "rep05-case28": "train_only",
+      "rep05-case29": "train_only"
+    },
+    "replicates": {
+      "rep01": {
+        "candidate_routes_per_group": {
+          "rep01-case00": 14,
+          "rep01-case01": 14,
+          "rep01-case02": 14,
+          "rep01-case03": 14,
+          "rep01-case04": 14,
+          "rep01-case05": 14,
+          "rep01-case06": 14,
+          "rep01-case07": 14,
+          "rep01-case08": 14,
+          "rep01-case09": 14,
+          "rep01-case10": 14,
+          "rep01-case11": 14,
+          "rep01-case12": 14,
+          "rep01-case13": 14,
+          "rep01-case14": 14,
+          "rep01-case15": 14,
+          "rep01-case16": 14,
+          "rep01-case17": 14,
+          "rep01-case18": 14,
+          "rep01-case19": 14,
+          "rep01-case20": 14,
+          "rep01-case21": 14,
+          "rep01-case22": 14,
+          "rep01-case23": 14,
+          "rep01-case24": 14,
+          "rep01-case25": 14,
+          "rep01-case26": 14,
+          "rep01-case27": 14,
+          "rep01-case28": 14,
+          "rep01-case29": 14
+        },
+        "feasible_plans_per_group": {
+          "rep01-case00": 8,
+          "rep01-case01": 8,
+          "rep01-case02": 8,
+          "rep01-case03": 8,
+          "rep01-case04": 8,
+          "rep01-case05": 8,
+          "rep01-case06": 8,
+          "rep01-case07": 8,
+          "rep01-case08": 8,
+          "rep01-case09": 8,
+          "rep01-case10": 8,
+          "rep01-case11": 8,
+          "rep01-case12": 8,
+          "rep01-case13": 8,
+          "rep01-case14": 8,
+          "rep01-case15": 8,
+          "rep01-case16": 8,
+          "rep01-case17": 8,
+          "rep01-case18": 8,
+          "rep01-case19": 8,
+          "rep01-case20": 8,
+          "rep01-case21": 8,
+          "rep01-case22": 8,
+          "rep01-case23": 8,
+          "rep01-case24": 8,
+          "rep01-case25": 8,
+          "rep01-case26": 8,
+          "rep01-case27": 8,
+          "rep01-case28": 8,
+          "rep01-case29": 8
+        },
+        "scenario_hashes_sha256": {
+          "rep01-case00": "2A34A9D3634C897FFE259EE06212AA5F6DEA4D8CEE427F73DE89D7327532FFEF",
+          "rep01-case01": "E4C606AB9CD6479D72BBCD7C73868702E58FCA602AE19FBC4F358800BA4756DC",
+          "rep01-case02": "A107CF7E2874F967EC9591AF0E953AF99469EC9006F8900545D15625612D6517",
+          "rep01-case03": "3B2DA625899C6BCCC2D032F0B45A61B167F5E3CAF3F41FA0CCC90E65D5749900",
+          "rep01-case04": "07D826B63DDB11F585080D52FB4C335BA2784E4518670A6BC442CCB8FD339899",
+          "rep01-case05": "E9AA9330004415D6F65ED9DCE8609D4C6A5C17F07696653A5B156CB6350D7A4F",
+          "rep01-case06": "106483BBB600CCBCAF3DC57C8D590176420F90832495382B043A5D67EB3F9FBE",
+          "rep01-case07": "8DB0FD7BC070D6DE5E6BB6D421F302C48D3A06A377FA0EED804F5E981CF2DD4C",
+          "rep01-case08": "03BE8731435914F57F30A255AE5F219D5D9C495DCE3D22AA12CCF9B7AD8E0320",
+          "rep01-case09": "5373E8AB97C43CB13DDDB735DC906EC26E9ADB1EC57D953019F32264A8D19BE7",
+          "rep01-case10": "8E29D13057392EC8027E26001D7632A4F0C24B775A741BDC6D4C260091552579",
+          "rep01-case11": "617AD17C4AE45B5F2C2E161D355CBF82687565B52CA98F5521113AD88E4C07BA",
+          "rep01-case12": "69D12D0997DE4933CC196A5AEAD13664184F9CF5ADD31F6F188C59B72D077DE8",
+          "rep01-case13": "4AF7154E6AA3CE496F1682231A35966DA3662A50C6C772B398D7454353730FED",
+          "rep01-case14": "FBF27FB101B8D705C905F6B181D885B6080ACB329D84D1DA9862CA5916852B2E",
+          "rep01-case15": "F68F25E75E43D040215A2154DF579264AB6AE4234A03A539948A1ABD390F982B",
+          "rep01-case16": "4491ED67B77A958BC073CF521F43364DE9CAB8D3A89A58DAD9622954809FDA16",
+          "rep01-case17": "956D58EE6D811E7D162D8BC802E2DD151809178BEA580D713F056EE69EB4B1EE",
+          "rep01-case18": "AC3B7CB73E032ABA765FA953B33CA2B6B05570FAB75DBE25D3F31B976F8B2A2C",
+          "rep01-case19": "9EE54E774296D50892253E994B27FD6447DC4FE102A37C856880091D0D939783",
+          "rep01-case20": "B2B35053BCF1B9CFF2CEB326F6582E9E31F274BAC899243355877E371C01B95D",
+          "rep01-case21": "7DAEB1FB2120118946EF06C539658748E36E6A4948C3FCC65B72A67A1D40C44D",
+          "rep01-case22": "B00E4038F0A2F93BC67E93458A5DDB147AA425D0E24A1E35EA47710BA558FDBF",
+          "rep01-case23": "CFF7ABC773F40AEA18213AE186D348334559647506F42FE2BCECD3354E4DE1B0",
+          "rep01-case24": "C62B6D66BD6AC78284CFA84A40811F277C8E733D0BA5D533295046ED97B8B423",
+          "rep01-case25": "CA5BE09EFF94EE8558DE89A07C9528276F70BA15596630BD6826EF8B8AD074F8",
+          "rep01-case26": "73ABE191051B982F4F6C85BC0BA51DC378FB8166E8A3CE75270A72E5F4675341",
+          "rep01-case27": "59736FA4A5C2CFD416ED2F993CF4F03707E67CDD63B84E7FB7D8DBC160265009",
+          "rep01-case28": "54666F3513E20076257BEB6A541DBD14FD4995D9F1BB00A818901D3AC8AD7548",
+          "rep01-case29": "5A75A8D9F513A5DA336D4111CB8260414903410570771F71C481E5C7E977C81F"
+        },
+        "split_ids": {
+          "test": [
+            "rep01-case00",
+            "rep01-case08",
+            "rep01-case13",
+            "rep01-case18",
+            "rep01-case20",
+            "rep01-case25"
+          ],
+          "train": [
+            "rep01-case01",
+            "rep01-case02",
+            "rep01-case03",
+            "rep01-case04",
+            "rep01-case05",
+            "rep01-case06",
+            "rep01-case07",
+            "rep01-case09",
+            "rep01-case10",
+            "rep01-case11",
+            "rep01-case12",
+            "rep01-case14",
+            "rep01-case16",
+            "rep01-case17",
+            "rep01-case19",
+            "rep01-case26",
+            "rep01-case27",
+            "rep01-case28"
+          ],
+          "validation": [
+            "rep01-case15",
+            "rep01-case21",
+            "rep01-case22",
+            "rep01-case23",
+            "rep01-case24",
+            "rep01-case29"
+          ]
+        },
+        "split_ids_sha256": {
+          "test": "04A34D2EA392D3207097714EEE734613CBFAD265F05D0EB43938C9EFC7173EBD",
+          "train": "026AB469297A63CEA257486BA431B6A8D846DA8D0B518E7D6776B1B2C0312EF1",
+          "validation": "71BD50925008ECF23CB70F4114E82DAC7BF142E735B1CD63C1580D6A4E3AD689"
+        }
+      },
+      "rep02": {
+        "candidate_routes_per_group": {
+          "rep02-case00": 14,
+          "rep02-case01": 14,
+          "rep02-case02": 14,
+          "rep02-case03": 14,
+          "rep02-case04": 14,
+          "rep02-case05": 14,
+          "rep02-case06": 14,
+          "rep02-case07": 14,
+          "rep02-case08": 14,
+          "rep02-case09": 14,
+          "rep02-case10": 14,
+          "rep02-case11": 14,
+          "rep02-case12": 14,
+          "rep02-case13": 14,
+          "rep02-case14": 14,
+          "rep02-case15": 14,
+          "rep02-case16": 14,
+          "rep02-case17": 14,
+          "rep02-case18": 14,
+          "rep02-case19": 14,
+          "rep02-case20": 14,
+          "rep02-case21": 14,
+          "rep02-case22": 14,
+          "rep02-case23": 14,
+          "rep02-case24": 14,
+          "rep02-case25": 14,
+          "rep02-case26": 14,
+          "rep02-case27": 14,
+          "rep02-case28": 14,
+          "rep02-case29": 14
+        },
+        "feasible_plans_per_group": {
+          "rep02-case00": 8,
+          "rep02-case01": 8,
+          "rep02-case02": 8,
+          "rep02-case03": 8,
+          "rep02-case04": 8,
+          "rep02-case05": 8,
+          "rep02-case06": 8,
+          "rep02-case07": 8,
+          "rep02-case08": 8,
+          "rep02-case09": 8,
+          "rep02-case10": 8,
+          "rep02-case11": 8,
+          "rep02-case12": 8,
+          "rep02-case13": 8,
+          "rep02-case14": 8,
+          "rep02-case15": 8,
+          "rep02-case16": 8,
+          "rep02-case17": 8,
+          "rep02-case18": 8,
+          "rep02-case19": 8,
+          "rep02-case20": 8,
+          "rep02-case21": 8,
+          "rep02-case22": 8,
+          "rep02-case23": 8,
+          "rep02-case24": 8,
+          "rep02-case25": 8,
+          "rep02-case26": 8,
+          "rep02-case27": 8,
+          "rep02-case28": 8,
+          "rep02-case29": 8
+        },
+        "scenario_hashes_sha256": {
+          "rep02-case00": "3B2AFDCAAF8254B7374460787D3AD902C359BCDBD588362AD733721C03769D18",
+          "rep02-case01": "9AA4F4973FEB466665400E44B148CB40B47F93BB7F0346239D00F0E4417EB403",
+          "rep02-case02": "3D57F2F88AE38B854B603C70020B482D3324CBB2A7ADE2ECEF0B985B4E91B4B4",
+          "rep02-case03": "1CF7FDA413B9804B1E618D83632AE107137A674FB52486C2440ABDAE7967B5C4",
+          "rep02-case04": "6D1AFAA03399BE26264AA273EB15A68EC99B00272BBA8807FB6827194B1E23A2",
+          "rep02-case05": "879B078C02E14B16296AA374EB932FB8D8C8B2FBBA751322620B9DE84C842B17",
+          "rep02-case06": "807A56A0717B22B001C4FBBF25730D5473FBA547E8886E98C423A8ED83D2A5FA",
+          "rep02-case07": "A115813023DCA5E0B37D89671DD815EB274602D5AF25A5AB7133B4AA97141A31",
+          "rep02-case08": "2EBB5AD5B09BB9BDE91E9E7166E5042A59B243860FAECEBB469A1970F2A0FC36",
+          "rep02-case09": "CB370333B9001D1E0C80D1FBAB212F21E53561B7EF792FF75F136B9E711F9B3A",
+          "rep02-case10": "447A2BCACB54EFA7CFD6AF98EEBD1721CCCE388856FC08E523FE5B55A7B47DDE",
+          "rep02-case11": "6E4E32E288F81CD664A1B93B3840C6A71982A31FC83CABBF861618E4A203938D",
+          "rep02-case12": "8543C3C8F1C60B98A3D72706820548596B2C591FC22D01AE1B455CC508DE3FE9",
+          "rep02-case13": "637117CE9B5AF0EB91A1D0873E21CF2EB2BFD368CBD865F17699CCE38FEB0BCD",
+          "rep02-case14": "C0202E383DB47F021EA0128DBBF0CA3F87C1E98CD723A52E8E1BCB38606CCAFC",
+          "rep02-case15": "7FCCAE18B4B61EDE92A89F48EC228CD0852C44DFDE62A94EB6709A362D5FAB8F",
+          "rep02-case16": "7472559E0B4357A182B6EAD4268167895FF9D597DE32CE4489A3E7E3711BB0E8",
+          "rep02-case17": "0E4CEBD59445AB4CC99BA22645DAF0E130D7DFB668EB04365F281A1F7C55AB7B",
+          "rep02-case18": "61B9602293FFE6D31E87573D24CE026524B66F3E0B10182F5F4AFACABDB131DC",
+          "rep02-case19": "81703959BFE205172E5B7405EC1133E0B4EFB6C3A8C2C21B0A8FFC16B2F54EBC",
+          "rep02-case20": "C94DB20257654B4FD0149B8952401892C30BE3346436F60B73DABC864E34AA4C",
+          "rep02-case21": "8E92A6CB04C7958F9AE902DB80D1982B753D20B8CF00CAF59DEA1857F4678E47",
+          "rep02-case22": "58EC220FFC0768992AEB40AD31F71217FF75456737ED5F699A74A892DB6075B1",
+          "rep02-case23": "E73F6AC71616254F3FD3955E2D5FDF37C8A4024FD1DBF977586DA03F8D7C5CF9",
+          "rep02-case24": "0DDF3D0B3A91310FFB482AE9A797E977A5069C550A21F943EC54A17E4B8B9313",
+          "rep02-case25": "5F29BD9CE5C3A660303D8FAF12F72EED45DE879A91026CD56F1B5479D5B76F2C",
+          "rep02-case26": "538E10A18027752F574304691D0C280F9FB4C7306CD08ECCEE480AF07F2D26E1",
+          "rep02-case27": "77BCD10040AC8C9B776692A40D791A3910773E203DDE5EB9CD8D954B5F41ADFC",
+          "rep02-case28": "81D32D22EC60CE602B454989EB1D2766AAD10A0E7DBF636EF17274AB73820F95",
+          "rep02-case29": "E2CF864F356BED4E9542DECC066A7BFBC1C6FB1A6C52353CF00587677F913A61"
+        },
+        "split_ids": {
+          "test": [
+            "rep02-case08",
+            "rep02-case10",
+            "rep02-case22",
+            "rep02-case27",
+            "rep02-case28",
+            "rep02-case29"
+          ],
+          "train": [
+            "rep02-case00",
+            "rep02-case02",
+            "rep02-case03",
+            "rep02-case04",
+            "rep02-case07",
+            "rep02-case09",
+            "rep02-case11",
+            "rep02-case12",
+            "rep02-case13",
+            "rep02-case14",
+            "rep02-case15",
+            "rep02-case16",
+            "rep02-case17",
+            "rep02-case18",
+            "rep02-case19",
+            "rep02-case20",
+            "rep02-case24",
+            "rep02-case25"
+          ],
+          "validation": [
+            "rep02-case01",
+            "rep02-case05",
+            "rep02-case06",
+            "rep02-case21",
+            "rep02-case23",
+            "rep02-case26"
+          ]
+        },
+        "split_ids_sha256": {
+          "test": "C3769F77EC54F13855CB0880AF048E3FE2307B981BDE13A8DF78E3651A85FE79",
+          "train": "79CBA97E89224C6BECF3F0FFFBF4239BD663A87F470AE4DABC75BCFA2373F046",
+          "validation": "07A6C4413DB845C5BECF8465261D879310D222214D4E75AC7FD4E0B85290134F"
+        }
+      },
+      "rep03": {
+        "candidate_routes_per_group": {
+          "rep03-case00": 14,
+          "rep03-case01": 14,
+          "rep03-case02": 14,
+          "rep03-case03": 14,
+          "rep03-case04": 14,
+          "rep03-case05": 14,
+          "rep03-case06": 14,
+          "rep03-case07": 14,
+          "rep03-case08": 14,
+          "rep03-case09": 14,
+          "rep03-case10": 14,
+          "rep03-case11": 14,
+          "rep03-case12": 14,
+          "rep03-case13": 14,
+          "rep03-case14": 14,
+          "rep03-case15": 14,
+          "rep03-case16": 14,
+          "rep03-case17": 14,
+          "rep03-case18": 14,
+          "rep03-case19": 14,
+          "rep03-case20": 14,
+          "rep03-case21": 14,
+          "rep03-case22": 14,
+          "rep03-case23": 14,
+          "rep03-case24": 14,
+          "rep03-case25": 14,
+          "rep03-case26": 14,
+          "rep03-case27": 14,
+          "rep03-case28": 14,
+          "rep03-case29": 14
+        },
+        "feasible_plans_per_group": {
+          "rep03-case00": 8,
+          "rep03-case01": 8,
+          "rep03-case02": 8,
+          "rep03-case03": 8,
+          "rep03-case04": 8,
+          "rep03-case05": 8,
+          "rep03-case06": 8,
+          "rep03-case07": 8,
+          "rep03-case08": 8,
+          "rep03-case09": 8,
+          "rep03-case10": 8,
+          "rep03-case11": 8,
+          "rep03-case12": 8,
+          "rep03-case13": 8,
+          "rep03-case14": 8,
+          "rep03-case15": 8,
+          "rep03-case16": 8,
+          "rep03-case17": 8,
+          "rep03-case18": 8,
+          "rep03-case19": 8,
+          "rep03-case20": 8,
+          "rep03-case21": 8,
+          "rep03-case22": 8,
+          "rep03-case23": 8,
+          "rep03-case24": 8,
+          "rep03-case25": 8,
+          "rep03-case26": 8,
+          "rep03-case27": 8,
+          "rep03-case28": 8,
+          "rep03-case29": 8
+        },
+        "scenario_hashes_sha256": {
+          "rep03-case00": "AB6AE994CD292E481767A6062710DCC6665B15907F5883729055A9CBBF13B0A9",
+          "rep03-case01": "D51E67B7D971C791A35688DF4430110CBD5B25D2EBF21004C21FFD1E8DD0E7BC",
+          "rep03-case02": "2EC820FB5C04E23D0D37012F2F2E96FD34A30A9F54D4CA8B42C41937B44BBBB2",
+          "rep03-case03": "1B648FF6ADB2D2E486CE69C744265D40585349AE4661C318E36EF54E4029AFB8",
+          "rep03-case04": "BF7DAEAE7B2571E274EAA0E5F608D261F02B6A259264BF4DF9C4DF259CF1F0FA",
+          "rep03-case05": "21183BB56F57A65158B37CA90C8B0B6F3808526E0280C6A6CA3BEB3980AE193E",
+          "rep03-case06": "AB7AF284E2654ED87E92557776378DB896D6B52B954C926FE2B0FA29A5688722",
+          "rep03-case07": "A834E44B36CFBFD638ED1442BC9667C7EB671521EBF6966A8BF7A152AAE9F299",
+          "rep03-case08": "5F57086921B4B7BC91DAF57AC28F1988903B9792CDE856568973F2C29530E435",
+          "rep03-case09": "C23558DF573C03F0AB4A759FA628BB02897676526A7CCE4700C12E98BE02B2E0",
+          "rep03-case10": "C7B9FE4170F7782D5682C2CC711F111773E68A6665744C98DD6CB7DD33858145",
+          "rep03-case11": "42C6E4305377EEA597207247A8FBF492547B7052B76D21FF38E290D63414F856",
+          "rep03-case12": "D8D216BB0B41B259BB1B4B35B2929CAA922A05201D6CDAAAA31B07C76D03AB96",
+          "rep03-case13": "373570A548758B8F80414DFE368FC0FA19651B67D6DE79824381688D3853DCEF",
+          "rep03-case14": "8A3CA08635C8C6FD51439AB65055916F43AB1A9571B1C09AE5AF60A6CEB6C190",
+          "rep03-case15": "A89A6ED47712E72FBE7A3C5FE1DEA488C1DEEA9A3C2823A926C52D5CD8292C7B",
+          "rep03-case16": "DF961F2425024B197F2A1888A07BE5C355152E8145C1446B619516F0A8775F9E",
+          "rep03-case17": "0E7F024E57A12269E08A6B09570A9877383D08E5688BB0608DEBC0E553079D23",
+          "rep03-case18": "FB13795EBD2A9207CA736A7552A1905DE123BE3650E686017D170BFEC2D78E4B",
+          "rep03-case19": "FF7ABDAF1E97E06C1891C17E9284C0A1D7106AC4C294452E35149A28259ADF06",
+          "rep03-case20": "D6C256D01A8D72C0032D6B6B81EC081A540FB6D7D38ED04C5CCFE166CF5A46DC",
+          "rep03-case21": "BDCB471B4363944E14ADC0B8B951C5097ED49788066EFE4000C88B8840E29B90",
+          "rep03-case22": "BB33AB2423AB05BAE27115656CD07A9FFFD10AA2B83BCC3526735F1CF2D3C458",
+          "rep03-case23": "C0DDE896B810EA41774B0D9F72A17073E9E9708B2C3D7FAFD96EDF752C72964C",
+          "rep03-case24": "EDCC51F15EAFE677D5E9BA35EE2CE7BBCFAAC6B7E29C32BCEB29D11EB143FF28",
+          "rep03-case25": "F075EB3FF22ABD8B1D1E1B70B0AA884165252BE5FD987F3934A43C39D05E2BE5",
+          "rep03-case26": "75CCF7A8B40F928A608863EA41A1FCF6C6AD3EB2887225500A779EF9DC2336F5",
+          "rep03-case27": "F97DDE8665D7BBD06653DC14B43E36E0C342D15C81D1AB22BDA74F8BA924DA11",
+          "rep03-case28": "AA37DE515BF5D0BC88C7336ECF506B4D6629D42FD018BAB9D8A90490DA821433",
+          "rep03-case29": "C858D2A7989998791471267F08235B8B42BBD3CEEB01590141DE721CD0053787"
+        },
+        "split_ids": {
+          "test": [
+            "rep03-case00",
+            "rep03-case10",
+            "rep03-case15",
+            "rep03-case23",
+            "rep03-case24",
+            "rep03-case25"
+          ],
+          "train": [
+            "rep03-case01",
+            "rep03-case02",
+            "rep03-case04",
+            "rep03-case08",
+            "rep03-case09",
+            "rep03-case11",
+            "rep03-case12",
+            "rep03-case14",
+            "rep03-case16",
+            "rep03-case18",
+            "rep03-case19",
+            "rep03-case20",
+            "rep03-case21",
+            "rep03-case22",
+            "rep03-case26",
+            "rep03-case27",
+            "rep03-case28",
+            "rep03-case29"
+          ],
+          "validation": [
+            "rep03-case03",
+            "rep03-case05",
+            "rep03-case06",
+            "rep03-case07",
+            "rep03-case13",
+            "rep03-case17"
+          ]
+        },
+        "split_ids_sha256": {
+          "test": "2C2783A19D3704C3FF0D98EA4FB372EE32981456AE2F9DBC06A661DC41D1D4F0",
+          "train": "A497D4847795989843281467D124E31A2838C7A4DA6EF6A16C87A5600D2FFA05",
+          "validation": "48CCBDA481C8F104AF901C00E332B6D849672508585B7A16631E8FB5EC9517C0"
+        }
+      },
+      "rep04": {
+        "candidate_routes_per_group": {
+          "rep04-case00": 14,
+          "rep04-case01": 14,
+          "rep04-case02": 14,
+          "rep04-case03": 14,
+          "rep04-case04": 14,
+          "rep04-case05": 14,
+          "rep04-case06": 14,
+          "rep04-case07": 14,
+          "rep04-case08": 14,
+          "rep04-case09": 14,
+          "rep04-case10": 14,
+          "rep04-case11": 14,
+          "rep04-case12": 14,
+          "rep04-case13": 14,
+          "rep04-case14": 14,
+          "rep04-case15": 14,
+          "rep04-case16": 14,
+          "rep04-case17": 14,
+          "rep04-case18": 14,
+          "rep04-case19": 14,
+          "rep04-case20": 14,
+          "rep04-case21": 14,
+          "rep04-case22": 14,
+          "rep04-case23": 14,
+          "rep04-case24": 14,
+          "rep04-case25": 14,
+          "rep04-case26": 14,
+          "rep04-case27": 14,
+          "rep04-case28": 14,
+          "rep04-case29": 14
+        },
+        "feasible_plans_per_group": {
+          "rep04-case00": 8,
+          "rep04-case01": 8,
+          "rep04-case02": 8,
+          "rep04-case03": 8,
+          "rep04-case04": 8,
+          "rep04-case05": 8,
+          "rep04-case06": 8,
+          "rep04-case07": 8,
+          "rep04-case08": 8,
+          "rep04-case09": 8,
+          "rep04-case10": 8,
+          "rep04-case11": 8,
+          "rep04-case12": 8,
+          "rep04-case13": 8,
+          "rep04-case14": 8,
+          "rep04-case15": 8,
+          "rep04-case16": 8,
+          "rep04-case17": 8,
+          "rep04-case18": 8,
+          "rep04-case19": 8,
+          "rep04-case20": 8,
+          "rep04-case21": 8,
+          "rep04-case22": 8,
+          "rep04-case23": 8,
+          "rep04-case24": 8,
+          "rep04-case25": 8,
+          "rep04-case26": 8,
+          "rep04-case27": 8,
+          "rep04-case28": 8,
+          "rep04-case29": 8
+        },
+        "scenario_hashes_sha256": {
+          "rep04-case00": "4F0B64CA3AB97140729319AC780F5B76540B6B6D44131F55808B3695385FFD3F",
+          "rep04-case01": "9FF5503B4736CC789D78758039C4AAABBA65BFAF251846C693540E1FE1B5F631",
+          "rep04-case02": "0BF244BDC0DC040490C348CE924E44AE743823A46C2AE463D33B2AF198933C30",
+          "rep04-case03": "5CDF4BCD38F4FAE80E18E7D1CF54A603F234FAA01D37D7063012C7EAAA323C32",
+          "rep04-case04": "B5E7D813824902FAEF1613EC8BDBE0ACFF33AC39832DB6CD701CE72EE91D3F77",
+          "rep04-case05": "488A179A23FB010EAC3F4E5F55936EF3FAC2D5392576A1342E8C4B908DCE46C1",
+          "rep04-case06": "2FE130457DE2F7445B7E9B7241686E7BB2ED083BC38F7497746CBB54D985BF74",
+          "rep04-case07": "3071EA56CBA16BCF0C86FE69066165B43A1FBC6EBF0F9C41A7C81503B014A40F",
+          "rep04-case08": "2BF284119584EA77528CB5063C259EF7E844F264DFA5734DA20119A0F9CC9AB0",
+          "rep04-case09": "7068534C075AFCDE4871CC0A1F4DA9AFAAEDBDFFF045A6BF66DACF644C7C4946",
+          "rep04-case10": "F1E072928CD3385475DB3813707698CECA4ECD7DF9C67021910C164A89C67717",
+          "rep04-case11": "06B605673D8BDCAAD242A0802598A02E197F6B31B1662047312120B242E400A6",
+          "rep04-case12": "2A48F4365053112D3308B39CC8CEA148294E69FBA1D4AA6862F3CC7C5A454598",
+          "rep04-case13": "B02A64971DA4DEC19F3F342BD58534AE464C149B99B60E80188521473CCD0FEB",
+          "rep04-case14": "118FFE00C0B65C21D75432B40FF1B8593A4DAFC7C3EAD02F69F50624F7445DF3",
+          "rep04-case15": "AFF9680574BBAAA3BCD0F3CFFEDECD77F40FED5AF261E6C8F8FE3477396FBECA",
+          "rep04-case16": "DB6E4D2E2D02CDD15FC21BF9CEF782CD332DFE6651568C19E5E7594820A044C8",
+          "rep04-case17": "EFD1687903B5BBB47D03C5B38205EB3CA76D2EAEBEFA5277F59135F43183C3F8",
+          "rep04-case18": "593E1A233EFD62B6599C09F46F536A6E3E4EA3F300D11AF71540D4006B260E9F",
+          "rep04-case19": "67578974C3A530ECE11C63068501B99A6D0FEE2471B7A214D162D575B6DAC7B0",
+          "rep04-case20": "304C77D82F50DE1200493EB3F484C9B9226584CD569F2BBAC94893BBFD1FE129",
+          "rep04-case21": "97DBD561CF09C554D2250219F259BFADF4F61CE566FBF907194DF4B2CF25EAD3",
+          "rep04-case22": "659056517CCCBAE612A1E570CF91E7DB8224F9D6F8894FCECDE00266FFB6F6FA",
+          "rep04-case23": "173D0AFEEA9DD060948ED6DA55A5F268C5862E539F9B6A8F07B5D7EF6D8C6DCD",
+          "rep04-case24": "D62607A12BD96BFD7CB712C1AE41CDE0EA985262D4FA53B134F0A2D5716E8E7B",
+          "rep04-case25": "F042DBAFB556027886EC673B0C389E4EEE7B951A8AFE596948E07600448704C8",
+          "rep04-case26": "9E756A156FB4CD83F8A84AEC2EABBB87F00FE6B5FC7EB5226F7C9791E9E49540",
+          "rep04-case27": "3FEAD974DA684EFE390F8FB3C06F475F47499C0435D078EE9C77C1502873FC0B",
+          "rep04-case28": "B747B5BE47140539541B4CBE2E06A261241EB85420C7D71575ADB4E9E7247C9A",
+          "rep04-case29": "8C0F72F1DD919C34853B5DDFC2147C43964DC72A719AA580418EC29F8A61BC2E"
+        },
+        "split_ids": {
+          "test": [
+            "rep04-case04",
+            "rep04-case10",
+            "rep04-case12",
+            "rep04-case14",
+            "rep04-case19",
+            "rep04-case27"
+          ],
+          "train": [
+            "rep04-case00",
+            "rep04-case01",
+            "rep04-case03",
+            "rep04-case06",
+            "rep04-case07",
+            "rep04-case08",
+            "rep04-case09",
+            "rep04-case13",
+            "rep04-case15",
+            "rep04-case17",
+            "rep04-case20",
+            "rep04-case21",
+            "rep04-case22",
+            "rep04-case23",
+            "rep04-case25",
+            "rep04-case26",
+            "rep04-case28",
+            "rep04-case29"
+          ],
+          "validation": [
+            "rep04-case02",
+            "rep04-case05",
+            "rep04-case11",
+            "rep04-case16",
+            "rep04-case18",
+            "rep04-case24"
+          ]
+        },
+        "split_ids_sha256": {
+          "test": "B78157C7B2BF6807481782F167F59944760EDDC31C560706565061EDA37099E7",
+          "train": "08E238976E30AABF9735C4DBBA197E87459A9DC1F9E38A47F78A88E006E31EB0",
+          "validation": "0B0E9C9811FC454D1DE90998525CBD3AAE8E1C71ECE6979F1FE934E92FA5CE7F"
+        }
+      },
+      "rep05": {
+        "candidate_routes_per_group": {
+          "rep05-case00": 14,
+          "rep05-case01": 14,
+          "rep05-case02": 14,
+          "rep05-case03": 14,
+          "rep05-case04": 14,
+          "rep05-case05": 14,
+          "rep05-case06": 14,
+          "rep05-case07": 14,
+          "rep05-case08": 14,
+          "rep05-case09": 14,
+          "rep05-case10": 14,
+          "rep05-case11": 14,
+          "rep05-case12": 14,
+          "rep05-case13": 14,
+          "rep05-case14": 14,
+          "rep05-case15": 14,
+          "rep05-case16": 14,
+          "rep05-case17": 14,
+          "rep05-case18": 14,
+          "rep05-case19": 14,
+          "rep05-case20": 14,
+          "rep05-case21": 14,
+          "rep05-case22": 14,
+          "rep05-case23": 14,
+          "rep05-case24": 14,
+          "rep05-case25": 14,
+          "rep05-case26": 14,
+          "rep05-case27": 14,
+          "rep05-case28": 14,
+          "rep05-case29": 14
+        },
+        "feasible_plans_per_group": {
+          "rep05-case00": 8,
+          "rep05-case01": 8,
+          "rep05-case02": 8,
+          "rep05-case03": 8,
+          "rep05-case04": 8,
+          "rep05-case05": 8,
+          "rep05-case06": 8,
+          "rep05-case07": 8,
+          "rep05-case08": 8,
+          "rep05-case09": 8,
+          "rep05-case10": 8,
+          "rep05-case11": 8,
+          "rep05-case12": 8,
+          "rep05-case13": 8,
+          "rep05-case14": 8,
+          "rep05-case15": 8,
+          "rep05-case16": 8,
+          "rep05-case17": 8,
+          "rep05-case18": 8,
+          "rep05-case19": 8,
+          "rep05-case20": 8,
+          "rep05-case21": 8,
+          "rep05-case22": 8,
+          "rep05-case23": 8,
+          "rep05-case24": 8,
+          "rep05-case25": 8,
+          "rep05-case26": 8,
+          "rep05-case27": 8,
+          "rep05-case28": 8,
+          "rep05-case29": 8
+        },
+        "scenario_hashes_sha256": {
+          "rep05-case00": "1D479D60549D2396F3ED316FD3B962BCD340C9A05BBE6E6C5654AD2C04A8D29C",
+          "rep05-case01": "5576836BAADA06719E4148BE29225332F9285494EE5AFE20AAF22FD696699C93",
+          "rep05-case02": "9922C2028F28AFE769DF26FC0195BEC8287405FF3DC2222ACF9D79F0C36FAB80",
+          "rep05-case03": "DD36B4542395365EFE369D5F35A60DD56859A0378DF1125B1120BA5D448B7D22",
+          "rep05-case04": "2D40CE2D6323E7008A02438DD0EBF1BB9B378929F9E7E0EC8E183C83E84A5B66",
+          "rep05-case05": "2DF1E444CD5BBC789E48905848B5482E07736D8AECC1E4C1B17621CB4D09F701",
+          "rep05-case06": "92A2538319AE9CD3C99147AEAD2041C88925A4120AA608B2A0DD144F19659B83",
+          "rep05-case07": "A6A19291674F9EAC31BAE25576901658D0D0E4C4A6D17C84934DB164293A5ADF",
+          "rep05-case08": "5DDCE9B46801E92BD01631EA31287971479E8258810E403918AACAB74BE0F5C9",
+          "rep05-case09": "DE1A6976381D1188A5C906E220B3C1A1B3B6D3B94F4E50963267242F7C839673",
+          "rep05-case10": "82FA92BA12B873D52FBDE3E392D079A5BA0A38217D5D96799C23C68158F337E8",
+          "rep05-case11": "A0B2A1C4B2A65822141CDF8AF0F7C6FDFEB3BCB5AD401308F5642E6114F57B9A",
+          "rep05-case12": "B8F7B089D7AB28F2E69EADA121823C75B719DC16207F16034E9EB0016AB350C7",
+          "rep05-case13": "4F7E3D3BAADD0295ECD302AB9CCBA6C6462FD31FBF7B232D35668DCA4F51F140",
+          "rep05-case14": "241D4FA819F4239B267C1D19169FE6932FB9A6B56014C9472EC60E83191CE9BE",
+          "rep05-case15": "552674BE26349F932AC3EA1B91194B517FB29094E691A065C237DA97CBD5AAD0",
+          "rep05-case16": "77930692E1B4E55DDD921B6E0B2531EEF27DC680082F7301BF881A67612B77D1",
+          "rep05-case17": "62EAB68B86A4C1B1C05F43DA468D429467F2435E65BA4793280FBC2D3EC4A869",
+          "rep05-case18": "48EBC24F4FCB971AAF57AF5FF3CF70E0A10D08D524F95862D8FC45D6E1F0E5CC",
+          "rep05-case19": "D0DDC8B3E0C42D27DA6B09844D9DD103BFD660F44ADF52757C3F72D7C4043935",
+          "rep05-case20": "E3D32F4369E0B91CAE7591070CDFD0FAA47A6EFB9DDB9DA181E79E3CD1A3DEC9",
+          "rep05-case21": "5F8F05DF187BE680E50D9C6D5B749ED3C982A7CC21E7FE7B16044261D63FD1E5",
+          "rep05-case22": "81A31AE6578A1F195B3EB144FEBCD1B1C1FDEF040CF32B4B3C15B494021FFF82",
+          "rep05-case23": "FD7103358967067E055877FD6C051CD75495F9669DB22DCFB822A5427F5EE0D5",
+          "rep05-case24": "D64DC9A7ECE0C24DF41B2A09F6930F0B60D4E0F5F0AE59CF9787DD9A95BCF9EF",
+          "rep05-case25": "3067E1BC54217C204AAAC0CAA9D57CB1752C35554EDBF3C5066F34632FD9B1DB",
+          "rep05-case26": "BE8ED44654279877F2CAFD0BC7BBBD40F3A0FBAAE463EE87B1A76A6B5BD260BC",
+          "rep05-case27": "999AFB30339CCA4CAB7E7D140CB0D3E9D0308C889BC31838A03E11DD3030B6AF",
+          "rep05-case28": "6EEF5EF02949D8B1FA29CD0C614646284D30D1365C8B60E3B02716C0F6BBB28F",
+          "rep05-case29": "718FB0347FA951596177487A771740245B9E1070E1BC9D3331643E99C0BC87A9"
+        },
+        "split_ids": {
+          "test": [
+            "rep05-case00",
+            "rep05-case01",
+            "rep05-case06",
+            "rep05-case12",
+            "rep05-case14",
+            "rep05-case21"
+          ],
+          "train": [
+            "rep05-case03",
+            "rep05-case04",
+            "rep05-case05",
+            "rep05-case07",
+            "rep05-case09",
+            "rep05-case10",
+            "rep05-case13",
+            "rep05-case15",
+            "rep05-case17",
+            "rep05-case18",
+            "rep05-case19",
+            "rep05-case23",
+            "rep05-case24",
+            "rep05-case25",
+            "rep05-case26",
+            "rep05-case27",
+            "rep05-case28",
+            "rep05-case29"
+          ],
+          "validation": [
+            "rep05-case02",
+            "rep05-case08",
+            "rep05-case11",
+            "rep05-case16",
+            "rep05-case20",
+            "rep05-case22"
+          ]
+        },
+        "split_ids_sha256": {
+          "test": "6D157A9C222F713687667E939B7859A559813CC2813AF83DEE6DA2B045108C35",
+          "train": "EC5BF9DA58241DF3A42CF68B50F4949AE119940287565B9CE40EA3319345B6B9",
+          "validation": "529626F6976DDD8B4F3E154C451EF427DEC9BF0FDE797ABACE54EFB23A5B0EB0"
+        }
+      }
+    },
+    "scenario_group_count": 150
+  },
+  "evidence_type": "one-time execution of a preregistered synthetic local comparison",
+  "exact_reference": {
+    "rep01-case00": {
+      "objective": 14.894669,
+      "valid": true
+    },
+    "rep01-case08": {
+      "objective": 16.217737,
+      "valid": true
+    },
+    "rep01-case13": {
+      "objective": 20.13439,
+      "valid": true
+    },
+    "rep01-case15": {
+      "objective": 18.048626,
+      "valid": true
+    },
+    "rep01-case18": {
+      "objective": 16.503709,
+      "valid": true
+    },
+    "rep01-case20": {
+      "objective": 10.691342,
+      "valid": true
+    },
+    "rep01-case21": {
+      "objective": 7.678330000000001,
+      "valid": true
+    },
+    "rep01-case22": {
+      "objective": 21.391267999999997,
+      "valid": true
+    },
+    "rep01-case23": {
+      "objective": 9.971232,
+      "valid": true
+    },
+    "rep01-case24": {
+      "objective": 16.416354,
+      "valid": true
+    },
+    "rep01-case25": {
+      "objective": 14.955306,
+      "valid": true
+    },
+    "rep01-case29": {
+      "objective": 15.868844,
+      "valid": true
+    },
+    "rep02-case01": {
+      "objective": 10.737285,
+      "valid": true
+    },
+    "rep02-case05": {
+      "objective": 8.986874,
+      "valid": true
+    },
+    "rep02-case06": {
+      "objective": 14.346817,
+      "valid": true
+    },
+    "rep02-case08": {
+      "objective": 14.563288,
+      "valid": true
+    },
+    "rep02-case10": {
+      "objective": 16.660792,
+      "valid": true
+    },
+    "rep02-case21": {
+      "objective": 8.375089,
+      "valid": true
+    },
+    "rep02-case22": {
+      "objective": 12.338991,
+      "valid": true
+    },
+    "rep02-case23": {
+      "objective": 16.633687000000002,
+      "valid": true
+    },
+    "rep02-case26": {
+      "objective": 9.634091999999999,
+      "valid": true
+    },
+    "rep02-case27": {
+      "objective": 9.044542999999999,
+      "valid": true
+    },
+    "rep02-case28": {
+      "objective": 15.315179,
+      "valid": true
+    },
+    "rep02-case29": {
+      "objective": 16.0012,
+      "valid": true
+    },
+    "rep03-case00": {
+      "objective": 9.907953,
+      "valid": true
+    },
+    "rep03-case03": {
+      "objective": 9.828827,
+      "valid": true
+    },
+    "rep03-case05": {
+      "objective": 15.126468,
+      "valid": true
+    },
+    "rep03-case06": {
+      "objective": 17.512605,
+      "valid": true
+    },
+    "rep03-case07": {
+      "objective": 10.520938000000001,
+      "valid": true
+    },
+    "rep03-case10": {
+      "objective": 9.383587,
+      "valid": true
+    },
+    "rep03-case13": {
+      "objective": 18.956024,
+      "valid": true
+    },
+    "rep03-case15": {
+      "objective": 10.087444000000001,
+      "valid": true
+    },
+    "rep03-case17": {
+      "objective": 12.169394,
+      "valid": true
+    },
+    "rep03-case23": {
+      "objective": 15.570678000000001,
+      "valid": true
+    },
+    "rep03-case24": {
+      "objective": 13.605477,
+      "valid": true
+    },
+    "rep03-case25": {
+      "objective": 9.733055,
+      "valid": true
+    },
+    "rep04-case02": {
+      "objective": 20.604618,
+      "valid": true
+    },
+    "rep04-case04": {
+      "objective": 9.438501,
+      "valid": true
+    },
+    "rep04-case05": {
+      "objective": 8.005914,
+      "valid": true
+    },
+    "rep04-case10": {
+      "objective": 7.670479,
+      "valid": true
+    },
+    "rep04-case11": {
+      "objective": 21.020597000000002,
+      "valid": true
+    },
+    "rep04-case12": {
+      "objective": 15.983775,
+      "valid": true
+    },
+    "rep04-case14": {
+      "objective": 13.445356,
+      "valid": true
+    },
+    "rep04-case16": {
+      "objective": 17.294816,
+      "valid": true
+    },
+    "rep04-case18": {
+      "objective": 14.437629000000001,
+      "valid": true
+    },
+    "rep04-case19": {
+      "objective": 9.751448,
+      "valid": true
+    },
+    "rep04-case24": {
+      "objective": 19.751835999999997,
+      "valid": true
+    },
+    "rep04-case27": {
+      "objective": 16.62048,
+      "valid": true
+    },
+    "rep05-case00": {
+      "objective": 14.897621000000001,
+      "valid": true
+    },
+    "rep05-case01": {
+      "objective": 14.202263,
+      "valid": true
+    },
+    "rep05-case02": {
+      "objective": 16.68424,
+      "valid": true
+    },
+    "rep05-case06": {
+      "objective": 11.243593,
+      "valid": true
+    },
+    "rep05-case08": {
+      "objective": 14.06717,
+      "valid": true
+    },
+    "rep05-case11": {
+      "objective": 20.341098,
+      "valid": true
+    },
+    "rep05-case12": {
+      "objective": 8.298655,
+      "valid": true
+    },
+    "rep05-case14": {
+      "objective": 10.432246,
+      "valid": true
+    },
+    "rep05-case16": {
+      "objective": 10.777124,
+      "valid": true
+    },
+    "rep05-case20": {
+      "objective": 15.602484,
+      "valid": true
+    },
+    "rep05-case21": {
+      "objective": 11.00042,
+      "valid": true
+    },
+    "rep05-case22": {
+      "objective": 10.863535,
+      "valid": true
+    }
+  },
+  "execution": {
+    "dataset_manifest_sha256": "DB95F5F18BA15577321AED9CB381033B4FD23A6C7AE485C9D37AF576C790BB5C",
+    "external_calls": 0,
+    "nonlinear_baseline": "not included; three-method comparison only",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "protocol_sha256": "F6EB0B4DAC361CD214239574A33E5CA311327AD81CB96241669C45D61C6C9C57",
+    "python": "3.12.14",
+    "runner_sha256": "65441499AC17BBD724FC49610C1EF4D2FB5BF8DB232BA16BD1531026DC0C7E30",
+    "total_wall_seconds_including_generation_fit_validation_test": 2.967963199946098
+  },
+  "experiment_id": "terra-independent-matched-budget-v1",
+  "limitations": [
+    "synthetic data only",
+    "five independent replicate worlds and six test groups per replicate",
+    "CPU time is a common upper bound, not equal compute delivered; stopping granularity is one full-batch update",
+    "decision, predictive and logistic objectives have different computational costs",
+    "no tree baseline, calibration or operational claims",
+    "one evaluation only"
+  ],
+  "per_scenario_paired_objective_differences_vs_logistic": {
+    "decision_focused_vqc": {
+      "per_scenario": [
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case00"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case08"
+        },
+        {
+          "method_minus_logistic": 0.2948259999999969,
+          "scenario_id": "rep01-case13"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case18"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case20"
+        },
+        {
+          "method_minus_logistic": -0.3966339999999988,
+          "scenario_id": "rep01-case25"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep02-case08"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep02-case10"
+        },
+        {
+          "method_minus_logistic": -0.16467199999999949,
+          "scenario_id": "rep02-case22"
+        },
+        {
+          "method_minus_logistic": 0.0829480000000018,
+          "scenario_id": "rep02-case27"
+        },
+        {
+          "method_minus_logistic": -0.19252099999999928,
+          "scenario_id": "rep02-case28"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep02-case29"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case00"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case10"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case15"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case23"
+        },
+        {
+          "method_minus_logistic": 0.5252420000000004,
+          "scenario_id": "rep03-case24"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case25"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case04"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case10"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case12"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case14"
+        },
+        {
+          "method_minus_logistic": 0.20255700000000054,
+          "scenario_id": "rep04-case19"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case27"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case00"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case01"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case06"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case12"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case14"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case21"
+        }
+      ],
+      "replicate_mean_summary": {
+        "max_replicate_mean": 0.0875403333333334,
+        "mean_of_replicate_means": 0.011724866666666736,
+        "min_replicate_mean": -0.04570749999999949,
+        "replicates": 5,
+        "sample_sd_of_replicate_means": 0.05121703790940942
+      },
+      "replicate_means": [
+        -0.016968000000000316,
+        -0.04570749999999949,
+        0.0875403333333334,
+        0.03375950000000009,
+        0.0
+      ]
+    },
+    "predictive_only_vqc": {
+      "per_scenario": [
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case00"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case08"
+        },
+        {
+          "method_minus_logistic": 0.2948259999999969,
+          "scenario_id": "rep01-case13"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case18"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep01-case20"
+        },
+        {
+          "method_minus_logistic": -0.3966339999999988,
+          "scenario_id": "rep01-case25"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep02-case08"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep02-case10"
+        },
+        {
+          "method_minus_logistic": -0.16467199999999949,
+          "scenario_id": "rep02-case22"
+        },
+        {
+          "method_minus_logistic": 0.0829480000000018,
+          "scenario_id": "rep02-case27"
+        },
+        {
+          "method_minus_logistic": -0.19252099999999928,
+          "scenario_id": "rep02-case28"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep02-case29"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case00"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case10"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case15"
+        },
+        {
+          "method_minus_logistic": -0.38251499999999794,
+          "scenario_id": "rep03-case23"
+        },
+        {
+          "method_minus_logistic": 0.5252420000000004,
+          "scenario_id": "rep03-case24"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep03-case25"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case04"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case10"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case12"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case14"
+        },
+        {
+          "method_minus_logistic": 0.20255700000000054,
+          "scenario_id": "rep04-case19"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep04-case27"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case00"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case01"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case06"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case12"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case14"
+        },
+        {
+          "method_minus_logistic": 0.0,
+          "scenario_id": "rep05-case21"
+        }
+      ],
+      "replicate_mean_summary": {
+        "max_replicate_mean": 0.03375950000000009,
+        "mean_of_replicate_means": -0.0010256333333331946,
+        "min_replicate_mean": -0.04570749999999949,
+        "replicates": 5,
+        "sample_sd_of_replicate_means": 0.0319272368696471
+      },
+      "replicate_means": [
+        -0.016968000000000316,
+        -0.04570749999999949,
+        0.023787833333333747,
+        0.03375950000000009,
+        0.0
+      ]
+    }
+  },
+  "protocol": {
+    "decision_and_scoring": {
+      "exact_reference": "independent exact solve on realized scenario, post-selection only",
+      "no_method_or_seed_selection_by_test_outcome": true,
+      "no_tuning_on_validation_or_test": true,
+      "plan_score": "sum forecast route travel cost + predicted probability * sum contractual penalties for each selected route (one-minute horizon)",
+      "primary_metrics": [
+        "mean validator objective",
+        "per-scenario regret versus exact realized reference",
+        "valid-plan rate"
+      ],
+      "replicate_analysis": "report five replicate test means and paired per-scenario method-minus-logistic objective differences",
+      "secondary_metrics": [
+        "route Brier score",
+        "lateness exposure",
+        "fit CPU and wall time",
+        "updates completed"
+      ],
+      "validator": "backend.validator.validate_plan recomputes constraints and objective from realized input"
+    },
+    "frozen_before_evaluation": true,
+    "frozen_before_generation": true,
+    "information_boundary": {
+      "common_random_numbers": "all methods receive identical frozen forecast and realized matrices per replicate and identical 18/6/6 group splits",
+      "decision_selection_uses_forecast_only": true,
+      "model_features": [
+        "forecast route travel cost / 30 clipped to [0,1]",
+        "nominal contractual window pressure"
+      ],
+      "realized_matrix_opened_after_all_method_selections": true,
+      "training_labels": "train-only indicator that any stop on route is late in the separately generated realized matrix, irrespective of penalty",
+      "validation_and_test_labels_passed_to_fit": false
+    },
+    "limitations": [
+      "synthetic data only",
+      "five independent replicate worlds and six test groups per replicate",
+      "CPU time is a common upper bound, not equal compute delivered; stopping granularity is one full-batch update",
+      "decision, predictive and logistic objectives have different computational costs",
+      "no tree baseline, calibration or operational claims",
+      "one evaluation only"
+    ],
+    "methods_and_fixed_budgets": {
+      "cpu_seconds_per_method_replicate": 0.25,
+      "decision_focused_vqc": {
+        "initial_theta": [
+          0.31,
+          -0.47
+        ],
+        "learning_rate": 0.025,
+        "objective": "soft exact-cover plan decision loss, temperature 2"
+      },
+      "logistic_regression": {
+        "implementation": "deterministic full-batch logistic gradient descent",
+        "learning_rate": 0.3
+      },
+      "max_updates": 120,
+      "predictive_only_vqc": {
+        "initial_theta": [
+          0.31,
+          -0.47
+        ],
+        "learning_rate": 0.08,
+        "objective": "route-label binary cross entropy"
+      },
+      "primary_budget": "at most 0.25 process CPU seconds per method per replicate, measured via Python process_time; stop only between full-batch optimizer updates, so one update may exceed cap",
+      "secondary_work_counts": [
+        "completed optimizer updates",
+        "train route rows",
+        "test scenario groups",
+        "fit process CPU seconds",
+        "fit wall seconds"
+      ]
+    },
+    "protocol_id": "terra-independent-matched-budget-v1",
+    "purpose": "One-time synthetic comparison of decision-focused VQC, predictive-only VQC, and logistic regression on independent new worlds.",
+    "scenario_family": {
+      "family_seed": 2026103001,
+      "forecast_clipping": [
+        0.5,
+        2.5
+      ],
+      "forecast_edge_jitter": [
+        0.97,
+        1.03
+      ],
+      "forecast_noise_sd": 0.3,
+      "generator": "independent four-location, three-order, two-vehicle family in this isolated runner; same documented generator shape as V2 but with new fixed seeds",
+      "latent_multiplier": [
+        0.75,
+        2.1
+      ],
+      "realized_edge_jitter": [
+        0.9,
+        1.1
+      ],
+      "replicates": 5,
+      "scenario_groups_per_replicate": 30,
+      "scenario_seeds_are_independent_by_replicate": true,
+      "split_per_replicate": {
+        "test": 6,
+        "train": 18,
+        "validation": 6
+      },
+      "split_seed": 2026103002
+    }
+  },
+  "replicate_mean_objective_summary": {
+    "decision_focused_vqc": {
+      "max_replicate_mean": 15.687786166666667,
+      "mean_of_replicate_means": 13.146708566666666,
+      "min_replicate_mean": 11.610758666666667,
+      "replicates": 5,
+      "sample_sd_of_replicate_means": 1.7252310755573987
+    },
+    "logistic_regression": {
+      "max_replicate_mean": 15.704754166666667,
+      "mean_of_replicate_means": 13.134983700000001,
+      "min_replicate_mean": 11.523218333333332,
+      "replicates": 5,
+      "sample_sd_of_replicate_means": 1.761817115303313
+    },
+    "predictive_only_vqc": {
+      "max_replicate_mean": 15.687786166666667,
+      "mean_of_replicate_means": 13.133958066666668,
+      "min_replicate_mean": 11.547006166666668,
+      "replicates": 5,
+      "sample_sd_of_replicate_means": 1.7395963506860044
+    }
+  },
+  "replicates": [
+    {
+      "replicate": 1,
+      "split_ids": {
+        "test": [
+          "rep01-case00",
+          "rep01-case08",
+          "rep01-case13",
+          "rep01-case18",
+          "rep01-case20",
+          "rep01-case25"
+        ],
+        "train": [
+          "rep01-case01",
+          "rep01-case02",
+          "rep01-case03",
+          "rep01-case04",
+          "rep01-case05",
+          "rep01-case06",
+          "rep01-case07",
+          "rep01-case09",
+          "rep01-case10",
+          "rep01-case11",
+          "rep01-case12",
+          "rep01-case14",
+          "rep01-case16",
+          "rep01-case17",
+          "rep01-case19",
+          "rep01-case26",
+          "rep01-case27",
+          "rep01-case28"
+        ],
+        "validation": [
+          "rep01-case15",
+          "rep01-case21",
+          "rep01-case22",
+          "rep01-case23",
+          "rep01-case24",
+          "rep01-case29"
+        ]
+      },
+      "test_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.12159399999999969,
+          "mean_route_brier": 0.0817513577002033,
+          "mean_validator_objective": 15.687786166666667,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.138562,
+          "mean_route_brier": 0.10738579097023027,
+          "mean_validator_objective": 15.704754166666667,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.12159399999999969,
+          "mean_route_brier": 0.07954884267644281,
+          "mean_validator_objective": 15.687786166666667,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      },
+      "test_outcomes": {
+        "decision_focused_vqc": [
+          {
+            "exact_reference_objective": 14.894669,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.06874099999999927,
+            "replicate": 1,
+            "route_brier": 0.07017548306105494,
+            "scenario_id": "rep01-case00",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.96341
+          },
+          {
+            "exact_reference_objective": 16.217737,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.03749700000000189,
+            "replicate": 1,
+            "route_brier": 0.0667891869152905,
+            "scenario_id": "rep01-case08",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.255234
+          },
+          {
+            "exact_reference_objective": 20.13439,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2948259999999969,
+            "replicate": 1,
+            "route_brier": 0.1778788332954912,
+            "scenario_id": "rep01-case13",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 20.429215999999997
+          },
+          {
+            "exact_reference_objective": 16.503709,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3038559999999997,
+            "replicate": 1,
+            "route_brier": 0.06571647391343255,
+            "scenario_id": "rep01-case18",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.807565
+          },
+          {
+            "exact_reference_objective": 10.691342,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.024644000000000332,
+            "replicate": 1,
+            "route_brier": 0.04379595681944431,
+            "scenario_id": "rep01-case20",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.715986000000001
+          },
+          {
+            "exact_reference_objective": 14.955306,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 1,
+            "route_brier": 0.06615221219650627,
+            "scenario_id": "rep01-case25",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.955306
+          }
+        ],
+        "logistic_regression": [
+          {
+            "exact_reference_objective": 14.894669,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.06874099999999927,
+            "replicate": 1,
+            "route_brier": 0.05490847289059837,
+            "scenario_id": "rep01-case00",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.96341
+          },
+          {
+            "exact_reference_objective": 16.217737,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.03749700000000189,
+            "replicate": 1,
+            "route_brier": 0.09191308039600232,
+            "scenario_id": "rep01-case08",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.255234
+          },
+          {
+            "exact_reference_objective": 20.13439,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 1,
+            "route_brier": 0.25926387096628517,
+            "scenario_id": "rep01-case13",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 20.13439
+          },
+          {
+            "exact_reference_objective": 16.503709,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3038559999999997,
+            "replicate": 1,
+            "route_brier": 0.09205372421002207,
+            "scenario_id": "rep01-case18",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.807565
+          },
+          {
+            "exact_reference_objective": 10.691342,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.024644000000000332,
+            "replicate": 1,
+            "route_brier": 0.05408932564260678,
+            "scenario_id": "rep01-case20",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.715986000000001
+          },
+          {
+            "exact_reference_objective": 14.955306,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3966339999999988,
+            "replicate": 1,
+            "route_brier": 0.09208627171586682,
+            "scenario_id": "rep01-case25",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.351939999999999
+          }
+        ],
+        "predictive_only_vqc": [
+          {
+            "exact_reference_objective": 14.894669,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.06874099999999927,
+            "replicate": 1,
+            "route_brier": 0.06238879321824081,
+            "scenario_id": "rep01-case00",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.96341
+          },
+          {
+            "exact_reference_objective": 16.217737,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.03749700000000189,
+            "replicate": 1,
+            "route_brier": 0.06365686335265323,
+            "scenario_id": "rep01-case08",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.255234
+          },
+          {
+            "exact_reference_objective": 20.13439,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2948259999999969,
+            "replicate": 1,
+            "route_brier": 0.18478790208276846,
+            "scenario_id": "rep01-case13",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 20.429215999999997
+          },
+          {
+            "exact_reference_objective": 16.503709,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3038559999999997,
+            "replicate": 1,
+            "route_brier": 0.06342234038189344,
+            "scenario_id": "rep01-case18",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.807565
+          },
+          {
+            "exact_reference_objective": 10.691342,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.024644000000000332,
+            "replicate": 1,
+            "route_brier": 0.039237067735669394,
+            "scenario_id": "rep01-case20",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.715986000000001
+          },
+          {
+            "exact_reference_objective": 14.955306,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 1,
+            "route_brier": 0.06380008928743154,
+            "scenario_id": "rep01-case25",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.955306
+          }
+        ]
+      },
+      "training_work": {
+        "cpu_budget_seconds_per_method": 0.25,
+        "decision_final_training_loss": 15.403256783789935,
+        "decision_focused_vqc_fit_seconds": 0.25,
+        "decision_focused_vqc_fit_wall_seconds": 0.24796670000068843,
+        "decision_vqc_updates": 26,
+        "logistic_regression_fit_seconds": 0.015625,
+        "logistic_regression_fit_wall_seconds": 0.022565499995835125,
+        "logistic_updates": 120,
+        "predictive_only_vqc_fit_seconds": 0.25,
+        "predictive_only_vqc_fit_wall_seconds": 0.32121919991914183,
+        "predictive_vqc_updates": 35,
+        "training_route_rows": 252
+      },
+      "validation_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.18207433333333375,
+          "mean_route_brier": 0.09140930494324352,
+          "mean_validator_objective": 15.07785,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.18207433333333375,
+          "mean_route_brier": 0.11679856168276882,
+          "mean_validator_objective": 15.07785,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.18207433333333375,
+          "mean_route_brier": 0.09012217307084906,
+          "mean_validator_objective": 15.07785,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      }
+    },
+    {
+      "replicate": 2,
+      "split_ids": {
+        "test": [
+          "rep02-case08",
+          "rep02-case10",
+          "rep02-case22",
+          "rep02-case27",
+          "rep02-case28",
+          "rep02-case29"
+        ],
+        "train": [
+          "rep02-case00",
+          "rep02-case02",
+          "rep02-case03",
+          "rep02-case04",
+          "rep02-case07",
+          "rep02-case09",
+          "rep02-case11",
+          "rep02-case12",
+          "rep02-case13",
+          "rep02-case14",
+          "rep02-case15",
+          "rep02-case16",
+          "rep02-case17",
+          "rep02-case18",
+          "rep02-case19",
+          "rep02-case20",
+          "rep02-case24",
+          "rep02-case25"
+        ],
+        "validation": [
+          "rep02-case01",
+          "rep02-case05",
+          "rep02-case06",
+          "rep02-case21",
+          "rep02-case23",
+          "rep02-case26"
+        ]
+      },
+      "test_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.1571741666666672,
+          "mean_route_brier": 0.06716254123059749,
+          "mean_validator_objective": 14.144506333333334,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.2028816666666667,
+          "mean_route_brier": 0.07457661880340027,
+          "mean_validator_objective": 14.190213833333333,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.1571741666666672,
+          "mean_route_brier": 0.06316105344447297,
+          "mean_validator_objective": 14.144506333333334,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      },
+      "test_outcomes": {
+        "decision_focused_vqc": [
+          {
+            "exact_reference_objective": 14.563288,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 2,
+            "route_brier": 0.06618688987856647,
+            "scenario_id": "rep02-case08",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.563288
+          },
+          {
+            "exact_reference_objective": 16.660792,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2955900000000007,
+            "replicate": 2,
+            "route_brier": 0.06642216399907461,
+            "scenario_id": "rep02-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.956382
+          },
+          {
+            "exact_reference_objective": 12.338991,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.03190999999999988,
+            "replicate": 2,
+            "route_brier": 0.0421352800982321,
+            "scenario_id": "rep02-case22",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 12.370901
+          },
+          {
+            "exact_reference_objective": 9.044542999999999,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.24387600000000198,
+            "replicate": 2,
+            "route_brier": 0.09494039324679895,
+            "scenario_id": "rep02-case27",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.288419000000001
+          },
+          {
+            "exact_reference_objective": 15.315179,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 2,
+            "route_brier": 0.0659173520492078,
+            "scenario_id": "rep02-case28",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.315179
+          },
+          {
+            "exact_reference_objective": 16.0012,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3716690000000007,
+            "replicate": 2,
+            "route_brier": 0.06737316811170502,
+            "scenario_id": "rep02-case29",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.372869
+          }
+        ],
+        "logistic_regression": [
+          {
+            "exact_reference_objective": 14.563288,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 2,
+            "route_brier": 0.09317345316238777,
+            "scenario_id": "rep02-case08",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.563288
+          },
+          {
+            "exact_reference_objective": 16.660792,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2955900000000007,
+            "replicate": 2,
+            "route_brier": 0.09325868792038254,
+            "scenario_id": "rep02-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.956382
+          },
+          {
+            "exact_reference_objective": 12.338991,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.19658199999999937,
+            "replicate": 2,
+            "route_brier": 0.048736223972596714,
+            "scenario_id": "rep02-case22",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 12.535573
+          },
+          {
+            "exact_reference_objective": 9.044542999999999,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.16092800000000018,
+            "replicate": 2,
+            "route_brier": 0.025865483458937796,
+            "scenario_id": "rep02-case27",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.205471
+          },
+          {
+            "exact_reference_objective": 15.315179,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.19252099999999928,
+            "replicate": 2,
+            "route_brier": 0.09309726710069924,
+            "scenario_id": "rep02-case28",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.5077
+          },
+          {
+            "exact_reference_objective": 16.0012,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3716690000000007,
+            "replicate": 2,
+            "route_brier": 0.09332859720539757,
+            "scenario_id": "rep02-case29",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.372869
+          }
+        ],
+        "predictive_only_vqc": [
+          {
+            "exact_reference_objective": 14.563288,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 2,
+            "route_brier": 0.06336956489097206,
+            "scenario_id": "rep02-case08",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.563288
+          },
+          {
+            "exact_reference_objective": 16.660792,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2955900000000007,
+            "replicate": 2,
+            "route_brier": 0.06272020704141562,
+            "scenario_id": "rep02-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.956382
+          },
+          {
+            "exact_reference_objective": 12.338991,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.03190999999999988,
+            "replicate": 2,
+            "route_brier": 0.03691065578408329,
+            "scenario_id": "rep02-case22",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 12.370901
+          },
+          {
+            "exact_reference_objective": 9.044542999999999,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.24387600000000198,
+            "replicate": 2,
+            "route_brier": 0.0893682331995014,
+            "scenario_id": "rep02-case27",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.288419000000001
+          },
+          {
+            "exact_reference_objective": 15.315179,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 2,
+            "route_brier": 0.06380879874335457,
+            "scenario_id": "rep02-case28",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.315179
+          },
+          {
+            "exact_reference_objective": 16.0012,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3716690000000007,
+            "replicate": 2,
+            "route_brier": 0.06278886100751085,
+            "scenario_id": "rep02-case29",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 16.372869
+          }
+        ]
+      },
+      "training_work": {
+        "cpu_budget_seconds_per_method": 0.25,
+        "decision_final_training_loss": 14.336705661316882,
+        "decision_focused_vqc_fit_seconds": 0.25,
+        "decision_focused_vqc_fit_wall_seconds": 0.26546310004778206,
+        "decision_vqc_updates": 27,
+        "logistic_regression_fit_seconds": 0.015625,
+        "logistic_regression_fit_wall_seconds": 0.023535399930551648,
+        "logistic_updates": 120,
+        "predictive_only_vqc_fit_seconds": 0.25,
+        "predictive_only_vqc_fit_wall_seconds": 0.25314239994622767,
+        "predictive_vqc_updates": 28,
+        "training_route_rows": 252
+      },
+      "validation_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.1701390000000004,
+          "mean_route_brier": 0.07786609340735683,
+          "mean_validator_objective": 11.622446333333334,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.1455485000000003,
+          "mean_route_brier": 0.04472158427029074,
+          "mean_validator_objective": 11.597855833333334,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.1701390000000004,
+          "mean_route_brier": 0.07143417405779715,
+          "mean_validator_objective": 11.622446333333334,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      }
+    },
+    {
+      "replicate": 3,
+      "split_ids": {
+        "test": [
+          "rep03-case00",
+          "rep03-case10",
+          "rep03-case15",
+          "rep03-case23",
+          "rep03-case24",
+          "rep03-case25"
+        ],
+        "train": [
+          "rep03-case01",
+          "rep03-case02",
+          "rep03-case04",
+          "rep03-case08",
+          "rep03-case09",
+          "rep03-case11",
+          "rep03-case12",
+          "rep03-case14",
+          "rep03-case16",
+          "rep03-case18",
+          "rep03-case19",
+          "rep03-case20",
+          "rep03-case21",
+          "rep03-case22",
+          "rep03-case26",
+          "rep03-case27",
+          "rep03-case28",
+          "rep03-case29"
+        ],
+        "validation": [
+          "rep03-case03",
+          "rep03-case05",
+          "rep03-case06",
+          "rep03-case07",
+          "rep03-case13",
+          "rep03-case17"
+        ]
+      },
+      "test_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.22939299999999938,
+          "mean_route_brier": 0.07065078847889535,
+          "mean_validator_objective": 11.610758666666667,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.14185266666666596,
+          "mean_route_brier": 0.05752011423843878,
+          "mean_validator_objective": 11.523218333333332,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.16564049999999972,
+          "mean_route_brier": 0.06493642855201813,
+          "mean_validator_objective": 11.547006166666668,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      },
+      "test_outcomes": {
+        "decision_focused_vqc": [
+          {
+            "exact_reference_objective": 9.907953,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.048954026562007744,
+            "scenario_id": "rep03-case00",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.907953
+          },
+          {
+            "exact_reference_objective": 9.383587,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.09700886913912213,
+            "scenario_id": "rep03-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.383587
+          },
+          {
+            "exact_reference_objective": 10.087444000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2733649999999983,
+            "replicate": 3,
+            "route_brier": 0.05021183373986444,
+            "scenario_id": "rep03-case15",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.360809
+          },
+          {
+            "exact_reference_objective": 15.570678000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.38251499999999794,
+            "replicate": 3,
+            "route_brier": 0.06660587106529815,
+            "scenario_id": "rep03-case23",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.953192999999999
+          },
+          {
+            "exact_reference_objective": 13.605477,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.5252420000000004,
+            "replicate": 3,
+            "route_brier": 0.06788153894031182,
+            "scenario_id": "rep03-case24",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.130719000000001
+          },
+          {
+            "exact_reference_objective": 9.733055,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.19523599999999952,
+            "replicate": 3,
+            "route_brier": 0.09324259142676775,
+            "scenario_id": "rep03-case25",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.928291
+          }
+        ],
+        "logistic_regression": [
+          {
+            "exact_reference_objective": 9.907953,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.051777685713411827,
+            "scenario_id": "rep03-case00",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.907953
+          },
+          {
+            "exact_reference_objective": 9.383587,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.02293056893483831,
+            "scenario_id": "rep03-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.383587
+          },
+          {
+            "exact_reference_objective": 10.087444000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2733649999999983,
+            "replicate": 3,
+            "route_brier": 0.051777938055173924,
+            "scenario_id": "rep03-case15",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.360809
+          },
+          {
+            "exact_reference_objective": 15.570678000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.38251499999999794,
+            "replicate": 3,
+            "route_brier": 0.09784492341205542,
+            "scenario_id": "rep03-case23",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.953192999999999
+          },
+          {
+            "exact_reference_objective": 13.605477,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.0978512817414605,
+            "scenario_id": "rep03-case24",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 13.605477
+          },
+          {
+            "exact_reference_objective": 9.733055,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.19523599999999952,
+            "replicate": 3,
+            "route_brier": 0.02293828757369268,
+            "scenario_id": "rep03-case25",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.928291
+          }
+        ],
+        "predictive_only_vqc": [
+          {
+            "exact_reference_objective": 9.907953,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.041694273180288684,
+            "scenario_id": "rep03-case00",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.907953
+          },
+          {
+            "exact_reference_objective": 9.383587,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.09050044425942946,
+            "scenario_id": "rep03-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.383587
+          },
+          {
+            "exact_reference_objective": 10.087444000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.2733649999999983,
+            "replicate": 3,
+            "route_brier": 0.04264755716230388,
+            "scenario_id": "rep03-case15",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.360809
+          },
+          {
+            "exact_reference_objective": 15.570678000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 3,
+            "route_brier": 0.06325729464767936,
+            "scenario_id": "rep03-case23",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.570678000000001
+          },
+          {
+            "exact_reference_objective": 13.605477,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.5252420000000004,
+            "replicate": 3,
+            "route_brier": 0.06346209976504648,
+            "scenario_id": "rep03-case24",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.130719000000001
+          },
+          {
+            "exact_reference_objective": 9.733055,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.19523599999999952,
+            "replicate": 3,
+            "route_brier": 0.08805690229736092,
+            "scenario_id": "rep03-case25",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.928291
+          }
+        ]
+      },
+      "training_work": {
+        "cpu_budget_seconds_per_method": 0.25,
+        "decision_final_training_loss": 14.436132834741905,
+        "decision_focused_vqc_fit_seconds": 0.25,
+        "decision_focused_vqc_fit_wall_seconds": 0.24149609997402877,
+        "decision_vqc_updates": 26,
+        "logistic_regression_fit_seconds": 0.015625,
+        "logistic_regression_fit_wall_seconds": 0.022519199992530048,
+        "logistic_updates": 120,
+        "predictive_only_vqc_fit_seconds": 0.25,
+        "predictive_only_vqc_fit_wall_seconds": 0.2516786999767646,
+        "predictive_vqc_updates": 27,
+        "training_route_rows": 252
+      },
+      "validation_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.10875766666666653,
+          "mean_route_brier": 0.08933765513552906,
+          "mean_validator_objective": 14.127800333333333,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.0853635,
+          "mean_route_brier": 0.11798940390411145,
+          "mean_validator_objective": 14.104406166666665,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.10875766666666653,
+          "mean_route_brier": 0.08713151341650564,
+          "mean_validator_objective": 14.127800333333333,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      }
+    },
+    {
+      "replicate": 4,
+      "split_ids": {
+        "test": [
+          "rep04-case04",
+          "rep04-case10",
+          "rep04-case12",
+          "rep04-case14",
+          "rep04-case19",
+          "rep04-case27"
+        ],
+        "train": [
+          "rep04-case00",
+          "rep04-case01",
+          "rep04-case03",
+          "rep04-case06",
+          "rep04-case07",
+          "rep04-case08",
+          "rep04-case09",
+          "rep04-case13",
+          "rep04-case15",
+          "rep04-case17",
+          "rep04-case20",
+          "rep04-case21",
+          "rep04-case22",
+          "rep04-case23",
+          "rep04-case25",
+          "rep04-case26",
+          "rep04-case28",
+          "rep04-case29"
+        ],
+        "validation": [
+          "rep04-case02",
+          "rep04-case05",
+          "rep04-case11",
+          "rep04-case16",
+          "rep04-case18",
+          "rep04-case24"
+        ]
+      },
+      "test_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.20335349999999938,
+          "mean_route_brier": 0.08683877513579873,
+          "mean_validator_objective": 12.355026666666667,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.16959399999999927,
+          "mean_route_brier": 0.06758643007449884,
+          "mean_validator_objective": 12.321267166666665,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.20335349999999938,
+          "mean_route_brier": 0.08237831241133219,
+          "mean_validator_objective": 12.355026666666667,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      },
+      "test_outcomes": {
+        "decision_focused_vqc": [
+          {
+            "exact_reference_objective": 9.438501,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.05741199999999935,
+            "replicate": 4,
+            "route_brier": 0.10174959479132419,
+            "scenario_id": "rep04-case04",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.495913
+          },
+          {
+            "exact_reference_objective": 7.670479,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.002491000000000021,
+            "replicate": 4,
+            "route_brier": 0.09278297751145355,
+            "scenario_id": "rep04-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 7.67297
+          },
+          {
+            "exact_reference_objective": 15.983775,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 4,
+            "route_brier": 0.06819108857825265,
+            "scenario_id": "rep04-case12",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.983775
+          },
+          {
+            "exact_reference_objective": 13.445356,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.36031799999999947,
+            "replicate": 4,
+            "route_brier": 0.06180984864158749,
+            "scenario_id": "rep04-case14",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 13.805674
+          },
+          {
+            "exact_reference_objective": 9.751448,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3189489999999999,
+            "replicate": 4,
+            "route_brier": 0.09701558172128756,
+            "scenario_id": "rep04-case19",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.070397
+          },
+          {
+            "exact_reference_objective": 16.62048,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.48095099999999746,
+            "replicate": 4,
+            "route_brier": 0.09948355957088692,
+            "scenario_id": "rep04-case27",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 17.101430999999998
+          }
+        ],
+        "logistic_regression": [
+          {
+            "exact_reference_objective": 9.438501,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.05741199999999935,
+            "replicate": 4,
+            "route_brier": 0.026323419871899987,
+            "scenario_id": "rep04-case04",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.495913
+          },
+          {
+            "exact_reference_objective": 7.670479,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.002491000000000021,
+            "replicate": 4,
+            "route_brier": 0.02655292756128372,
+            "scenario_id": "rep04-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 7.67297
+          },
+          {
+            "exact_reference_objective": 15.983775,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 4,
+            "route_brier": 0.09467402807028259,
+            "scenario_id": "rep04-case12",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.983775
+          },
+          {
+            "exact_reference_objective": 13.445356,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.36031799999999947,
+            "replicate": 4,
+            "route_brier": 0.05035387577949362,
+            "scenario_id": "rep04-case14",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 13.805674
+          },
+          {
+            "exact_reference_objective": 9.751448,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.11639199999999938,
+            "replicate": 4,
+            "route_brier": 0.026435813293211798,
+            "scenario_id": "rep04-case19",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.86784
+          },
+          {
+            "exact_reference_objective": 16.62048,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.48095099999999746,
+            "replicate": 4,
+            "route_brier": 0.18117851587082137,
+            "scenario_id": "rep04-case27",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 17.101430999999998
+          }
+        ],
+        "predictive_only_vqc": [
+          {
+            "exact_reference_objective": 9.438501,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.05741199999999935,
+            "replicate": 4,
+            "route_brier": 0.09517155773437724,
+            "scenario_id": "rep04-case04",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 9.495913
+          },
+          {
+            "exact_reference_objective": 7.670479,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.002491000000000021,
+            "replicate": 4,
+            "route_brier": 0.08902577696101463,
+            "scenario_id": "rep04-case10",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 7.67297
+          },
+          {
+            "exact_reference_objective": 15.983775,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0,
+            "replicate": 4,
+            "route_brier": 0.06345957310142664,
+            "scenario_id": "rep04-case12",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.983775
+          },
+          {
+            "exact_reference_objective": 13.445356,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.36031799999999947,
+            "replicate": 4,
+            "route_brier": 0.05298414509429032,
+            "scenario_id": "rep04-case14",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 13.805674
+          },
+          {
+            "exact_reference_objective": 9.751448,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3189489999999999,
+            "replicate": 4,
+            "route_brier": 0.09182244215261715,
+            "scenario_id": "rep04-case19",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.070397
+          },
+          {
+            "exact_reference_objective": 16.62048,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.48095099999999746,
+            "replicate": 4,
+            "route_brier": 0.10180637942426717,
+            "scenario_id": "rep04-case27",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 17.101430999999998
+          }
+        ]
+      },
+      "training_work": {
+        "cpu_budget_seconds_per_method": 0.25,
+        "decision_final_training_loss": 14.581710319748128,
+        "decision_focused_vqc_fit_seconds": 0.25,
+        "decision_focused_vqc_fit_wall_seconds": 0.26221369998529553,
+        "decision_vqc_updates": 26,
+        "logistic_regression_fit_seconds": 0.015625,
+        "logistic_regression_fit_wall_seconds": 0.030142199946567416,
+        "logistic_updates": 120,
+        "predictive_only_vqc_fit_seconds": 0.25,
+        "predictive_only_vqc_fit_wall_seconds": 0.24682819994632155,
+        "predictive_vqc_updates": 27,
+        "training_route_rows": 252
+      },
+      "validation_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.14285199999999895,
+          "mean_route_brier": 0.13592421638948535,
+          "mean_validator_objective": 16.995420333333332,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.15359066666666563,
+          "mean_route_brier": 0.1935071238194145,
+          "mean_validator_objective": 17.006159,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.14285199999999895,
+          "mean_route_brier": 0.13860940526344553,
+          "mean_validator_objective": 16.995420333333332,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      }
+    },
+    {
+      "replicate": 5,
+      "split_ids": {
+        "test": [
+          "rep05-case00",
+          "rep05-case01",
+          "rep05-case06",
+          "rep05-case12",
+          "rep05-case14",
+          "rep05-case21"
+        ],
+        "train": [
+          "rep05-case03",
+          "rep05-case04",
+          "rep05-case05",
+          "rep05-case07",
+          "rep05-case09",
+          "rep05-case10",
+          "rep05-case13",
+          "rep05-case15",
+          "rep05-case17",
+          "rep05-case18",
+          "rep05-case19",
+          "rep05-case23",
+          "rep05-case24",
+          "rep05-case25",
+          "rep05-case26",
+          "rep05-case27",
+          "rep05-case28",
+          "rep05-case29"
+        ],
+        "validation": [
+          "rep05-case02",
+          "rep05-case08",
+          "rep05-case11",
+          "rep05-case16",
+          "rep05-case20",
+          "rep05-case22"
+        ]
+      },
+      "test_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.25633199999999956,
+          "mean_route_brier": 0.05649719742000603,
+          "mean_validator_objective": 11.935465,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.25633199999999956,
+          "mean_route_brier": 0.04561725603008429,
+          "mean_validator_objective": 11.935465,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.25633199999999956,
+          "mean_route_brier": 0.052169795703154796,
+          "mean_validator_objective": 11.935465,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      },
+      "test_outcomes": {
+        "decision_focused_vqc": [
+          {
+            "exact_reference_objective": 14.897621000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.5829609999999992,
+            "replicate": 5,
+            "route_brier": 0.05308086501757409,
+            "scenario_id": "rep05-case00",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.480582
+          },
+          {
+            "exact_reference_objective": 14.202263,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0481429999999996,
+            "replicate": 5,
+            "route_brier": 0.054767597666897615,
+            "scenario_id": "rep05-case01",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.250406
+          },
+          {
+            "exact_reference_objective": 11.243593,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3934849999999983,
+            "replicate": 5,
+            "route_brier": 0.047966119447829914,
+            "scenario_id": "rep05-case06",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 11.637077999999999
+          },
+          {
+            "exact_reference_objective": 8.298655,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.13821000000000083,
+            "replicate": 5,
+            "route_brier": 0.09046526347738319,
+            "scenario_id": "rep05-case12",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 8.436865000000001
+          },
+          {
+            "exact_reference_objective": 10.432246,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.029766000000000403,
+            "replicate": 5,
+            "route_brier": 0.0509925745958711,
+            "scenario_id": "rep05-case14",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.462012
+          },
+          {
+            "exact_reference_objective": 11.00042,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.34542699999999904,
+            "replicate": 5,
+            "route_brier": 0.04171076431448027,
+            "scenario_id": "rep05-case21",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 11.345847
+          }
+        ],
+        "logistic_regression": [
+          {
+            "exact_reference_objective": 14.897621000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.5829609999999992,
+            "replicate": 5,
+            "route_brier": 0.04837127586305332,
+            "scenario_id": "rep05-case00",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.480582
+          },
+          {
+            "exact_reference_objective": 14.202263,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0481429999999996,
+            "replicate": 5,
+            "route_brier": 0.048373530812804946,
+            "scenario_id": "rep05-case01",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.250406
+          },
+          {
+            "exact_reference_objective": 11.243593,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3934849999999983,
+            "replicate": 5,
+            "route_brier": 0.04835821981752493,
+            "scenario_id": "rep05-case06",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 11.637077999999999
+          },
+          {
+            "exact_reference_objective": 8.298655,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.13821000000000083,
+            "replicate": 5,
+            "route_brier": 0.031895244711445406,
+            "scenario_id": "rep05-case12",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 8.436865000000001
+          },
+          {
+            "exact_reference_objective": 10.432246,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.029766000000000403,
+            "replicate": 5,
+            "route_brier": 0.04836559314591637,
+            "scenario_id": "rep05-case14",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.462012
+          },
+          {
+            "exact_reference_objective": 11.00042,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.34542699999999904,
+            "replicate": 5,
+            "route_brier": 0.04833967182976077,
+            "scenario_id": "rep05-case21",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 11.345847
+          }
+        ],
+        "predictive_only_vqc": [
+          {
+            "exact_reference_objective": 14.897621000000001,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.5829609999999992,
+            "replicate": 5,
+            "route_brier": 0.04739774829798343,
+            "scenario_id": "rep05-case00",
+            "selected_route_ids": [
+              "R1:P>R",
+              "R2:Q"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 15.480582
+          },
+          {
+            "exact_reference_objective": 14.202263,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.0481429999999996,
+            "replicate": 5,
+            "route_brier": 0.04872805166141218,
+            "scenario_id": "rep05-case01",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 14.250406
+          },
+          {
+            "exact_reference_objective": 11.243593,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.3934849999999983,
+            "replicate": 5,
+            "route_brier": 0.04343404243552084,
+            "scenario_id": "rep05-case06",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 11.637077999999999
+          },
+          {
+            "exact_reference_objective": 8.298655,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.13821000000000083,
+            "replicate": 5,
+            "route_brier": 0.08892018096580893,
+            "scenario_id": "rep05-case12",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 8.436865000000001
+          },
+          {
+            "exact_reference_objective": 10.432246,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.029766000000000403,
+            "replicate": 5,
+            "route_brier": 0.0457696247893275,
+            "scenario_id": "rep05-case14",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 10.462012
+          },
+          {
+            "exact_reference_objective": 11.00042,
+            "lateness_exposure": 0.0,
+            "regret_vs_exact": 0.34542699999999904,
+            "replicate": 5,
+            "route_brier": 0.03876912606887586,
+            "scenario_id": "rep05-case21",
+            "selected_route_ids": [
+              "R1:Q>R",
+              "R2:P"
+            ],
+            "split": "test",
+            "valid": true,
+            "validation_errors": [],
+            "validator_objective": 11.345847
+          }
+        ]
+      },
+      "training_work": {
+        "cpu_budget_seconds_per_method": 0.25,
+        "decision_final_training_loss": 14.89292152235981,
+        "decision_focused_vqc_fit_seconds": 0.25,
+        "decision_focused_vqc_fit_wall_seconds": 0.26991969998925924,
+        "decision_vqc_updates": 27,
+        "logistic_regression_fit_seconds": 0.03125,
+        "logistic_regression_fit_wall_seconds": 0.02210870000999421,
+        "logistic_updates": 120,
+        "predictive_only_vqc_fit_seconds": 0.25,
+        "predictive_only_vqc_fit_wall_seconds": 0.25404229993000627,
+        "predictive_vqc_updates": 27,
+        "training_route_rows": 252
+      },
+      "validation_metrics": {
+        "decision_focused_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.22563733333333383,
+          "mean_route_brier": 0.07494276104003168,
+          "mean_validator_objective": 14.948245833333333,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "logistic_regression": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.20442883333333395,
+          "mean_route_brier": 0.09914861134130404,
+          "mean_validator_objective": 14.927037333333333,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        },
+        "predictive_only_vqc": {
+          "mean_lateness_exposure": 0.0,
+          "mean_regret_vs_exact": 0.21129450000000047,
+          "mean_route_brier": 0.07245713582988403,
+          "mean_validator_objective": 14.933903,
+          "n_scenarios": 6,
+          "valid_plan_rate": 1.0
+        }
+      }
+    }
+  ],
+  "test_metrics_by_method": {
+    "decision_focused_vqc": {
+      "mean_lateness_exposure": 0.0,
+      "mean_regret_vs_exact": 0.19356933333333304,
+      "mean_route_brier": 0.07258013199310018,
+      "mean_validator_objective": 13.146708566666666,
+      "n_scenarios": 30,
+      "valid_plan_rate": 1.0
+    },
+    "logistic_regression": {
+      "mean_lateness_exposure": 0.0,
+      "mean_regret_vs_exact": 0.1818444666666663,
+      "mean_route_brier": 0.07053724202333049,
+      "mean_validator_objective": 13.1349837,
+      "n_scenarios": 30,
+      "valid_plan_rate": 1.0
+    },
+    "predictive_only_vqc": {
+      "mean_lateness_exposure": 0.0,
+      "mean_regret_vs_exact": 0.1808188333333331,
+      "mean_route_brier": 0.06843888655748417,
+      "mean_validator_objective": 13.133958066666667,
+      "n_scenarios": 30,
+      "valid_plan_rate": 1.0
+    }
+  }
+}
