@@ -103,3 +103,4 @@ Explicit financial contract: `Transport = $0.50 / travel_min`, `Driver Labor = $
 ## 6. Cross-Team Artifact Contract (`debugleaf.hybrid_artifact.v1.1`)
 
 Implemented in `experiments_v1_1/artifact_contract.py` and exported at `experiments_v1_1/artifacts/exported_hybrid_contract_sample.json` (`SHA-256: 54FF0477F5E505C2F18AFEA5EE2F40436179075EDE52E526F875B4A11AB95A0E`, `valid = true`).
+
